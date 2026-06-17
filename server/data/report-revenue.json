@@ -1,0 +1,16 @@
+{
+  "list": [
+    { "date": "06-01", "revenue": 12800, "refund": 250, "netRevenue": 12550 },
+    { "date": "06-02", "revenue": 15200, "refund": 320, "netRevenue": 14880 },
+    { "date": "06-03", "revenue": 13800, "refund": 180, "netRevenue": 13620 },
+    { "date": "06-04", "revenue": 16500, "refund": 450, "netRevenue": 16050 },
+    { "date": "06-05", "revenue": 19200, "refund": 520, "netRevenue": 18680 },
+    { "date": "06-06", "revenue": 17300, "refund": 380, "netRevenue": 16920 },
+    { "date": "06-07", "revenue": 22350, "refund": 680, "netRevenue": 21670 }
+  ],
+  "summary": {
+    "totalRevenue": 117150,
+    "totalRefund": 2780,
+    "netRevenue": 114370
+  }
+}

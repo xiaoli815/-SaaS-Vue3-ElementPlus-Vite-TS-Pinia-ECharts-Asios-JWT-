@@ -1,0 +1,50 @@
+{
+  "overview": {
+    "todaySales": 22350, "yesterdaySales": 18900, "todayOrders": 156, "yesterdayOrders": 132,
+    "todayUsers": 48, "totalUsers": 12860, "monthSales": 358600, "lastMonthSales": 312000,
+    "totalProducts": 1260, "conversionRate": 3.2, "refundRate": 2.8
+  },
+  "salesTrend": [
+    { "date": "06-01", "amount": 12800, "orders": 85 },
+    { "date": "06-02", "amount": 15200, "orders": 102 },
+    { "date": "06-03", "amount": 13800, "orders": 96 },
+    { "date": "06-04", "amount": 16500, "orders": 115 },
+    { "date": "06-05", "amount": 19200, "orders": 128 },
+    { "date": "06-06", "amount": 17300, "orders": 119 },
+    { "date": "06-07", "amount": 22350, "orders": 156 }
+  ],
+  "visitorTrend": [
+    { "date": "06-01", "visitors": 2800, "newUsers": 45 },
+    { "date": "06-02", "visitors": 3100, "newUsers": 52 },
+    { "date": "06-03", "visitors": 2900, "newUsers": 38 },
+    { "date": "06-04", "visitors": 3500, "newUsers": 48 },
+    { "date": "06-05", "visitors": 4200, "newUsers": 56 },
+    { "date": "06-06", "visitors": 3800, "newUsers": 50 },
+    { "date": "06-07", "visitors": 4600, "newUsers": 48 }
+  ],
+  "categorySales": [
+    { "categoryName": "数码家电", "amount": 125600, "percentage": 35 },
+    { "categoryName": "服装鞋帽", "amount": 89600, "percentage": 25 },
+    { "categoryName": "美妆护肤", "amount": 62800, "percentage": 17.5 },
+    { "categoryName": "食品饮料", "amount": 48600, "percentage": 13.5 },
+    { "categoryName": "家居日用", "amount": 32000, "percentage": 9 }
+  ],
+  "topProducts": [
+    { "id": 2, "name": "iPhone 15 Pro Max 256GB", "sales": 3560, "amount": 35599000 },
+    { "id": 3, "name": "三只松鼠坚果大礼包", "sales": 5680, "amount": 505520 },
+    { "id": 4, "name": "兰蔻持妆粉底液 30ml", "sales": 2100, "amount": 1092000 },
+    { "id": 1, "name": "夏季新款男士短袖T恤", "sales": 1280, "amount": 165120 },
+    { "id": 5, "name": "戴森V15无绳吸尘器", "sales": 890, "amount": 4441100 }
+  ],
+  "orderStatusDist": [
+    { "status": 1, "statusText": "待发货", "count": 28 },
+    { "status": 2, "statusText": "已发货", "count": 45 },
+    { "status": 3, "statusText": "已完成", "count": 620 },
+    { "status": 4, "statusText": "售后中", "count": 8 },
+    { "status": 5, "statusText": "已取消", "count": 15 }
+  ],
+  "stockWarning": [
+    { "productId": 5, "productName": "戴森V15无绳吸尘器", "stock": 80, "warningLine": 100 },
+    { "productId": 6, "productName": "女士碎花连衣裙", "stock": 0, "warningLine": 50 }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "123456",
+    "nickname": "超级管理员",
+    "avatar": "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png",
+    "email": "admin@saas.com",
+    "phone": "13800138000",
+    "role": ["admin", "super"],
+    "permissions": ["*"],
+    "createTime": "2024-01-01 00:00:00",
+    "status": 1
+  },
+  {
+    "id": 2,
+    "username": "operator",
+    "password": "123456",
+    "nickname": "运营专员",
+    "avatar": "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
+    "email": "operator@saas.com",
+    "phone": "13800138001",
+    "role": ["operator"],
+    "permissions": ["product:view", "product:edit", "order:view", "order:edit"],
+    "createTime": "2024-03-15 10:30:00",
+    "status": 1
+  },
+  {
+    "id": 3,
+    "username": "viewer",
+    "password": "123456",
+    "nickname": "访客账号",
+    "avatar": "",
+    "email": "viewer@saas.com",
+    "phone": "13800138002",
+    "role": ["viewer"],
+    "permissions": ["product:view", "order:view", "dashboard:view"],
+    "createTime": "2024-05-20 14:00:00",
+    "status": 1
+  }
+]

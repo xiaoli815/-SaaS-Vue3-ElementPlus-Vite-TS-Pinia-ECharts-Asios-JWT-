@@ -1,0 +1,12 @@
+{
+  "list": [
+    { "date": "06-01", "visits": 12000, "orders": 85, "rate": 0.71 },
+    { "date": "06-02", "visits": 13500, "orders": 102, "rate": 0.76 },
+    { "date": "06-03", "visits": 11800, "orders": 96, "rate": 0.81 },
+    { "date": "06-04", "visits": 15800, "orders": 115, "rate": 0.73 },
+    { "date": "06-05", "visits": 18200, "orders": 128, "rate": 0.70 },
+    { "date": "06-06", "visits": 16500, "orders": 119, "rate": 0.72 },
+    { "date": "06-07", "visits": 21000, "orders": 156, "rate": 0.74 }
+  ],
+  "avgRate": 0.74
+}

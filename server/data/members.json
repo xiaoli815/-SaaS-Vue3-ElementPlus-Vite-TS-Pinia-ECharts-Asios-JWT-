@@ -1,0 +1,28 @@
+{
+  "members": [
+    { "id": 1, "nickname": "张先生", "phone": "13900139001", "avatar": "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png", "gender": 1, "level": 3, "levelText": "钻石会员", "points": 25800, "balance": 520.00, "totalSpent": 35600.00, "orderCount": 48, "tags": ["高消费", "复购用户"], "status": 1, "registerTime": "2024-01-15 10:30:00", "lastLoginTime": "2024-06-07 15:20:00" },
+    { "id": 2, "nickname": "李女士", "phone": "13900139002", "avatar": "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png", "gender": 2, "level": 2, "levelText": "黄金会员", "points": 12800, "balance": 0.00, "totalSpent": 12000.00, "orderCount": 23, "tags": ["新用户福利"], "status": 1, "registerTime": "2024-03-20 14:00:00", "lastLoginTime": "2024-06-06 18:30:00" },
+    { "id": 3, "nickname": "王大拿", "phone": "13900139003", "avatar": "", "gender": 1, "level": 1, "levelText": "普通会员", "points": 2800, "balance": 50.00, "totalSpent": 2800.00, "orderCount": 12, "tags": [], "status": 1, "registerTime": "2024-05-10 09:15:00", "lastLoginTime": "2024-06-05 11:00:00" },
+    { "id": 4, "nickname": "赵小姐", "phone": "13900139004", "avatar": "", "gender": 2, "level": 2, "levelText": "黄金会员", "points": 9600, "balance": 120.00, "totalSpent": 9500.00, "orderCount": 18, "tags": ["流失预警"], "status": 1, "registerTime": "2024-02-28 16:45:00", "lastLoginTime": "2024-05-20 08:00:00" },
+    { "id": 5, "nickname": "刷单账号001", "phone": "13800000101", "avatar": "", "gender": 1, "level": 1, "levelText": "普通会员", "points": 0, "balance": 0.00, "totalSpent": 0.00, "orderCount": 0, "tags": ["异常账号", "刷单嫌疑"], "status": 0, "registerTime": "2024-06-01 02:00:00", "lastLoginTime": "2024-06-01 02:30:00" },
+    { "id": 6, "nickname": "孙总", "phone": "13900139006", "avatar": "", "gender": 1, "level": 3, "levelText": "钻石会员", "points": 52000, "balance": 880.00, "totalSpent": 98000.00, "orderCount": 72, "tags": ["VIP大客户", "高复购率"], "status": 1, "registerTime": "2023-08-12 10:00:00", "lastLoginTime": "2024-06-07 20:00:00" },
+    { "id": 7, "nickname": "恶意退货用户", "phone": "13800000102", "avatar": "", "gender": 2, "level": 1, "levelText": "普通会员", "points": 120, "balance": 0.00, "totalSpent": 1200.00, "orderCount": 15, "tags": ["恶意退货", "已拉黑"], "status": 0, "registerTime": "2024-04-01 11:00:00", "lastLoginTime": "2024-06-03 15:00:00" }
+  ],
+  "levelConfig": [
+    { "level": 1, "name": "普通会员", "icon": "user", "minSpent": 0, "discount": 100, "discountText": "无折扣", "pointRate": 1, "freeShippingMin": 99 },
+    { "level": 2, "name": "黄金会员", "icon": "star", "minSpent": 5000, "discount": 98, "discountText": "9.8折", "pointRate": 1.5, "freeShippingMin": 59 },
+    { "level": 3, "name": "钻石会员", "icon": "star-filled", "minSpent": 20000, "discount": 95, "discountText": "9.5折", "pointRate": 2, "freeShippingMin": 0 }
+  ],
+  "tags": [
+    { "id": 1, "name": "高消费", "color": "#f56c6c" },
+    { "id": 2, "name": "复购用户", "color": "#e6a23c" },
+    { "id": 3, "name": "VIP大客户", "color": "#409eff" },
+    { "id": 4, "name": "新用户福利", "color": "#67c23a" },
+    { "id": 5, "name": "流失预警", "color": "#909399" },
+    { "id": 6, "name": "异常账号", "color": "#f56c6c" },
+    { "id": 7, "name": "刷单嫌疑", "color": "#e04040" },
+    { "id": 8, "name": "已拉黑", "color": "#303133" },
+    { "id": 9, "name": "高复购率", "color": "#67c23a" },
+    { "id": 10, "name": "恶意退货", "color": "#e04040" }
+  ]
+}

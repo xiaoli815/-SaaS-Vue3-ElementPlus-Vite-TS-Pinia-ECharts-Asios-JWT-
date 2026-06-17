@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "普通会员",
+    "minSpent": 0,
+    "discount": 100,
+    "icon": "level1.png",
+    "color": "#999"
+  },
+  {
+    "id": 2,
+    "name": "黄金会员",
+    "minSpent": 500,
+    "discount": 95,
+    "icon": "level2.png",
+    "color": "#ecc031"
+  },
+  {
+    "id": 3,
+    "name": "白金会员",
+    "minSpent": 3000,
+    "discount": 90,
+    "icon": "level3.png",
+    "color": "#a9a9a9"
+  },
+  {
+    "id": 4,
+    "name": "钻石会员",
+    "minSpent": 10000,
+    "discount": 85,
+    "icon": "level4.png",
+    "color": "#5ac8fa"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "roomId": "10001",
+    "title": "618大促专场 数码家电限时秒杀",
+    "cover": "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png",
+    "anchor": "张主播",
+    "startTime": "2024-06-08 19:30:00",
+    "endTime": "2024-06-08 22:30:00",
+    "productIds": [2, 5],
+    "status": 1,
+    "statusText": "直播中"
+  },
+  {
+    "id": 2,
+    "roomId": "10002",
+    "title": "美妆护肤专场 主播帮你挑好货",
+    "cover": "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
+    "anchor": "李主播",
+    "startTime": "2024-06-09 19:30:00",
+    "endTime": "2024-06-09 22:30:00",
+    "productIds": [4],
+    "status": 0,
+    "statusText": "未开始"
+  },
+  {
+    "id": 3,
+    "roomId": "10003",
+    "title": "夏季新品服装搭配指南",
+    "cover": "https://cube.elemecdn.com/6/94/4d3ea599601794a3898c62c468587.png",
+    "anchor": "王主播",
+    "startTime": "2024-06-07 19:30:00",
+    "endTime": "2024-06-07 22:30:00",
+    "productIds": [1],
+    "status": 2,
+    "statusText": "已结束"
+  }
+]

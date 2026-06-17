@@ -1,0 +1,13 @@
+{
+  "wechat": {
+    "enabled": true,
+    "appId": "wx0000000000000000",
+    "mchId": "1234567890",
+    "apiKey": ""
+  },
+  "alipay": {
+    "enabled": true,
+    "appId": "2021000000000000",
+    "privateKey": ""
+  }
+}

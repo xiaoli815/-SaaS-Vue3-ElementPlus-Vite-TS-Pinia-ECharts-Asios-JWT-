@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 三人成团",
+    "productId": 2,
+    "productName": "iPhone 15 Pro Max 256GB",
+    "groupPrice": 8499,
+    "groupSize": 3,
+    "stock": 80,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-30 23:59:59",
+    "duration": 48,
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 2,
+    "name": "短袖T恤二人拼团",
+    "productId": 1,
+    "productName": "夏季新款男士短袖T恤",
+    "groupPrice": 89,
+    "groupSize": 2,
+    "stock": 1000,
+    "startTime": "2024-06-03 00:00:00",
+    "endTime": "2024-07-03 23:59:59",
+    "duration": 24,
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 3,
+    "name": "戴森吸尘器五人拼团",
+    "productId": 5,
+    "productName": "戴森V15无绳吸尘器",
+    "groupPrice": 4599,
+    "groupSize": 5,
+    "stock": 50,
+    "startTime": "2024-05-10 00:00:00",
+    "endTime": "2024-06-05 23:59:59",
+    "duration": 72,
+    "status": 2,
+    "statusText": "已结束"
+  }
+]

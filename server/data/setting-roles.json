@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "超级管理员", "description": "拥有所有权限", "permissions": ["product:read","product:write","order:read","order:write","order:deliver","marketing:read","marketing:write","member:read","member:write","report:read","setting:read","setting:write"] },
+  { "id": 2, "name": "运营专员", "description": "日常运营操作权限", "permissions": ["product:read","product:write","order:read","order:write","order:deliver","marketing:read","marketing:write","member:read","report:read"] },
+  { "id": 3, "name": "访客", "description": "只读权限，不可编辑", "permissions": ["product:read","order:read","marketing:read","member:read","report:read","setting:read"] }
+]

@@ -1,0 +1,16 @@
+{
+  "list": [
+    { "date": "06-01", "pv": 12000, "uv": 3500, "newUsers": 180 },
+    { "date": "06-02", "pv": 13500, "uv": 4100, "newUsers": 210 },
+    { "date": "06-03", "pv": 11800, "uv": 3200, "newUsers": 160 },
+    { "date": "06-04", "pv": 15800, "uv": 4500, "newUsers": 230 },
+    { "date": "06-05", "pv": 18200, "uv": 5200, "newUsers": 280 },
+    { "date": "06-06", "pv": 16500, "uv": 4800, "newUsers": 240 },
+    { "date": "06-07", "pv": 21000, "uv": 6200, "newUsers": 350 }
+  ],
+  "summary": {
+    "totalPv": 108800,
+    "totalUv": 31800,
+    "totalNewUsers": 1650
+  }
+}

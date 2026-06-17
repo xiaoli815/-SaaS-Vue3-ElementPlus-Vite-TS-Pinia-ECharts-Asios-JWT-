@@ -1,0 +1,18 @@
+[
+  { "id": 1, "name": "618年中秒杀", "type": "seckill", "typeText": "秒杀活动", "startTime": "2024-06-18 00:00:00", "endTime": "2024-06-18 23:59:59", "status": 1, "statusText": "进行中", "products": [
+    { "productId": 1, "productName": "夏季新款男士短袖T恤", "originalPrice": 129, "seckillPrice": 69, "stock": 100, "sold": 45 },
+    { "productId": 4, "productName": "兰蔻持妆粉底液", "originalPrice": 520, "seckillPrice": 299, "stock": 50, "sold": 32 }
+  ], "createTime": "2024-06-08 10:00:00" },
+  { "id": 2, "name": "端午拼团特惠", "type": "group", "typeText": "拼团活动", "startTime": "2024-06-10 00:00:00", "endTime": "2024-06-12 23:59:59", "status": 0, "statusText": "未开始", "products": [
+    { "productId": 3, "productName": "三只松鼠坚果大礼包", "originalPrice": 89, "groupPrice": 59, "groupSize": 3, "stock": 200, "sold": 0 }
+  ], "createTime": "2024-06-08 14:00:00" },
+  { "id": 3, "name": "新用户满减券", "type": "coupon", "typeText": "优惠券", "startTime": "2024-06-01 00:00:00", "endTime": "2024-12-31 23:59:59", "status": 1, "statusText": "进行中", "couponInfo": { "type": "discount", "value": 20, "minAmount": 199, "total": 10000, "received": 3280, "used": 856, "rule": "满199元减20元" }, "createTime": "2024-06-01 00:00:00" },
+  { "id": 4, "name": "夏日满减大促", "type": "fulldiscount", "typeText": "满减活动", "startTime": "2024-06-15 00:00:00", "endTime": "2024-07-15 23:59:59", "status": 0, "statusText": "未开始", "rules": [
+    { "minAmount": 199, "discount": 20 }, { "minAmount": 499, "discount": 80 }, { "minAmount": 999, "discount": 200 }
+  ], "createTime": "2024-06-08 16:00:00" },
+  { "id": 5, "name": "分销员招募计划", "type": "distribution", "typeText": "分销规则", "startTime": "2024-06-01 00:00:00", "endTime": "2024-12-31 23:59:59", "status": 1, "statusText": "进行中", "rules": [
+    { "level": 1, "levelText": "初级分销员", "condition": "累计推广销售额 ≥ ¥1000", "commission": 5, "commissionText": "5%返佣" },
+    { "level": 2, "levelText": "高级分销员", "condition": "累计推广销售额 ≥ ¥10000", "commission": 10, "commissionText": "10%返佣" }
+  ], "createTime": "2024-06-01 00:00:00" },
+  { "id": 6, "name": "618品牌直播日", "type": "live", "typeText": "直播活动", "startTime": "2024-06-18 19:00:00", "endTime": "2024-06-18 23:00:00", "status": 0, "statusText": "未开始", "liveInfo": { "roomId": "618001", "anchorName": "品牌推荐官小李", "coverUrl": "https://example.com/live-cover.jpg", "products": [1, 4, 5] }, "createTime": "2024-06-08 18:00:00" }
+]

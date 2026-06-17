@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "满100减10",
+    "fullAmount": 100,
+    "reduceAmount": 10,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-30 23:59:59",
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 2,
+    "name": "满500减60",
+    "fullAmount": 500,
+    "reduceAmount": 60,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-30 23:59:59",
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 3,
+    "name": "满1000减150",
+    "fullAmount": 1000,
+    "reduceAmount": 150,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-30 23:59:59",
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 4,
+    "name": "满2000减400",
+    "fullAmount": 2000,
+    "reduceAmount": 400,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-30 23:59:59",
+    "status": 1,
+    "statusText": "进行中"
+  }
+]

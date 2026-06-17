@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "服装鞋帽", "parentId": 0, "sort": 1, "status": 1 },
+  { "id": 2, "name": "数码家电", "parentId": 0, "sort": 2, "status": 1 },
+  { "id": 3, "name": "食品饮料", "parentId": 0, "sort": 3, "status": 1 },
+  { "id": 4, "name": "美妆护肤", "parentId": 0, "sort": 4, "status": 1 },
+  { "id": 5, "name": "家居日用", "parentId": 0, "sort": 5, "status": 1 },
+  { "id": 6, "name": "母婴用品", "parentId": 0, "sort": 6, "status": 1 },
+  { "id": 11, "name": "男装", "parentId": 1, "sort": 1, "status": 1 },
+  { "id": 12, "name": "女装", "parentId": 1, "sort": 2, "status": 1 },
+  { "id": 13, "name": "童装", "parentId": 1, "sort": 3, "status": 1 },
+  { "id": 21, "name": "手机", "parentId": 2, "sort": 1, "status": 1 },
+  { "id": 22, "name": "电脑", "parentId": 2, "sort": 2, "status": 1 },
+  { "id": 23, "name": "智能穿戴", "parentId": 2, "sort": 3, "status": 1 },
+  { "id": 31, "name": "休闲零食", "parentId": 3, "sort": 1, "status": 1 },
+  { "id": 32, "name": "饮料冲调", "parentId": 3, "sort": 2, "status": 1 }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro 开学季秒杀",
+    "productId": 2,
+    "productName": "iPhone 15 Pro Max 256GB",
+    "seckillPrice": 8999,
+    "stock": 100,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-15 23:59:59",
+    "limitPerUser": 1,
+    "status": 1,
+    "statusText": "进行中"
+  },
+  {
+    "id": 2,
+    "name": "坚果大礼包限时秒杀",
+    "productId": 3,
+    "productName": "三只松鼠坚果大礼包 750g",
+    "seckillPrice": 59,
+    "stock": 500,
+    "startTime": "2024-06-05 10:00:00",
+    "endTime": "2024-06-10 23:59:59",
+    "limitPerUser": 2,
+    "status": 0,
+    "statusText": "未开始"
+  },
+  {
+    "id": 3,
+    "name": "兰蔻粉底液618大促",
+    "productId": 4,
+    "productName": "兰蔻持妆粉底液 30ml",
+    "seckillPrice": 399,
+    "stock": 200,
+    "startTime": "2024-05-20 00:00:00",
+    "endTime": "2024-06-03 23:59:59",
+    "limitPerUser": 1,
+    "status": 2,
+    "statusText": "已结束"
+  }
+]

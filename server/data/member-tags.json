@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "消费大户", "color": "#f56c6c", "memberCount": 26 },
+  { "id": 2, "name": "高频用户", "color": "#409eff", "memberCount": 89 },
+  { "id": 3, "name": "恶意退款", "color": "#e6a23c", "memberCount": 3 },
+  { "id": 4, "name": "新用户", "color": "#67c23a", "memberCount": 156 },
+  { "id": 5, "name": "铁粉", "color": "#f56c6c", "memberCount": 18 }
+]

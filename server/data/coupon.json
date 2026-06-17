@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "满100减10",
+    "type": 1,
+    "typeText": "满减券",
+    "value": 10,
+    "minAmount": 100,
+    "total": 1000,
+    "received": 350,
+    "used": 120,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-07-01 23:59:59",
+    "status": 1,
+    "statusText": "发放中"
+  },
+  {
+    "id": 2,
+    "name": "新人立减20",
+    "type": 2,
+    "typeText": "直减券",
+    "value": 20,
+    "minAmount": 0,
+    "total": 5000,
+    "received": 1200,
+    "used": 850,
+    "startTime": "2024-01-01 00:00:00",
+    "endTime": "2024-12-31 23:59:59",
+    "status": 1,
+    "statusText": "发放中"
+  },
+  {
+    "id": 3,
+    "name": "数码9折",
+    "type": 3,
+    "typeText": "折扣券",
+    "value": 10,
+    "minAmount": 1000,
+    "total": 500,
+    "received": 120,
+    "used": 45,
+    "startTime": "2024-06-10 00:00:00",
+    "endTime": "2024-06-20 23:59:59",
+    "status": 0,
+    "statusText": "未开始"
+  },
+  {
+    "id": 4,
+    "name": "618专属券",
+    "type": 1,
+    "typeText": "满减券",
+    "value": 100,
+    "minAmount": 3000,
+    "total": 200,
+    "received": 150,
+    "used": 130,
+    "startTime": "2024-06-01 00:00:00",
+    "endTime": "2024-06-06 23:59:59",
+    "status": 2,
+    "statusText": "已结束"
+  }
+]

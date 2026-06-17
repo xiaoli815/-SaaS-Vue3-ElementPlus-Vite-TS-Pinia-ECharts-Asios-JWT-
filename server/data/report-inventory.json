@@ -1,0 +1,12 @@
+{
+  "list": [
+    { "productName": "iPhone 15 Pro Max", "stock": 200, "sales": 3560, "turnover": 2.8 },
+    { "productName": "夏季新款短袖T恤", "stock": 500, "sales": 1280, "turnover": 1.8 },
+    { "productName": "三只松鼠坚果大礼包", "stock": 1000, "sales": 5680, "turnover": 3.2 },
+    { "productName": "兰蔻持妆粉底液", "stock": 300, "sales": 2100, "turnover": 2.5 },
+    { "productName": "戴森V15吸尘器", "stock": 80, "sales": 890, "turnover": 2.1 },
+    { "productName": "女士碎花连衣裙", "stock": 0, "sales": 650, "turnover": 0.0 }
+  ],
+  "totalStock": 2080,
+  "totalValue": 1258920
+}

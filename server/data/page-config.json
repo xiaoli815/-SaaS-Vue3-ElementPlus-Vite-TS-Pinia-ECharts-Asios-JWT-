@@ -1,0 +1,8 @@
+{
+  "homePage": [
+    { "id": "banner01", "type": "banner", "config": { "images": ["https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png", "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"], "duration": 3000 } },
+    { "id": "nav01", "type": "nav", "config": { "columns": 5, "items": [{ "name": "秒杀", "icon": "Timer" }, { "name": "拼团", "icon": "UserFilled" }, { "name": "优惠券", "icon": "Ticket" }, { "name": "新品", "icon": "Star" }, { "name": "热销", "icon": "TrendCharts" }] } },
+    { "id": "goods01", "type": "goods", "config": { "title": "热销推荐", "layout": "grid", "columns": 2, "productIds": [2, 3, 4, 1] } },
+    { "id": "coupon01", "type": "coupon", "config": { "title": "领券中心", "couponIds": [1, 2] } }
+  ]
+}
