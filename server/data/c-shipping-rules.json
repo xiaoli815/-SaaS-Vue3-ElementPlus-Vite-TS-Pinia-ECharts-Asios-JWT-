@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "江浙沪包邮",
+    "type": "area",
+    "provinceCodes": ["310000", "320000", "330000"],
+    "baseFee": 0,
+    "freeThreshold": 0,
+    "weightRate": 0,
+    "minWeight": 0,
+    "storeId": null,
+    "priority": 1,
+    "status": true
+  },
+  {
+    "id": 2,
+    "name": "满49元包邮",
+    "type": "amount",
+    "provinceCodes": ["*"],
+    "baseFee": 500,
+    "freeThreshold": 4900,
+    "weightRate": 0,
+    "minWeight": 0,
+    "storeId": null,
+    "priority": 3,
+    "status": true
+  },
+  {
+    "id": 3,
+    "name": "新疆西藏偏远加价",
+    "type": "area",
+    "provinceCodes": ["650000", "540000"],
+    "baseFee": 1200,
+    "freeThreshold": 6900,
+    "weightRate": 0,
+    "minWeight": 0,
+    "storeId": null,
+    "priority": 2,
+    "status": true
+  },
+  {
+    "id": 4,
+    "name": "内蒙古甘肃青海宁夏偏远加价",
+    "type": "area",
+    "provinceCodes": ["150000", "620000", "630000", "640000"],
+    "baseFee": 800,
+    "freeThreshold": 5900,
+    "weightRate": 0,
+    "minWeight": 0,
+    "storeId": null,
+    "priority": 2,
+    "status": true
+  },
+  {
+    "id": 5,
+    "name": "按重量计费（默认规则）",
+    "type": "weight",
+    "provinceCodes": ["*"],
+    "baseFee": 500,
+    "freeThreshold": 4900,
+    "weightRate": 100,
+    "minWeight": 1,
+    "storeId": null,
+    "priority": 4,
+    "status": true
+  },
+  {
+    "id": 6,
+    "name": "南极人官方旗舰店包邮",
+    "type": "store",
+    "provinceCodes": ["*"],
+    "baseFee": 0,
+    "freeThreshold": 0,
+    "weightRate": 0,
+    "minWeight": 0,
+    "storeId": 1,
+    "priority": 1,
+    "status": true
+  }
+]

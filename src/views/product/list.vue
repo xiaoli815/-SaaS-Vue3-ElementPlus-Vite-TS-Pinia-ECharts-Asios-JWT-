@@ -144,61 +144,61 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getProductList,
     getCategories,
     toggleListing,
     deleteProduct,
     type ProductItem,
-  } from '@/api/modules/product';
+  } from '@/api/modules/product'
 
-  const list = ref<ProductItem[]>([]);
+  const list = ref<ProductItem[]>([])
   const categories = ref<{ id: number; name: string }[]>(
     []
-  );
-  const total = ref(0);
-  const loading = ref(false);
+  )
+  const total = ref(0)
+  const loading = ref(false)
   const query = reactive({
     page: 1,
     pageSize: 10,
     keyword: '',
     categoryId: undefined as number | undefined,
     isListed: '',
-  });
+  })
 
   async function fetchList() {
-    loading.value = true;
+    loading.value = true
     try {
-      const res = await getProductList(query);
-      list.value = res.data.list;
-      total.value = res.data.total;
+      const res = await getProductList(query)
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
   async function handleToggle(row: ProductItem) {
-    await toggleListing(row.id, !row.isListed);
+    await toggleListing(row.id, !row.isListed)
     ElMessage.success(
       row.isListed ? '下架成功' : '上架成功'
-    );
-    fetchList();
+    )
+    fetchList()
   }
   async function handleDelete(id: number) {
-    await deleteProduct(id);
-    ElMessage.success('删除成功');
-    fetchList();
+    await deleteProduct(id)
+    ElMessage.success('删除成功')
+    fetchList()
   }
 
   onMounted(async () => {
-    const res = await getCategories();
-    categories.value = res.data;
-    fetchList();
-  });
+    const res = await getCategories()
+    categories.value = res.data
+    fetchList()
+  })
 </script>
 
 <style scoped lang="scss">

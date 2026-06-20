@@ -8,9 +8,10 @@ import memberRouter from './routes/member.js'
 import reportRouter from './routes/report.js'
 import settingRouter from './routes/setting.js'
 import cMobileRouter from './routes/c-mobile.js'
+import uploadRouter from './routes/upload.js'
 
 const app = express()
-const PORT = 3001
+const PORT = 3002
 
 app.use(cors())
 app.use(express.json())
@@ -24,6 +25,7 @@ app.use('/api/marketing', marketingRouter)
 app.use('/api/member', memberRouter)
 app.use('/api/report', reportRouter)
 app.use('/api/setting', settingRouter)
+app.use('/api/upload', uploadRouter)
 
 // C端路由（移动端用户端）
 app.use('/api/c', cMobileRouter)

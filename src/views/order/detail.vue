@@ -221,27 +221,27 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { useRoute } from 'vue-router';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { ElMessage } from 'element-plus'
   import {
     getOrderDetail,
     deliverOrder,
     updateOrderPrice,
     reviewAfterSale,
     type OrderItem,
-  } from '@/api/modules/order';
+  } from '@/api/modules/order'
 
-  const route = useRoute();
-  const order = ref<OrderItem | null>(null);
-  const loading = ref(false);
-  const showDeliver = ref(false);
-  const showAdjust = ref(false);
+  const route = useRoute()
+  const order = ref<OrderItem | null>(null)
+  const loading = ref(false)
+  const showDeliver = ref(false)
+  const showAdjust = ref(false)
   const deliverForm = reactive({
     company: '顺丰速运',
     trackingNo: '',
-  });
-  const adjustForm = reactive({ payAmount: 0, remark: '' });
+  })
+  const adjustForm = reactive({ payAmount: 0, remark: '' })
 
   function statusTag(s: number) {
     const m: Record<number, string> = {
@@ -250,38 +250,38 @@
       3: 'success',
       4: 'danger',
       5: 'info',
-    };
-    return m[s] || '';
+    }
+    return m[s] || ''
   }
 
   async function fetch() {
-    loading.value = true;
+    loading.value = true
     try {
       const res = await getOrderDetail(
         route.params.id as string
-      );
-      order.value = res.data;
+      )
+      order.value = res.data
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
   async function handleDeliver() {
     try {
       if (!deliverForm.trackingNo) {
-        ElMessage.warning('请输入物流单号');
-        return;
+        ElMessage.warning('请输入物流单号')
+        return
       }
       await deliverOrder(
         order.value!.id,
         deliverForm.company,
         deliverForm.trackingNo
-      );
-      ElMessage.success('发货成功');
-      showDeliver.value = false;
-      fetch();
+      )
+      ElMessage.success('发货成功')
+      showDeliver.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -293,10 +293,10 @@
         order.value!.id,
         adjustForm.payAmount,
         adjustForm.remark
-      );
-      ElMessage.success('改价成功');
-      showAdjust.value = false;
-      fetch();
+      )
+      ElMessage.success('改价成功')
+      showAdjust.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -306,21 +306,21 @@
     try {
       const reply = approved
         ? '同意售后申请'
-        : '售后申请不符合条件';
-      await reviewAfterSale(order.value!.id, approved, reply);
+        : '售后申请不符合条件'
+      await reviewAfterSale(order.value!.id, approved, reply)
       ElMessage.success(
         approved ? '已同意售后' : '已拒绝售后'
-      );
-      fetch();
+      )
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
 
   onMounted(() => {
-    adjustForm.payAmount = order.value?.payAmount || 0;
-    fetch();
-  });
+    adjustForm.payAmount = order.value?.payAmount || 0
+    fetch()
+  })
 </script>
 
 <style scoped lang="scss">

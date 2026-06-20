@@ -40,16 +40,16 @@
 </template>
 
 <script setup lang="ts">
-  import { useRoute } from 'vue-router';
-  import { useUserStore, useAppStore } from '@/store';
-  import Sidebar from '@/components/Sidebar/index.vue';
+  import { useRoute } from 'vue-router'
+  import { useUserStore, useAppStore } from '@/store'
+  import Sidebar from '@/components/Sidebar/index.vue'
 
-  const route = useRoute();
-  const userStore = useUserStore();
-  const appStore = useAppStore();
+  const route = useRoute()
+  const userStore = useUserStore()
+  const appStore = useAppStore()
 
   function handleCommand(cmd: string) {
-    if (cmd === 'logout') userStore.logoutAction();
+    if (cmd === 'logout') userStore.logoutAction()
   }
 </script>
 

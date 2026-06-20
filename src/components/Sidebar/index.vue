@@ -65,11 +65,11 @@
 </template>
 
 <script setup lang="ts">
-  import { useRoute } from 'vue-router';
-  import { useAppStore } from '@/store';
+  import { useRoute } from 'vue-router'
+  import { useAppStore } from '@/store'
 
-  const route = useRoute();
-  const appStore = useAppStore();
+  const route = useRoute()
+  const appStore = useAppStore()
 </script>
 
 <style scoped lang="scss">

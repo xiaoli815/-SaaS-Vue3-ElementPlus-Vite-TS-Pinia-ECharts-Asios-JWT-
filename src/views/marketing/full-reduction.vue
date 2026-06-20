@@ -103,23 +103,23 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getFullReductionList,
     createFullReduction,
     updateFullReduction,
     deleteFullReduction,
     type FullReduction,
-  } from '@/api/modules/marketing';
+  } from '@/api/modules/marketing'
 
-  const list = ref<FullReduction[]>([]);
-  const total = ref(0);
-  const page = ref(1);
-  const pageSize = ref(10);
-  const dlgVisible = ref(false);
-  const editId = ref<number | null>(null);
-  const dlgTitle = ref('新增满减');
+  const list = ref<FullReduction[]>([])
+  const total = ref(0)
+  const page = ref(1)
+  const pageSize = ref(10)
+  const dlgVisible = ref(false)
+  const editId = ref<number | null>(null)
+  const dlgTitle = ref('新增满减')
   const form = reactive({
     name: '',
     fullAmount: 100,
@@ -127,24 +127,24 @@
     startTime: '',
     endTime: '',
     status: 0,
-  });
+  })
 
   async function fetch() {
     try {
       const res = await getFullReductionList({
         page: page.value,
         pageSize: pageSize.value,
-      });
-      list.value = res.data.list;
-      total.value = res.data.total;
+      })
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   function showDlg(type: string, row: FullReduction) {
-    editId.value = type === 'add' ? null : row.id || null;
+    editId.value = type === 'add' ? null : row.id || null
     dlgTitle.value =
-      type === 'add' ? '新增满减' : '编辑满减';
+      type === 'add' ? '新增满减' : '编辑满减'
     Object.assign(
       form,
       row || {
@@ -155,34 +155,34 @@
         endTime: '',
         status: 0,
       }
-    );
-    dlgVisible.value = true;
+    )
+    dlgVisible.value = true
   }
   async function handleSave() {
     try {
       if (editId.value) {
-        await updateFullReduction(editId.value, form);
-        ElMessage.success('更新成功');
+        await updateFullReduction(editId.value, form)
+        ElMessage.success('更新成功')
       } else {
-        await createFullReduction(form);
-        ElMessage.success('创建成功');
+        await createFullReduction(form)
+        ElMessage.success('创建成功')
       }
-      dlgVisible.value = false;
-      fetch();
+      dlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleDelete(id: number) {
     try {
-      await deleteFullReduction(id);
-      ElMessage.success('删除成功');
-      fetch();
+      await deleteFullReduction(id)
+      ElMessage.success('删除成功')
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
-  onMounted(fetch);
+  onMounted(fetch)
 </script>
 
 <style scoped lang="scss">

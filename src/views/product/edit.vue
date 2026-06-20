@@ -51,18 +51,27 @@
             /></el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="封面图"><el-input
-              v-model="form.cover"
-              placeholder="图片URL"
-            /><el-image
-              v-if="form.cover"
-              :src="form.cover"
-              style="
-                  margin-top: 8px;
-                  width: 120px;
-                  height: 120px;
-                "
-            /></el-form-item>
+            <el-form-item label="封面图">
+              <el-upload
+                :action="uploadUrl"
+                :headers="uploadHeaders"
+                :show-file-list="false"
+                :on-success="handleCoverSuccess"
+                :before-upload="beforeCoverUpload"
+              >
+                <el-button type="primary">上传图片</el-button>
+              </el-upload>
+              <el-input
+                v-model="form.cover"
+                placeholder="图片URL（可手动输入）"
+                style="margin-top: 8px"
+              />
+              <el-image
+                v-if="form.cover"
+                :src="form.cover"
+                style="margin-top: 8px; width: 120px; height: 120px"
+              />
+            </el-form-item>
             <el-form-item label="商品描述"><el-input
               v-model="form.description"
               type="textarea"
@@ -132,24 +141,32 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted, computed } from 'vue';
-  import { useRoute, useRouter } from 'vue-router';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted, computed } from 'vue'
+  import { useRoute, useRouter } from 'vue-router'
+  import { ElMessage } from 'element-plus'
+  import { useUserStore } from '@/store'
   import {
     getProductDetail,
     createProduct,
     updateProduct,
     getCategories,
     ProductForm,
-  } from '@/api/modules/product';
+  } from '@/api/modules/product'
 
-  const route = useRoute();
-  const router = useRouter();
-  const isEdit = computed(() => !!route.params.id);
+  const route = useRoute()
+  const router = useRouter()
+  const userStore = useUserStore()
+  const isEdit = computed(() => !!route.params.id)
   const categories = ref<{ id: number; name: string }[]>(
     []
-  );
-  const saving = ref(false);
+  )
+  const saving = ref(false)
+
+  // 上传配置
+  const uploadUrl = '/api/upload'
+  const uploadHeaders = {
+    Authorization: `Bearer ${userStore.token}`,
+  }
 
   const form = reactive<ProductForm>({
     name: '',
@@ -163,19 +180,19 @@
     cover: '',
     description: '',
     skuList: [],
-  });
+  })
 
   const rules = {
     name: [{ required: true, message: '请输入商品名称' }],
     categoryId: [{ required: true, message: '请选择分类' }],
     price: [{ required: true, message: '请输入售价' }],
-  };
+  }
 
   function onCategoryChange(val: number) {
     const found = categories.value.find(
       (c) => c.id === val
-    );
-    form.categoryName = found?.name || '';
+    )
+    form.categoryName = found?.name || ''
   }
   function addSku() {
     form.skuList.push({
@@ -184,41 +201,66 @@
       price: 0,
       stock: 0,
       skuCode: '',
-    });
+    })
+  }
+
+  // 图片上传处理
+  function handleCoverSuccess(res: any) {
+    if (res.code === 200) {
+      form.cover = res.data.url
+      ElMessage.success('上传成功')
+    } else {
+      ElMessage.error(res.message || '上传失败')
+    }
+  }
+
+  function beforeCoverUpload(file: File) {
+    const isImage = file.type.startsWith('image/')
+    const isLt2M = file.size / 1024 / 1024 < 2
+
+    if (!isImage) {
+      ElMessage.error('只能上传图片文件')
+      return false
+    }
+    if (!isLt2M) {
+      ElMessage.error('图片大小不能超过 2MB')
+      return false
+    }
+    return true
   }
 
   async function handleSave() {
-    saving.value = true;
+    saving.value = true
     try {
       if (isEdit.value) {
-        await updateProduct(Number(route.params.id), form);
-        ElMessage.success('更新成功');
+        await updateProduct(Number(route.params.id), form)
+        ElMessage.success('更新成功')
       } else {
-        await createProduct(form);
-        ElMessage.success('新增成功');
+        await createProduct(form)
+        ElMessage.success('新增成功')
       }
-      router.push('/product/list');
+      router.push('/product/list')
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      saving.value = false;
+      saving.value = false
     }
   }
 
   onMounted(async () => {
     try {
-      const res = await getCategories();
-      categories.value = res.data;
+      const res = await getCategories()
+      categories.value = res.data
       if (isEdit.value) {
         const d = await getProductDetail(
           Number(route.params.id)
-        );
-        Object.assign(form, d.data);
+        )
+        Object.assign(form, d.data)
       }
     } catch {
       // 全局拦截器已弹出错误提示
     }
-  });
+  })
 </script>
 
 <style scoped lang="scss">

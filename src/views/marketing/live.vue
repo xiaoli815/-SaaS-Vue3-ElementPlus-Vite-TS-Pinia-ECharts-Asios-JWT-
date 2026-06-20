@@ -111,8 +111,8 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getLiveList,
     createLive,
@@ -120,16 +120,16 @@
     deleteLive,
     type LiveActivity,
     type LiveForm,
-  } from '@/api/modules/marketing';
+  } from '@/api/modules/marketing'
 
-  const list = ref<LiveActivity[]>([]);
-  const total = ref(0);
-  const page = ref(1);
-  const pageSize = ref(10);
-  const keyword = ref('');
-  const dlgVisible = ref(false);
-  const editId = ref<number | null>(null);
-  const dlgTitle = ref('新增直播');
+  const list = ref<LiveActivity[]>([])
+  const total = ref(0)
+  const page = ref(1)
+  const pageSize = ref(10)
+  const keyword = ref('')
+  const dlgVisible = ref(false)
+  const editId = ref<number | null>(null)
+  const dlgTitle = ref('新增直播')
   const form = reactive<LiveForm>({
     title: '',
     roomId: '',
@@ -138,7 +138,7 @@
     productIdsStr: '',
     startTime: '',
     endTime: '',
-  });
+  })
 
   async function fetch() {
     try {
@@ -146,9 +146,9 @@
         page: page.value,
         pageSize: pageSize.value,
         keyword: keyword.value,
-      });
-      list.value = res.data.list;
-      total.value = res.data.total;
+      })
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -163,19 +163,19 @@
         productIdsStr: '',
         startTime: '',
         endTime: '',
-      });
-      editId.value = null;
-      dlgTitle.value = '新增直播';
+      })
+      editId.value = null
+      dlgTitle.value = '新增直播'
     } else {
       const r = {
         ...row,
         productIdsStr: (row.productIds || []).join(','),
-      };
-      editId.value = row.id;
-      dlgTitle.value = '编辑直播';
-      Object.assign(form, r);
+      }
+      editId.value = row.id
+      dlgTitle.value = '编辑直播'
+      Object.assign(form, r)
     }
-    dlgVisible.value = true;
+    dlgVisible.value = true
   }
   async function handleSave() {
     try {
@@ -185,30 +185,30 @@
           .split(',')
           .map((s: string) => Number(s.trim()))
           .filter(Boolean),
-      };
-      if (editId.value) {
-        await updateLive(editId.value, data);
-        ElMessage.success('更新成功');
-      } else {
-        await createLive(data);
-        ElMessage.success('创建成功');
       }
-      dlgVisible.value = false;
-      fetch();
+      if (editId.value) {
+        await updateLive(editId.value, data)
+        ElMessage.success('更新成功')
+      } else {
+        await createLive(data)
+        ElMessage.success('创建成功')
+      }
+      dlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleDelete(id: number) {
     try {
-      await deleteLive(id);
-      ElMessage.success('删除成功');
-      fetch();
+      await deleteLive(id)
+      ElMessage.success('删除成功')
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
-  onMounted(fetch);
+  onMounted(fetch)
 </script>
 
 <style scoped lang="scss">

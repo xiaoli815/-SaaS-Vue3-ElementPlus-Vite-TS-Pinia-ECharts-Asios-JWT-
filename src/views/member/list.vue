@@ -283,8 +283,8 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getMemberList,
     getLevelConfigs,
@@ -298,22 +298,22 @@
     type LevelConfig,
     type TagItem,
     type MemberQuery,
-  } from '@/api/modules/member';
+  } from '@/api/modules/member'
 
-  const list = ref<MemberItem[]>([]);
-  const total = ref(0);
-  const loading = ref(false);
-  const levels = ref<LevelConfig[]>([]);
-  const tags = ref<TagItem[]>([]);
-  const activeTab = ref('list');
-  const query = reactive<MemberQuery>({ });
+  const list = ref<MemberItem[]>([])
+  const total = ref(0)
+  const loading = ref(false)
+  const levels = ref<LevelConfig[]>([])
+  const tags = ref<TagItem[]>([])
+  const activeTab = ref('list')
+  const query = reactive<MemberQuery>({ })
 
   // 改等级
-  const levelDlgVisible = ref(false);
-  const changeLevelId = ref(0);
-  const currentMemberId = ref(0);
+  const levelDlgVisible = ref(false)
+  const changeLevelId = ref(0)
+  const currentMemberId = ref(0)
   // 编辑等级配置
-  const levelEditVisible = ref(false);
+  const levelEditVisible = ref(false)
   const levelEditForm = reactive<LevelConfig>({
     id: 0,
     name: '',
@@ -321,19 +321,19 @@
     discount: 0,
     icon: '',
     color: '',
-  });
+  })
   // 标签
-  const showTagDlg = ref(false);
-  const tagForm = reactive({ name: '', color: '#409eff' });
+  const showTagDlg = ref(false)
+  const tagForm = reactive({ name: '', color: '#409eff' })
 
   async function fetch() {
-    loading.value = true;
+    loading.value = true
     try {
-      const res = await getMemberList(query);
-      list.value = res.data.list;
-      total.value = res.data.total;
+      const res = await getMemberList(query)
+      list.value = res.data.list
+      total.value = res.data.total
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
   async function fetchConfigs() {
@@ -341,26 +341,26 @@
       [levels.value, tags.value] = [
         (await getLevelConfigs()).data,
         (await getTags()).data,
-      ];
+      ]
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
 
   function handleLevelChange(row: MemberItem) {
-    currentMemberId.value = row.id;
-    changeLevelId.value = row.level;
-    levelDlgVisible.value = true;
+    currentMemberId.value = row.id
+    changeLevelId.value = row.level
+    levelDlgVisible.value = true
   }
   async function confirmLevelChange() {
     try {
       await updateMemberLevel(
         currentMemberId.value,
         changeLevelId.value
-      );
-      ElMessage.success('等级修改成功');
-      levelDlgVisible.value = false;
-      fetch();
+      )
+      ElMessage.success('等级修改成功')
+      levelDlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -370,55 +370,55 @@
       .then(() => {
         ElMessage.success(
           row.isBlacklisted ? '已恢复' : '已拉黑'
-        );
-        fetch();
+        )
+        fetch()
       })
       .catch(() => {
         // 全局拦截器已弹出错误提示
-      });
+      })
   }
 
   function editLevel(row: LevelConfig) {
-    Object.assign(levelEditForm, { ...row });
-    levelEditVisible.value = true;
+    Object.assign(levelEditForm, { ...row })
+    levelEditVisible.value = true
   }
   async function confirmLevelEdit() {
     try {
       await updateLevelConfig(
         levelEditForm.id,
         levelEditForm
-      );
-      ElMessage.success('保存成功');
-      levelEditVisible.value = false;
-      fetchConfigs();
+      )
+      ElMessage.success('保存成功')
+      levelEditVisible.value = false
+      fetchConfigs()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleCreateTag() {
     try {
-      await createTag(tagForm);
-      ElMessage.success('创建成功');
-      showTagDlg.value = false;
-      fetchConfigs();
+      await createTag(tagForm)
+      ElMessage.success('创建成功')
+      showTagDlg.value = false
+      fetchConfigs()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleDeleteTag(id: number) {
     try {
-      await deleteTag(id);
-      ElMessage.success('删除成功');
-      fetchConfigs();
+      await deleteTag(id)
+      ElMessage.success('删除成功')
+      fetchConfigs()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
 
   onMounted(() => {
-    fetch();
-    fetchConfigs();
-  });
+    fetch()
+    fetchConfigs()
+  })
 </script>
 
 <style scoped lang="scss">

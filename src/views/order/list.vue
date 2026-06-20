@@ -122,18 +122,18 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getOrderList,
     confirmOrder,
     type OrderItem,
-  } from '@/api/modules/order';
+  } from '@/api/modules/order'
 
-  const list = ref<OrderItem[]>([]);
-  const total = ref(0);
-  const loading = ref(false);
-  const dateRange = ref<string[]>([]);
+  const list = ref<OrderItem[]>([])
+  const total = ref(0)
+  const loading = ref(false)
+  const dateRange = ref<string[]>([])
   const query = reactive({
     page: 1,
     pageSize: 10,
@@ -141,17 +141,17 @@
     status: undefined as number | undefined,
     startDate: '',
     endDate: '',
-  });
+  })
 
   function onDateChange(val: string[] | null) {
     if (val) {
-      query.startDate = val[0];
-      query.endDate = val[1];
+      query.startDate = val[0]
+      query.endDate = val[1]
     } else {
-      query.startDate = '';
-      query.endDate = '';
+      query.startDate = ''
+      query.endDate = ''
     }
-    fetchList();
+    fetchList()
   }
 
   function statusTag(s: number) {
@@ -169,30 +169,30 @@
       3: 'success',
       4: 'danger',
       5: 'info',
-    };
-    return m[s];
+    }
+    return m[s]
   }
 
   async function fetchList() {
-    loading.value = true;
+    loading.value = true
     try {
-      const res = await getOrderList(query);
-      list.value = res.data.list;
-      total.value = res.data.total;
+      const res = await getOrderList(query)
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
   async function handleConfirm(row: any) {
-    await confirmOrder(row.id);
-    ElMessage.success('接单成功');
-    fetchList();
+    await confirmOrder(row.id)
+    ElMessage.success('接单成功')
+    fetchList()
   }
 
-  onMounted(fetchList);
+  onMounted(fetchList)
 </script>
 
 <style scoped lang="scss">

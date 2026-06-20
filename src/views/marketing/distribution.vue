@@ -71,33 +71,33 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getDistribConfig,
     updateDistribConfig,
     type DistribConfig,
-  } from '@/api/modules/marketing';
+  } from '@/api/modules/marketing'
 
-  const levels = ref<DistribConfig[]>([]);
-  const loading = ref(false);
-  const dlgVisible = ref(false);
-  const editForm = reactive<DistribConfig>({} as DistribConfig);
+  const levels = ref<DistribConfig[]>([])
+  const loading = ref(false)
+  const dlgVisible = ref(false)
+  const editForm = reactive<DistribConfig>({} as DistribConfig)
 
   function editRow(row: DistribConfig) {
-    Object.assign(editForm, { ...row });
-    dlgVisible.value = true;
+    Object.assign(editForm, { ...row })
+    dlgVisible.value = true
   }
 
   async function fetch() {
-    loading.value = true;
+    loading.value = true
     try {
-      const res = await getDistribConfig();
-      levels.value = res.data;
+      const res = await getDistribConfig()
+      levels.value = res.data
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
@@ -105,17 +105,17 @@
     try {
       const updated = levels.value.map((l) =>
         l.id === editForm.id ? { ...editForm } : l
-      );
-      await updateDistribConfig(updated);
-      ElMessage.success('保存成功');
-      dlgVisible.value = false;
-      fetch();
+      )
+      await updateDistribConfig(updated)
+      ElMessage.success('保存成功')
+      dlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
 
-  onMounted(fetch);
+  onMounted(fetch)
 </script>
 
 <style scoped lang="scss">

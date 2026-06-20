@@ -130,24 +130,24 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getSeckillList,
     createSeckill,
     updateSeckill,
     deleteSeckill,
     type SeckillActivity,
-  } from '@/api/modules/marketing';
+  } from '@/api/modules/marketing'
 
-  const list = ref<SeckillActivity[]>([]);
-  const total = ref(0);
-  const page = ref(1);
-  const pageSize = ref(10);
-  const keyword = ref('');
-  const dlgVisible = ref(false);
-  const editId = ref<number | null>(null);
-  const dlgTitle = ref('新增秒杀');
+  const list = ref<SeckillActivity[]>([])
+  const total = ref(0)
+  const page = ref(1)
+  const pageSize = ref(10)
+  const keyword = ref('')
+  const dlgVisible = ref(false)
+  const editId = ref<number | null>(null)
+  const dlgTitle = ref('新增秒杀')
   const form = reactive({
     name: '',
     productId: 0,
@@ -157,7 +157,7 @@
     startTime: '',
     endTime: '',
     status: 0,
-  });
+  })
 
   async function fetch() {
     try {
@@ -165,9 +165,9 @@
         page: page.value,
         pageSize: pageSize.value,
         keyword: keyword.value,
-      });
-      list.value = res.data.list;
-      total.value = res.data.total;
+      })
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -175,8 +175,8 @@
 
   function showDlg(type: string, row: SeckillActivity) {
     if (type === 'add') {
-      editId.value = null;
-      dlgTitle.value = '新增秒杀';
+      editId.value = null
+      dlgTitle.value = '新增秒杀'
       Object.assign(form, {
         name: '',
         productId: 0,
@@ -186,26 +186,26 @@
         startTime: '',
         endTime: '',
         status: 0,
-      });
+      })
     } else {
-      editId.value = row.id;
-      dlgTitle.value = '编辑秒杀';
-      Object.assign(form, row);
+      editId.value = row.id
+      dlgTitle.value = '编辑秒杀'
+      Object.assign(form, row)
     }
-    dlgVisible.value = true;
+    dlgVisible.value = true
   }
 
   async function handleSave() {
     try {
       if (editId.value) {
-        await updateSeckill(editId.value, form);
-        ElMessage.success('更新成功');
+        await updateSeckill(editId.value, form)
+        ElMessage.success('更新成功')
       } else {
-        await createSeckill(form);
-        ElMessage.success('创建成功');
+        await createSeckill(form)
+        ElMessage.success('创建成功')
       }
-      dlgVisible.value = false;
-      fetch();
+      dlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -213,16 +213,16 @@
 
   async function handleDelete(id: number) {
     try {
-      await deleteSeckill(id);
-      ElMessage.success('删除成功');
-      fetch();
+      await deleteSeckill(id)
+      ElMessage.success('删除成功')
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
 
-  import { onMounted } from 'vue';
-  onMounted(fetch);
+  import { onMounted } from 'vue'
+  onMounted(fetch)
 </script>
 
 <style scoped lang="scss">

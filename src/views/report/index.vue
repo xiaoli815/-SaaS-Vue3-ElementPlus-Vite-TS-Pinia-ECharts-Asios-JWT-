@@ -89,9 +89,9 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, watch, onMounted, nextTick } from 'vue';
-  import { useRoute } from 'vue-router';
-  import * as echarts from 'echarts';
+  import { ref, watch, onMounted, nextTick } from 'vue'
+  import { useRoute } from 'vue-router'
+  import * as echarts from 'echarts'
   import {
     getSalesReport,
     getTrafficReport,
@@ -103,41 +103,41 @@
     type RevenueData,
     type ConversionData,
     type InventoryData,
-  } from '@/api/modules/report';
+  } from '@/api/modules/report'
 
-  const route = useRoute();
+  const route = useRoute()
   const activeTab = ref(
     (route.params.tab as string) || 'sales'
-  );
+  )
 
   watch(
     () => route.params.tab,
     (val) => {
-      if (val) activeTab.value = val as string;
+      if (val) activeTab.value = val as string
     }
-  );
-  const chartRef = ref<HTMLElement | null>(null);
-  const loading = ref(false);
+  )
+  const chartRef = ref<HTMLElement | null>(null)
+  const loading = ref(false)
 
-  let chart: echarts.ECharts | null = null;
+  let chart: echarts.ECharts | null = null
 
   const salesData = ref({
     totalSales: 0,
     totalOrders: 0,
     todaySales: 0,
     growth: 0,
-  });
+  })
 
   function renderSales(data: { list: SalesData[]; total?: { amount: number; orders: number } }) {
   const growth = data.list.length >= 2
     ? +(((data.list[data.list.length - 1].amount - data.list[data.list.length - 2].amount) / data.list[data.list.length - 2].amount) * 100).toFixed(1)
-    : 0;
+    : 0
   salesData.value = {
     totalSales: data.total?.amount || 0,
     totalOrders: data.total?.orders || 0,
     todaySales: data.list[data.list.length - 1]?.amount || 0,
     growth,
-  };
+  }
   chart?.setOption({
     tooltip: { trigger: 'axis' },
     legend: { data: ['销售额(元)', '订单量'] },
@@ -147,7 +147,7 @@
       { name: '销售额(元)', type: 'bar', data: data.list.map((d: SalesData) => d.amount), itemStyle: { color: '#409eff' } },
       { name: '订单量', type: 'line', yAxisIndex: 1, data: data.list.map((d: SalesData) => d.orders), itemStyle: { color: '#67c23a' } },
     ],
-  });
+  })
 }
 function renderTraffic(data: { list: TrafficData[] }) {
   chart?.setOption({
@@ -160,7 +160,7 @@ function renderTraffic(data: { list: TrafficData[] }) {
       { name: 'UV', type: 'bar', data: data.list.map((d: TrafficData) => d.uv), itemStyle: { color: '#e6a23c' } },
       { name: '新用户', type: 'line', data: data.list.map((d: TrafficData) => d.newUsers), itemStyle: { color: '#67c23a' } },
     ],
-  });
+  })
 }
 function renderRevenue(data: { list: RevenueData[] }) {
   chart?.setOption({
@@ -173,7 +173,7 @@ function renderRevenue(data: { list: RevenueData[] }) {
       { name: '退款', type: 'bar', data: data.list.map((d: RevenueData) => d.refund), itemStyle: { color: '#f56c6c' } },
       { name: '净营收', type: 'line', data: data.list.map((d: RevenueData) => d.netRevenue), itemStyle: { color: '#67c23a' } },
     ],
-  });
+  })
 }
 function renderConversion(data: { list: ConversionData[] }) {
   chart?.setOption({
@@ -184,7 +184,7 @@ function renderConversion(data: { list: ConversionData[] }) {
     series: [
       { name: '转化率', type: 'line', data: data.list.map((d: ConversionData) => +(d.rate * 100).toFixed(2)), smooth: true, areaStyle: {}, itemStyle: { color: '#409eff' } },
     ],
-  });
+  })
 }
 function renderInventory(data: { list: InventoryData[] }) {
   chart?.setOption({
@@ -196,46 +196,46 @@ function renderInventory(data: { list: InventoryData[] }) {
       { name: '库存', type: 'bar', data: data.list.map((d: InventoryData) => d.stock), itemStyle: { color: '#409eff' } },
       { name: '销量', type: 'bar', data: data.list.map((d: InventoryData) => d.sales), itemStyle: { color: '#67c23a' } },
     ],
-  });
+  })
 }
 
   async function loadData() {
-    loading.value = true;
+    loading.value = true
     try {
-      await nextTick();
+      await nextTick()
       if (!chart)
         chart = echarts.init(
           chartRef.value as HTMLDivElement
-        );
+        )
 
       if (activeTab.value === 'sales') {
-        const res = await getSalesReport();
-        renderSales(res.data);
+        const res = await getSalesReport()
+        renderSales(res.data)
       } else if (activeTab.value === 'traffic') {
-        const res = await getTrafficReport();
-        renderTraffic(res.data);
+        const res = await getTrafficReport()
+        renderTraffic(res.data)
       } else if (activeTab.value === 'revenue') {
-        const res = await getRevenueReport();
-        renderRevenue(res.data);
+        const res = await getRevenueReport()
+        renderRevenue(res.data)
       } else if (activeTab.value === 'conversion') {
-        const res = await getConversionReport();
-        renderConversion(res.data);
+        const res = await getConversionReport()
+        renderConversion(res.data)
       } else if (activeTab.value === 'inventory') {
-        const res = await getInventoryReport();
-        renderInventory(res.data);
+        const res = await getInventoryReport()
+        renderInventory(res.data)
       }
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
-  watch(activeTab, loadData);
+  watch(activeTab, loadData)
 
   onMounted(async () => {
-    await loadData();
-  });
+    await loadData()
+  })
 </script>
 
 <style scoped lang="scss">

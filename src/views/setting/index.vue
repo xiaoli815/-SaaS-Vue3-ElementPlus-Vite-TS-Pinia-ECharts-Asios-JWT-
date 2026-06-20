@@ -209,9 +209,9 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, watch, onMounted } from 'vue';
-  import { useRoute } from 'vue-router';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, watch, onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { ElMessage } from 'element-plus'
   import {
     getRoles,
     updateRole,
@@ -225,19 +225,19 @@
     type ShopInfo,
     type PaymentConfig,
     type PageBlock,
-  } from '@/api/modules/setting';
+  } from '@/api/modules/setting'
 
-  const route = useRoute();
-  const activeTab = ref((route.params.tab as string) || 'roles');
-  const loading = ref(false);
+  const route = useRoute()
+  const activeTab = ref((route.params.tab as string) || 'roles')
+  const loading = ref(false)
 
   watch(() => route.params.tab,(val) => {
-      if (val) activeTab.value = val as string;
+      if (val) activeTab.value = val as string
     }
-  );
+  )
 
   // 角色
-  const roles = ref<RoleItem[]>([]);
+  const roles = ref<RoleItem[]>([])
   const allPerms = [
     'product:read',
     'product:write',
@@ -251,7 +251,7 @@
     'report:read',
     'setting:read',
     'setting:write',
-  ];
+  ]
   // 店铺
   const shopForm = reactive<ShopInfo>({
     id: 0,
@@ -261,7 +261,7 @@
     address: '',
     description: '',
     notice: '',
-  });
+  })
   // 支付
   const payForm = reactive<PaymentConfig>({
     wechat: {
@@ -271,23 +271,26 @@
       apiKey: '',
     },
     alipay: { enabled: false, appId: '', privateKey: '' },
-  });
+  })
   // 页面
   interface PageBlockForm extends PageBlock {
-    config: Record<string, any>;
+    config: Record<string, any>
   }
-  const pageComponents = ref<PageBlockForm[]>([]);
-
+  const pageComponents = ref<PageBlockForm[]>([])
+// 初始化数据
+  onMounted(() => {
+    fetchData()
+  })
   async function fetchData() {
-    loading.value = true;
+    loading.value = true
     try {
-      roles.value = (await getRoles()).data;
-      Object.assign(shopForm, (await getShopInfo()).data);
+      roles.value = (await getRoles()).data
+      Object.assign(shopForm, (await getShopInfo()).data)
       Object.assign(
         payForm,
         (await getPaymentConfig()).data
-      );
-      const pageData = (await getPageConfig()).data;
+      )
+      const pageData = (await getPageConfig()).data
       pageComponents.value = (pageData.homePage || []).map(
         (c: PageBlockForm) => ({
           ...c,
@@ -301,34 +304,34 @@
             ),
           },
         })
-      );
+      )
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 
   async function handleSaveRoles(row: RoleItem) {
     try {
-      await updateRole(row.id, row.permissions);
-      ElMessage.success('保存成功');
+      await updateRole(row.id, row.permissions)
+      ElMessage.success('保存成功')
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleSaveShop() {
     try {
-      await updateShopInfo(shopForm);
-      ElMessage.success('保存成功');
+      await updateShopInfo(shopForm)
+      ElMessage.success('保存成功')
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleSavePayment() {
     try {
-      await updatePaymentConfig(payForm);
-      ElMessage.success('保存成功');
+      await updatePaymentConfig(payForm)
+      ElMessage.success('保存成功')
     } catch {
       // 全局拦截器已弹出错误提示
     }
@@ -348,12 +351,12 @@
         productIdsStr: '',
       },
       coupon: { title: '领券中心', couponIdsStr: '' },
-    };
+    }
     pageComponents.value.push({
       id: type + Date.now(),
       type,
       config: defaults[type],
-    });
+    })
   }
 
   async function handleSavePage() {
@@ -379,15 +382,13 @@
           productIdsStr: undefined,
           couponIdsStr: undefined,
         },
-      }));
-      await updatePageConfig({ homePage });
-      ElMessage.success('页面配置已保存');
+      }))
+      await updatePageConfig({ homePage })
+      ElMessage.success('页面配置已保存')
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
-
-  onMounted(fetchData);
 </script>
 
 <style scoped lang="scss">

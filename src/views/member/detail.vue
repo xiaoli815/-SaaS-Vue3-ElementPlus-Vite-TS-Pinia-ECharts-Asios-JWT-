@@ -92,29 +92,29 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue';
-  import { useRoute } from 'vue-router';
-  import { getMemberFullData,MemberItem } from '@/api/modules/member';
-  import { OrderItem } from '@/api/modules/order';
+  import { ref, onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { getMemberFullData,MemberItem } from '@/api/modules/member'
+  import { OrderItem } from '@/api/modules/order'
 
-  const route = useRoute();
-  const member = ref<MemberItem >();
-  const orderHistory = ref<OrderItem[]>([]);
-  const loading = ref(false);
+  const route = useRoute()
+  const member = ref<MemberItem >()
+  const orderHistory = ref<OrderItem[]>([])
+  const loading = ref(false)
 
   onMounted(async () => {
-    loading.value = true;
+    loading.value = true
     try {
       const res = await getMemberFullData(
         Number(route.params.id)
-      );
-      member.value = res.data.member;
+      )
+      member.value = res.data.member
       orderHistory.value =
-        res.data.orderHistory;
+        res.data.orderHistory
     } finally {
-      loading.value = false;
+      loading.value = false
     }
-  });
+  })
 </script>
 
 <style scoped lang="scss">

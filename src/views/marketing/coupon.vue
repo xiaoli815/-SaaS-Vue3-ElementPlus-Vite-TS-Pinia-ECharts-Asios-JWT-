@@ -155,25 +155,25 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, reactive, onMounted } from 'vue';
-  import { ElMessage } from 'element-plus';
+  import { ref, reactive, onMounted } from 'vue'
+  import { ElMessage } from 'element-plus'
   import {
     getCouponList,
     createCoupon,
     updateCoupon,
     deleteCoupon,
     type CouponItem,
-  } from '@/api/modules/marketing';
+  } from '@/api/modules/marketing'
 
-  const list = ref<CouponItem[]>([]);
-  const total = ref(0);
-  const page = ref(1);
-  const pageSize = ref(10);
-  const keyword = ref('');
-  const status = ref<number | undefined>();
-  const dlgVisible = ref(false);
-  const editId = ref<number | null>(null);
-  const dlgTitle = ref('新增优惠券');
+  const list = ref<CouponItem[]>([])
+  const total = ref(0)
+  const page = ref(1)
+  const pageSize = ref(10)
+  const keyword = ref('')
+  const status = ref<number | undefined>()
+  const dlgVisible = ref(false)
+  const editId = ref<number | null>(null)
+  const dlgTitle = ref('新增优惠券')
   const form = reactive({
     name: '',
     type: 1,
@@ -182,7 +182,7 @@
     total: 1000,
     startTime: '',
     endTime: '',
-  });
+  })
 
   async function fetch() {
     try {
@@ -191,17 +191,17 @@
         pageSize: pageSize.value,
         keyword: keyword.value,
         status: status.value,
-      });
-      list.value = res.data.list;
-      total.value = res.data.total;
+      })
+      list.value = res.data.list
+      total.value = res.data.total
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   function showDlg(type: string, row?: CouponItem) {
-    editId.value = type === 'add' ? null : row?.id || null;
+    editId.value = type === 'add' ? null : row?.id || null
     dlgTitle.value =
-      type === 'add' ? '新增优惠券' : '编辑优惠券';
+      type === 'add' ? '新增优惠券' : '编辑优惠券'
     Object.assign(
       form,
       row || {
@@ -213,34 +213,34 @@
         startTime: '',
         endTime: '',
       }
-    );
-    dlgVisible.value = true;
+    )
+    dlgVisible.value = true
   }
   async function handleSave() {
     try {
       if (editId.value) {
-        await updateCoupon(editId.value, form);
-        ElMessage.success('更新成功');
+        await updateCoupon(editId.value, form)
+        ElMessage.success('更新成功')
       } else {
-        await createCoupon(form);
-        ElMessage.success('创建成功');
+        await createCoupon(form)
+        ElMessage.success('创建成功')
       }
-      dlgVisible.value = false;
-      fetch();
+      dlgVisible.value = false
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
   async function handleDelete(id: number) {
     try {
-      await deleteCoupon(id);
-      ElMessage.success('删除成功');
-      fetch();
+      await deleteCoupon(id)
+      ElMessage.success('删除成功')
+      fetch()
     } catch {
       // 全局拦截器已弹出错误提示
     }
   }
-  onMounted(fetch);
+  onMounted(fetch)
 </script>
 
 <style scoped lang="scss">

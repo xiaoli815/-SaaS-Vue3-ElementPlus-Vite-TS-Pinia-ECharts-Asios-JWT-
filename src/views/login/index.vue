@@ -41,22 +41,22 @@
 </template>
 
 <script setup lang="ts">
-  import { reactive, ref } from 'vue';
-  import { useRouter } from 'vue-router';
+  import { reactive, ref } from 'vue'
+  import { useRouter } from 'vue-router'
   import type {
     FormInstance,
     FormRules,
-  } from 'element-plus';
-  import { useUserStore } from '@/store';
+  } from 'element-plus'
+  import { useUserStore } from '@/store'
 
-  const router = useRouter();
-  const userStore = useUserStore();
-  const formRef = ref<FormInstance>();
-  const loading = ref(false);
+  const router = useRouter()
+  const userStore = useUserStore()
+  const formRef = ref<FormInstance>()
+  const loading = ref(false)
   const form = reactive({
     username: 'admin',
     password: '123456',
-  });
+  })
   const rules: FormRules = {
     username: [
       {
@@ -72,21 +72,21 @@
         trigger: 'blur',
       },
     ],
-  };
+  }
   async function handleLogin() {
     const valid = await formRef.value
       ?.validate()
-      .catch(() => false);
-    if (!valid) return;
-    loading.value = true;
+      .catch(() => false)
+    if (!valid) return
+    loading.value = true
     try {
-      await userStore.loginAction(form);
-      await userStore.getUserInfoAction();
-      router.push('/');
+      await userStore.loginAction(form)
+      await userStore.getUserInfoAction()
+      router.push('/')
     } catch {
       // 全局拦截器已弹出错误提示
     } finally {
-      loading.value = false;
+      loading.value = false
     }
   }
 </script>

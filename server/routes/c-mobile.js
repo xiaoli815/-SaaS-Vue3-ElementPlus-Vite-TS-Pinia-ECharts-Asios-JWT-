@@ -535,4 +535,141 @@ router.get('/search/products', (req, res) => {
   res.json({ code: 200, msg: 'success', data: { list: filtered, total: filtered.length } })
 })
 
+// ==================== 运费计算 ====================
+
+// 加载运费规则
+function loadShippingRules() {
+  return readJSON('c-shipping-rules')
+}
+
+// 省份名称 → 编码映射表（用于运费计算）
+const PROVINCE_CODE_MAP = {
+  '北京市': '110000', '天津市': '120000', '河北省': '130000', '山西省': '140000',
+  '内蒙古自治区': '150000', '辽宁省': '210000', '吉林省': '220000', '黑龙江省': '230000',
+  '上海市': '310000', '江苏省': '320000', '浙江省': '330000', '安徽省': '340000',
+  '福建省': '350000', '江西省': '360000', '山东省': '370000', '河南省': '410000',
+  '湖北省': '420000', '湖南省': '430000', '广东省': '440000', '广西壮族自治区': '450000',
+  '海南省': '460000', '重庆市': '500000', '四川省': '510000', '贵州省': '520000',
+  '云南省': '530000', '西藏自治区': '540000', '陕西省': '610000', '甘肃省': '620000',
+  '青海省': '630000', '宁夏回族自治区': '640000', '新疆维吾尔自治区': '650000'
+}
+
+// 根据省份名称获取编码
+function getProvinceCode(province) {
+  return PROVINCE_CODE_MAP[province] || null
+}
+
+/**
+ * 运费计算接口
+ * POST /api/c/shipping/calculate
+ * Body: { addressId, items: [{ goodsId, skuId, count, price, weight? }] }
+ */
+router.post('/shipping/calculate', (req, res) => {
+  const { addressId, items } = req.body || {}
+  console.log('[运费计算] 入参:', { addressId, items })
+  if (!addressId || !items || !items.length) {
+    return res.json({ code: 400, msg: '参数不完整', data: null })
+  }
+
+  // 获取地址省份编码
+  const address = addressList.find(a => a.id === Number(addressId))
+  let provinceCode = '*'
+  if (!address) {
+    console.warn('[运费计算] 地址不存在，使用全国通用规则:', addressId)
+  } else {
+    provinceCode = getProvinceCode(address.province) || '*'
+    console.log('[运费计算] 省份:', address.province, '编码:', provinceCode)
+  }
+
+  // 获取运费规则
+  const rules = loadShippingRules()
+
+  // 计算订单金额
+  const orderAmount = items.reduce((sum, item) => sum + (item.price || 0) * (item.count || 1), 0)
+
+  // 计算总重量
+  const totalWeight = items.reduce((sum, item) => sum + (item.weight || 0.5) * (item.count || 1), 0)
+
+  // 获取商品所属店铺ID（从商品数据中查找第一个商品的店铺）
+  let storeId = null
+  if (items.length > 0) {
+    const products = loadCProducts()
+    const firstProduct = products.find(p => p.id === Number(items[0].goodsId))
+    if (firstProduct) {
+      storeId = firstProduct.storeId || null
+    }
+  }
+
+  // 规则优先级：店铺包邮 > 地区运费 > 满额包邮 > 按重量计费
+  const priorityMap = { store: 1, area: 2, amount: 3, weight: 4 }
+
+  const matchedRules = rules
+    .filter(r => r.status)  // 只取启用规则
+    .filter(r => {
+      // 省份匹配：'*' 表示全国，否则精确匹配
+      return r.provinceCodes.includes('*') || r.provinceCodes.includes(provinceCode)
+    })
+    .filter(r => {
+      // 店铺规则只匹配对应店铺
+      if (r.type === 'store' && r.storeId !== null) {
+        return r.storeId === storeId
+      }
+      return true
+    })
+    .sort((a, b) => (priorityMap[a.type] || 99) - (priorityMap[b.type] || 99))
+
+  if (matchedRules.length === 0) {
+    return res.json({
+      code: 200, msg: 'success',
+      data: { fee: 0, freeAmount: 0, appliedRule: null, isFree: true }
+    })
+  }
+
+  const rule = matchedRules[0]  // 取优先级最高的规则
+  let fee = 0
+  let freeAmount = 0
+  let isFree = false
+
+  switch (rule.type) {
+    case 'store':
+      // 店铺包邮
+      isFree = true
+      break
+
+    case 'area':
+      if (rule.freeThreshold > 0 && orderAmount >= rule.freeThreshold) {
+        isFree = true
+      } else {
+        fee = rule.baseFee
+        freeAmount = rule.freeThreshold > 0 ? rule.freeThreshold - orderAmount : 0
+      }
+      break
+
+    case 'amount':
+      if (orderAmount >= rule.freeThreshold) {
+        isFree = true
+      } else {
+        fee = rule.baseFee
+        freeAmount = rule.freeThreshold - orderAmount
+      }
+      break
+
+    case 'weight':
+      const weight = Math.max(totalWeight, rule.minWeight || 1)
+      const calcFee = Math.max(rule.baseFee, Math.ceil(weight * (rule.weightRate || 200)))
+      if (rule.freeThreshold > 0 && orderAmount >= rule.freeThreshold) {
+        isFree = true
+      } else {
+        fee = calcFee
+        freeAmount = rule.freeThreshold > 0 ? rule.freeThreshold - orderAmount : 0
+      }
+      break
+  }
+
+  res.json({
+    code: 200, msg: 'success',
+    data: { fee, freeAmount, appliedRule: rule, isFree }
+  })
+})
+
 export default router
