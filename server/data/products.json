@@ -1,69 +1,228 @@
 [
   {
-    "id": 1, "name": "夏季新款男士短袖T恤", "title": "2024新款 纯棉透气 商务休闲", "categoryId": 11,
-    "categoryName": "男装", "brand": "南极人", "price": 129.00, "marketPrice": 259.00, "costPrice": 65.00,
-    "stock": 500, "sales": 1280, "cover": "https://img.alicdn.com/example1.jpg",
-    "images": ["https://img.alicdn.com/example1.jpg", "https://img.alicdn.com/example1-2.jpg"],
-    "description": "<p>纯棉面料，舒适透气，适合夏季穿着</p>", "status": 1, "isListed": true,
+    "id": 1,
+    "name": "夏季新款男士短袖T恤",
+    "title": "2024新款 纯棉透气 商务休闲",
+    "categoryId": 11,
+    "categoryName": "男装",
+    "brand": "南极人",
+    "price": 129,
+    "marketPrice": 259,
+    "costPrice": 65,
+    "stock": 500,
+    "sales": 1280,
+    "cover": "https://img.alicdn.com/example1.jpg",
+    "images": [
+      "https://img.alicdn.com/example1.jpg",
+      "https://img.alicdn.com/example1-2.jpg"
+    ],
+    "description": "<p>纯棉面料，舒适透气，适合夏季穿着</p>",
+    "status": 1,
+    "isListed": true,
     "skuList": [
-      { "id": 101, "specs": "黑色 / M", "price": 129.00, "stock": 120, "skuCode": "T001-BLACK-M" },
-      { "id": 102, "specs": "黑色 / L", "price": 129.00, "stock": 150, "skuCode": "T001-BLACK-L" },
-      { "id": 103, "specs": "白色 / M", "price": 119.00, "stock": 100, "skuCode": "T001-WHITE-M" },
-      { "id": 104, "specs": "白色 / L", "price": 119.00, "stock": 130, "skuCode": "T001-WHITE-L" }
-    ], "createTime": "2024-06-01 10:00:00", "updateTime": "2024-06-05 14:30:00"
+      {
+        "id": 101,
+        "specs": "黑色 / M",
+        "price": 129,
+        "stock": 120,
+        "skuCode": "T001-BLACK-M"
+      },
+      {
+        "id": 102,
+        "specs": "黑色 / L",
+        "price": 129,
+        "stock": 150,
+        "skuCode": "T001-BLACK-L"
+      },
+      {
+        "id": 103,
+        "specs": "白色 / M",
+        "price": 119,
+        "stock": 100,
+        "skuCode": "T001-WHITE-M"
+      },
+      {
+        "id": 104,
+        "specs": "白色 / L",
+        "price": 119,
+        "stock": 130,
+        "skuCode": "T001-WHITE-L"
+      }
+    ],
+    "createTime": "2024-06-01 10:00:00",
+    "updateTime": "2024-06-05 14:30:00"
   },
   {
-    "id": 2, "name": "iPhone 15 Pro Max 256GB", "title": "A17 Pro芯片 钛金属设计", "categoryId": 21,
-    "categoryName": "手机", "brand": "Apple", "price": 9999.00, "marketPrice": 9999.00, "costPrice": 8500.00,
-    "stock": 200, "sales": 3560, "cover": "https://img.alicdn.com/example2.jpg",
-    "images": ["https://img.alicdn.com/example2.jpg"], "description": "<p>A17 Pro芯片，钛金属设计，USB-C接口</p>",
-    "status": 1, "isListed": true,
+    "id": 2,
+    "name": "iPhone 15 Pro Max 256GB",
+    "title": "A17 Pro芯片 钛金属设计",
+    "categoryId": 21,
+    "categoryName": "手机",
+    "brand": "Apple",
+    "price": 9999,
+    "marketPrice": 9999,
+    "costPrice": 8500,
+    "stock": 200,
+    "sales": 3560,
+    "cover": "https://img.alicdn.com/example2.jpg",
+    "images": [
+      "https://img.alicdn.com/example2.jpg"
+    ],
+    "description": "<p>A17 Pro芯片，钛金属设计，USB-C接口</p>",
+    "status": 1,
+    "isListed": true,
     "skuList": [
-      { "id": 201, "specs": "原色钛金属 / 256GB", "price": 9999.00, "stock": 80, "skuCode": "IP15PM-NAT-256" },
-      { "id": 202, "specs": "蓝色钛金属 / 256GB", "price": 9999.00, "stock": 70, "skuCode": "IP15PM-BLU-256" },
-      { "id": 203, "specs": "原色钛金属 / 512GB", "price": 11999.00, "stock": 30, "skuCode": "IP15PM-NAT-512" },
-      { "id": 204, "specs": "蓝色钛金属 / 512GB", "price": 11999.00, "stock": 20, "skuCode": "IP15PM-BLU-512" }
-    ], "createTime": "2024-06-01 10:00:00", "updateTime": "2024-06-06 09:15:00"
+      {
+        "id": 201,
+        "specs": "原色钛金属 / 256GB",
+        "price": 9999,
+        "stock": 80,
+        "skuCode": "IP15PM-NAT-256"
+      },
+      {
+        "id": 202,
+        "specs": "蓝色钛金属 / 256GB",
+        "price": 9999,
+        "stock": 70,
+        "skuCode": "IP15PM-BLU-256"
+      },
+      {
+        "id": 203,
+        "specs": "原色钛金属 / 512GB",
+        "price": 11999,
+        "stock": 30,
+        "skuCode": "IP15PM-NAT-512"
+      },
+      {
+        "id": 204,
+        "specs": "蓝色钛金属 / 512GB",
+        "price": 11999,
+        "stock": 20,
+        "skuCode": "IP15PM-BLU-512"
+      }
+    ],
+    "createTime": "2024-06-01 10:00:00",
+    "updateTime": "2024-06-06 09:15:00"
   },
   {
-    "id": 3, "name": "三只松鼠坚果大礼包", "title": "每日坚果 混合装 750g", "categoryId": 31,
-    "categoryName": "休闲零食", "brand": "三只松鼠", "price": 89.00, "marketPrice": 139.00, "costPrice": 45.00,
-    "stock": 1000, "sales": 5680, "cover": "https://img.alicdn.com/example3.jpg",
-    "images": ["https://img.alicdn.com/example3.jpg"], "description": "<p>精选6种坚果，每日一包营养均衡</p>",
-    "status": 1, "isListed": true,
+    "id": 3,
+    "name": "三只松鼠坚果大礼包",
+    "title": "每日坚果 混合装 750g",
+    "categoryId": 31,
+    "categoryName": "休闲零食",
+    "brand": "三只松鼠",
+    "price": 89,
+    "marketPrice": 139,
+    "costPrice": 45,
+    "stock": 1000,
+    "sales": 5680,
+    "cover": "https://img.alicdn.com/example3.jpg",
+    "images": [
+      "https://img.alicdn.com/example3.jpg"
+    ],
+    "description": "<p>精选6种坚果，每日一包营养均衡</p>",
+    "status": 1,
+    "isListed": true,
     "skuList": [
-      { "id": 301, "specs": "经典款 750g", "price": 89.00, "stock": 600, "skuCode": "SSS-NUTS-750" },
-      { "id": 302, "specs": "礼盒装 1.5kg", "price": 169.00, "stock": 400, "skuCode": "SSS-NUTS-1500" }
-    ], "createTime": "2024-05-20 08:00:00", "updateTime": "2024-06-04 11:00:00"
+      {
+        "id": 301,
+        "specs": "经典款 750g",
+        "price": 89,
+        "stock": 600,
+        "skuCode": "SSS-NUTS-750"
+      },
+      {
+        "id": 302,
+        "specs": "礼盒装 1.5kg",
+        "price": 169,
+        "stock": 400,
+        "skuCode": "SSS-NUTS-1500"
+      }
+    ],
+    "createTime": "2024-05-20 08:00:00",
+    "updateTime": "2024-06-04 11:00:00"
   },
   {
-    "id": 4, "name": "兰蔻持妆粉底液 30ml", "title": "SPF25 PA+++ 持久不脱妆", "categoryId": 4,
-    "categoryName": "美妆护肤", "brand": "兰蔻", "price": 520.00, "marketPrice": 620.00, "costPrice": 280.00,
-    "stock": 300, "sales": 2100, "cover": "https://img.alicdn.com/example4.jpg",
-    "images": ["https://img.alicdn.com/example4.jpg"], "description": "<p>轻薄透气，24小时持妆</p>",
-    "status": 1, "isListed": true,
+    "id": 4,
+    "name": "兰蔻持妆粉底液 30ml",
+    "title": "SPF25 PA+++ 持久不脱妆",
+    "categoryId": 4,
+    "categoryName": "美妆护肤",
+    "brand": "兰蔻",
+    "price": 520,
+    "marketPrice": 620,
+    "costPrice": 280,
+    "stock": 300,
+    "sales": 2100,
+    "cover": "https://img.alicdn.com/example4.jpg",
+    "images": [
+      "https://img.alicdn.com/example4.jpg"
+    ],
+    "description": "<p>轻薄透气，24小时持妆</p>",
+    "status": 1,
+    "isListed": true,
     "skuList": [
-      { "id": 401, "specs": "PO-01 象牙白", "price": 520.00, "stock": 120, "skuCode": "LANCOME-PO01" },
-      { "id": 402, "specs": "BO-02 自然色", "price": 520.00, "stock": 100, "skuCode": "LANCOME-BO02" },
-      { "id": 403, "specs": "PO-03 暖杏色", "price": 520.00, "stock": 80, "skuCode": "LANCOME-PO03" }
-    ], "createTime": "2024-05-15 16:30:00", "updateTime": "2024-06-03 10:00:00"
+      {
+        "id": 401,
+        "specs": "PO-01 象牙白",
+        "price": 520,
+        "stock": 120,
+        "skuCode": "LANCOME-PO01"
+      },
+      {
+        "id": 402,
+        "specs": "BO-02 自然色",
+        "price": 520,
+        "stock": 100,
+        "skuCode": "LANCOME-BO02"
+      },
+      {
+        "id": 403,
+        "specs": "PO-03 暖杏色",
+        "price": 520,
+        "stock": 80,
+        "skuCode": "LANCOME-PO03"
+      }
+    ],
+    "createTime": "2024-05-15 16:30:00",
+    "updateTime": "2024-06-03 10:00:00"
   },
   {
-    "id": 5, "name": "戴森V15无绳吸尘器", "title": "激光探测微尘 智能除尘", "categoryId": 5,
-    "categoryName": "家居日用", "brand": "戴森", "price": 4990.00, "marketPrice": 5490.00, "costPrice": 3200.00,
-    "stock": 80, "sales": 890, "cover": "https://img.alicdn.com/example5.jpg",
-    "images": ["https://img.alicdn.com/example5.jpg"], "description": "<p>LCD屏幕实时显示，整机HEPA过滤</p>",
-    "status": 1, "isListed": true,
+    "id": 5,
+    "name": "戴森V15无绳吸尘器",
+    "title": "激光探测微尘 智能除尘",
+    "categoryId": 5,
+    "categoryName": "家居日用",
+    "brand": "戴森",
+    "price": 4990,
+    "marketPrice": 5490,
+    "costPrice": 3200,
+    "stock": 80,
+    "sales": 890,
+    "cover": "https://img.alicdn.com/example5.jpg",
+    "images": [
+      "https://img.alicdn.com/example5.jpg"
+    ],
+    "description": "<p>LCD屏幕实时显示，整机HEPA过滤</p>",
+    "status": 1,
+    "isListed": true,
     "skuList": [
-      { "id": 501, "specs": "标准版", "price": 4990.00, "stock": 50, "skuCode": "DYSON-V15-STD" },
-      { "id": 502, "specs": "旗舰版", "price": 5690.00, "stock": 30, "skuCode": "DYSON-V15-PRO" }
-    ], "createTime": "2024-06-02 09:00:00", "updateTime": "2024-06-07 15:00:00"
-  },
-  {
-    "id": 6, "name": "女士碎花连衣裙", "title": "春季新款 法式复古", "categoryId": 12, "categoryName": "女装",
-    "brand": "韩都衣舍", "price": 199.00, "marketPrice": 399.00, "costPrice": 85.00, "stock": 0, "sales": 650,
-    "cover": "https://img.alicdn.com/example6.jpg", "images": [], "description": "",
-    "status": 1, "isListed": false, "skuList": [],
-    "createTime": "2024-04-10 11:00:00", "updateTime": "2024-06-01 17:00:00"
+      {
+        "id": 501,
+        "specs": "标准版",
+        "price": 4990,
+        "stock": 50,
+        "skuCode": "DYSON-V15-STD"
+      },
+      {
+        "id": 502,
+        "specs": "旗舰版",
+        "price": 5690,
+        "stock": 30,
+        "skuCode": "DYSON-V15-PRO"
+      }
+    ],
+    "createTime": "2024-06-02 09:00:00",
+    "updateTime": "2024-06-07 15:00:00"
   }
 ]

@@ -174,6 +174,8 @@
       const res = await getProductList(query);
       list.value = res.data.list;
       total.value = res.data.total;
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }

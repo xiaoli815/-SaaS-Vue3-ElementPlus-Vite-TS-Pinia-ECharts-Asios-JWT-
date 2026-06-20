@@ -224,6 +224,8 @@ function renderInventory(data: { list: InventoryData[] }) {
         const res = await getInventoryReport();
         renderInventory(res.data);
       }
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }

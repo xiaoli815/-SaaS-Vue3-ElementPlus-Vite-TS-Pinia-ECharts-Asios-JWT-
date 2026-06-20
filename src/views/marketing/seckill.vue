@@ -160,13 +160,17 @@
   });
 
   async function fetch() {
-    const res = await getSeckillList({
-      page: page.value,
-      pageSize: pageSize.value,
-      keyword: keyword.value,
-    });
-    list.value = res.data.list;
-    total.value = res.data.total;
+    try {
+      const res = await getSeckillList({
+        page: page.value,
+        pageSize: pageSize.value,
+        keyword: keyword.value,
+      });
+      list.value = res.data.list;
+      total.value = res.data.total;
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   function showDlg(type: string, row: SeckillActivity) {
@@ -192,21 +196,29 @@
   }
 
   async function handleSave() {
-    if (editId.value) {
-      await updateSeckill(editId.value, form);
-      ElMessage.success('更新成功');
-    } else {
-      await createSeckill(form);
-      ElMessage.success('创建成功');
+    try {
+      if (editId.value) {
+        await updateSeckill(editId.value, form);
+        ElMessage.success('更新成功');
+      } else {
+        await createSeckill(form);
+        ElMessage.success('创建成功');
+      }
+      dlgVisible.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
     }
-    dlgVisible.value = false;
-    fetch();
   }
 
   async function handleDelete(id: number) {
-    await deleteSeckill(id);
-    ElMessage.success('删除成功');
-    fetch();
+    try {
+      await deleteSeckill(id);
+      ElMessage.success('删除成功');
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   import { onMounted } from 'vue';

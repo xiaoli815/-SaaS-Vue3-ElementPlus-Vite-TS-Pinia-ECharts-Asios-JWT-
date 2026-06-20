@@ -1,4 +1,4 @@
-import { get, put } from '../request';
+import { get, post } from '../request';
 
 export interface OrderItem {
   id: string;
@@ -71,7 +71,7 @@ export function getOrderDetail(id: string) {
 }
 /** 接单确认 */
 export function confirmOrder(id: string) {
-  return put(`/order/confirm/${id}`);
+  return post(`/order/confirm`, { id });
 }
 /** 改价 */
 export function updateOrderPrice(
@@ -79,14 +79,14 @@ export function updateOrderPrice(
   payAmount: number,
   remark?: string
 ) {
-  return put(`/order/price/${id}`, { payAmount, remark });
+  return post(`/order/adjust`, { id, payAmount, remark });
 }
 /** 修改订单信息 */
 export function updateOrderInfo(
   id: string,
   data: Partial<OrderItem>
 ) {
-  return put(`/order/info/${id}`, data);
+  return post(`/order/adjust`, { id, ...data });
 }
 /** 发货（录入物流单号） */
 export function deliverOrder(
@@ -94,7 +94,8 @@ export function deliverOrder(
   company: string,
   trackingNo: string
 ) {
-  return put(`/order/deliver/${id}`, {
+  return post(`/order/deliver`, {
+    id,
     company,
     trackingNo,
   });
@@ -105,7 +106,7 @@ export function refundOrder(
   amount: number,
   reason: string
 ) {
-  return put(`/order/refund/${id}`, { amount, reason });
+  return post(`/order/adjust`, { id, payAmount: amount, remark: reason });
 }
 /** 售后审核 */
 export function reviewAfterSale(
@@ -113,8 +114,9 @@ export function reviewAfterSale(
   approved: boolean,
   reply: string
 ) {
-  return put(`/order/after-sale/${id}`, {
-    approved,
-    reply,
+  return post(`/order/after-sale/review`, {
+    id,
+    approve: approved,
+    remark: reply,
   });
 }

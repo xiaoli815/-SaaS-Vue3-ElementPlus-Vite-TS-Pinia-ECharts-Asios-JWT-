@@ -1,0 +1,5741 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "desc": "华为笔记本电脑MateBook X Pro 2023 13代酷睿版锐炬显卡14.2英寸3.1K原色触控屏超轻薄旗舰微绒典藏1943",
+    "price": 1717,
+    "originalPrice": 2747,
+    "image": "/images/product/phone/product1.jpg",
+    "images": [
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg"
+    ],
+    "categoryId": 1,
+    "sales": 9611,
+    "stock": 139,
+    "isFlashSale": true,
+    "flashSalePrice": 1202,
+    "isFavorite": false,
+    "tags": [
+      "今日特价",
+      "新品"
+    ],
+    "detail": "Villa corona certe conatus vir demergo torqueo cernuus. Perferendis victoria asperiores stabilis decumbo. Stips thalassinus doloremque aspicio combibo ea summisse.\nDelectus asperiores torqueo in vinculum conforto. Centum caute timor alius trans caput. Bardus super astrum.\nVer addo venustas. Abduco tabula atque derideo terga socius modi. Depulso veritatis vere toties quasi deorsum demo rem.\nStrenuus culpa utor tredecim casus temptatio. Tego tutis ventosus demonstro. Pauper accendo harum subiungo coniuratio comparo.\nVicinus videlicet officiis amiculum dicta auditor. Subito creta tolero decerno magni tamdiu alter tonsor. Considero curvo deduco iusto ipsum tonsor demum.",
+    "skus": [
+      {
+        "id": 1000,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1730,
+        "stock": 92,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1001,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1731,
+        "stock": 189,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1002,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1725,
+        "stock": 59,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1003,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1737,
+        "stock": 111,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1004,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1733,
+        "stock": 187,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1005,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1708,
+        "stock": 32,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1006,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1716,
+        "stock": 199,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1007,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1733,
+        "stock": 137,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1008,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1744,
+        "stock": 138,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1009,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1719,
+        "stock": 15,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1010,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1727,
+        "stock": 107,
+        "image": "/images/product/phone/product1.jpg"
+      },
+      {
+        "id": 1011,
+        "productId": 1,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1738,
+        "stock": 155,
+        "image": "/images/product/phone/product1.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg",
+      "/images/product/phone/product1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost 轻量跑鞋",
+    "desc": "小米电视 Redmi A43 高清智能电视 43英寸液晶平板电视L43RA-RA",
+    "price": 4989,
+    "originalPrice": 9978,
+    "image": "/images/product/clothes/product17.jpg",
+    "images": [
+      "/images/product/clothes/product17.jpg",
+      "/images/product/clothes/product17.jpg",
+      "/images/product/clothes/product17.jpg"
+    ],
+    "categoryId": 2,
+    "sales": 8480,
+    "stock": 62,
+    "isFlashSale": true,
+    "flashSalePrice": 4490,
+    "isFavorite": false,
+    "tags": [
+      "爆款",
+      "热卖",
+      "今日特价"
+    ],
+    "detail": "Cubitum crepusculum mollitia utrimque sperno teneo attonbitus laudantium. Cohaero depulso campana consuasor varius apto contabesco. Voluntarius capio audio tredecim.\nBene carpo aranea adiuvo vehemens tabernus cohibeo certe. Sollers tripudio eaque vix corrupti porro contigo tabesco quidem canonicus. Dolore cavus antepono centum consuasor totus combibo cura ustulo.\nSordeo commodo subvenio compello dolorem. Tero campana fuga. Repudiandae coniecto clam odit defluo vilicus verto commemoro demulceo.\nPossimus laudantium vindico. Aequus turbo cometes. Quo qui vitium vitiosus ullus.\nAgo tepidus solio. Modi demum hic atqui deporto ustilo. Vigilo eos comburo caries adinventitias aeger verecundia adiuvo derelinquo.\nBellicus condico totidem aufero consequatur subnecto deripio vorago xiphias stillicidium. Umbra dignissimos celebrer similique voluptate theca degusto quidem thymbra. Arbor cuppedia basium vapulus tolero alienus.",
+    "skus": [
+      {
+        "id": 2000,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 4997,
+        "stock": 80,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2001,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 4983,
+        "stock": 171,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2002,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5006,
+        "stock": 121,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2003,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4989,
+        "stock": 100,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2004,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5011,
+        "stock": 103,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2005,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5006,
+        "stock": 36,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2006,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 4995,
+        "stock": 192,
+        "image": "/images/product/clothes/product17.jpg"
+      },
+      {
+        "id": 2007,
+        "productId": 2,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5004,
+        "stock": 43,
+        "image": "/images/product/clothes/product17.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/clothes/product17.jpg",
+      "/images/product/clothes/product17.jpg",
+      "/images/product/clothes/product17.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "美的 变频空调 1.5匹",
+    "desc": "小米电视 Redmi A43 高清智能电视 43英寸液晶平板电视L43RA-RA",
+    "price": 448,
+    "originalPrice": 896,
+    "image": "/images/product/electric/product3.jpg",
+    "images": [
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg"
+    ],
+    "categoryId": 3,
+    "sales": 8992,
+    "stock": 97,
+    "isFlashSale": true,
+    "flashSalePrice": 403,
+    "isFavorite": false,
+    "tags": [
+      "热卖"
+    ],
+    "detail": "Cognatus adaugeo voveo aestivus. Anser ex amplexus suggero admitto certus. Vereor vel depulso utor.\nSustineo cumque consuasor nihil. Praesentium curriculum calamitas cohaero synagoga id caput bonus stipes aperio. Temperantia patruus xiphias succedo agnitio video.\nAnimadverto adflicto venio ullus verto comedo utrum sophismata beatae. Vix quo cibus vereor adopto callide tametsi. Expedita reprehenderit provident.\nSui dedico supplanto audacia aliquid dedecor aestus demum volup terga. Tredecim eligendi tam patria pecco. Claudeo conservo suggero urbs cuppedia suggero tamdiu trepide combibo.\nCaelum auxilium combibo demonstro vulariter tolero alter contego. Adamo aegrotatio bene sono. Aufero sub tracto.\nLaudantium cado ventosus conduco vespillo cuppedia voveo usus. Adnuo collum animus pariatur somniculosus sopor thermae verecundia torqueo. Vitiosus comburo cinis adiuvo.",
+    "skus": [
+      {
+        "id": 3000,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 461,
+        "stock": 158,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3001,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 445,
+        "stock": 190,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3002,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 461,
+        "stock": 97,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3003,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 459,
+        "stock": 164,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3004,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 457,
+        "stock": 49,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3005,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 456,
+        "stock": 157,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3006,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 447,
+        "stock": 115,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3007,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 451,
+        "stock": 98,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3008,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 476,
+        "stock": 83,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3009,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 450,
+        "stock": 107,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3010,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 454,
+        "stock": 167,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3011,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 474,
+        "stock": 12,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3012,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 477,
+        "stock": 7,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3013,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 468,
+        "stock": 3,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3014,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 445,
+        "stock": 89,
+        "image": "/images/product/electric/product3.jpg"
+      },
+      {
+        "id": 3015,
+        "productId": 3,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 445,
+        "stock": 22,
+        "image": "/images/product/electric/product3.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg",
+      "/images/product/electric/product3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "海蓝之谜 面霜 60ml",
+    "desc": "华为笔记本电脑MateBook X Pro 2023 13代酷睿版锐炬显卡14.2英寸3.1K原色触控屏超轻薄旗舰微绒典藏1943",
+    "price": 1232,
+    "originalPrice": 2341,
+    "image": "/images/product/cosmetics/product4.jpg",
+    "images": [
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg"
+    ],
+    "categoryId": 4,
+    "sales": 8935,
+    "stock": 42,
+    "isFlashSale": true,
+    "flashSalePrice": 1109,
+    "isFavorite": false,
+    "tags": [
+      "品质优选"
+    ],
+    "detail": "Cui vae voco complectus volubilis vinculum tutis curo iure. Suscipio careo correptius substantia sapiente spectaculum suus voluptate. Dolorem tabesco alo deleo abscido desolo paens arguo animi.\nCaste spiculum inventore commodi caritas talio. Defetiscor audacia tabernus. Vespillo crux deorsum summopere sopor voco ubi taceo artificiose.\nFacilis socius cetera bis adipiscor conservo socius quidem. Sopor vester solium commodi votum dolor coniecto tripudio cumque tandem. Facere paulatim umbra crinis aeger comparo volva tonsor acquiro cernuus.",
+    "skus": [
+      {
+        "id": 4000,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1243,
+        "stock": 174,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4001,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1230,
+        "stock": 60,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4002,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1245,
+        "stock": 143,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4003,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1237,
+        "stock": 151,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4004,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1248,
+        "stock": 100,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4005,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1238,
+        "stock": 0,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4006,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1224,
+        "stock": 137,
+        "image": "/images/product/cosmetics/product4.jpg"
+      },
+      {
+        "id": 4007,
+        "productId": 4,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1241,
+        "stock": 159,
+        "image": "/images/product/cosmetics/product4.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg",
+      "/images/product/cosmetics/product4.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "蒙牛 特仑苏纯牛奶",
+    "desc": "Sony/索尼 XR-55A80EK 55英寸4K超清认知智能OLED安卓摄像头电视",
+    "price": 2636,
+    "originalPrice": 5272,
+    "image": "/images/product/food/product5.jpg",
+    "images": [
+      "/images/product/food/product5.jpg",
+      "/images/product/food/product5.jpg",
+      "/images/product/food/product5.jpg"
+    ],
+    "categoryId": 5,
+    "sales": 10242,
+    "stock": 23,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "今日特价",
+      "店主推荐",
+      "热卖"
+    ],
+    "detail": "Compello reprehenderit adeo caput vir maxime surculus adopto. Speciosus adinventitias solum ipsum id. Blandior sumo vero vespillo cado aperte adimpleo.\nStatua atque vomito comes clam tunc reprehenderit quo tres. Ultio cum victus stillicidium sono. Tandem ager claudeo amiculum solitudo delectatio cumque quidem.\nCallide libero aureus solio. Ulciscor acerbitas tristis. Cogo maxime aperiam tum caritas avaritia congregatio.\nSum et decumbo cras curso coruscus trepide. Acies corroboro adeo aspernatur aiunt voluptas. Vetus accommodo aveho unde vinculum avaritia convoco usitas ultra candidus.\nSpero solium defero triduana tenax universe apud caries thalassinus decretum. Coerceo appono pecto aspernatur vulgus claustrum suggero. Absconditus cupiditas stella tergiversatio vorago.\nDesidero defleo placeat administratio. Conatus exercitationem solitudo quo contabesco communis peior. Tui voluptate veniam reiciendis cattus candidus cupressus voluptate.",
+    "skus": [
+      {
+        "id": 5000,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 2653,
+        "stock": 7,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5001,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2626,
+        "stock": 186,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5002,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2640,
+        "stock": 57,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5003,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2633,
+        "stock": 80,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5004,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 2639,
+        "stock": 58,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5005,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2627,
+        "stock": 165,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5006,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2631,
+        "stock": 30,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5007,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2642,
+        "stock": 169,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5008,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 2638,
+        "stock": 196,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5009,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2646,
+        "stock": 75,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5010,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2659,
+        "stock": 141,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5011,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2654,
+        "stock": 84,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5012,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 2636,
+        "stock": 124,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5013,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2658,
+        "stock": 181,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5014,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2648,
+        "stock": 70,
+        "image": "/images/product/food/product5.jpg"
+      },
+      {
+        "id": 5015,
+        "productId": 5,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2666,
+        "stock": 72,
+        "image": "/images/product/food/product5.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/food/product5.jpg",
+      "/images/product/food/product5.jpg",
+      "/images/product/food/product5.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "慕思 乳胶床垫",
+    "desc": "【新品享壕礼】vivo iQOO Z8x手机官方旗舰店新品上市官网正品学生大电池大内存手机iqoo z7 z7x",
+    "price": 3363,
+    "originalPrice": 8408,
+    "image": "/images/product/home/product6.jpg",
+    "images": [
+      "/images/product/home/product6.jpg",
+      "/images/product/home/product6.jpg",
+      "/images/product/home/product6.jpg"
+    ],
+    "categoryId": 6,
+    "sales": 14878,
+    "stock": 185,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "限时特惠",
+      "爆款"
+    ],
+    "detail": "Crapula voluptatibus unus deludo cui approbo tabgo alius concedo hic. Ustulo caste sonitus statim ustulo arx audio vicinus. Adnuo error laborum cubicularis tepidus admitto ara repellendus voro.\nIllum ad clam usus omnis comitatus. Clibanus vilis urbanus trucido cognomen currus. Tener amita ut vero aranea cuius summisse cupio nam.\nReprehenderit apto facilis comburo denego verbum. Theatrum custodia adversus. Depulso strues usus aestus adipisci cursim coerceo officia appono acquiro.",
+    "skus": [
+      {
+        "id": 6000,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3366,
+        "stock": 105,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6001,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3368,
+        "stock": 126,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6002,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3362,
+        "stock": 76,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6003,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3373,
+        "stock": 195,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6004,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3376,
+        "stock": 78,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6005,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3361,
+        "stock": 144,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6006,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3362,
+        "stock": 35,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6007,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3366,
+        "stock": 92,
+        "image": "/images/product/home/product6.jpg"
+      },
+      {
+        "id": 6008,
+        "productId": 6,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3382,
+        "stock": 169,
+        "image": "/images/product/home/product6.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/home/product6.jpg",
+      "/images/product/home/product6.jpg",
+      "/images/product/home/product6.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "爱他美 卓萃 2段",
+    "desc": "华为笔记本电脑MateBook X Pro 2023 13代酷睿版锐炬显卡14.2英寸3.1K原色触控屏超轻薄旗舰微绒典藏1943",
+    "price": 5831,
+    "originalPrice": 8163,
+    "image": "/images/product/baby/product7.jpg",
+    "images": [
+      "/images/product/baby/product7.jpg",
+      "/images/product/baby/product7.jpg",
+      "/images/product/baby/product7.jpg"
+    ],
+    "categoryId": 7,
+    "sales": 9337,
+    "stock": 47,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "爆款",
+      "品质优选"
+    ],
+    "detail": "Omnis sulum vociferor tripudio culpo hic capto degero audio. Suffoco adfero fugit amplus. Necessitatibus cruciamentum pectus degusto.\nCommodo bene utrimque collum audax strenuus aestivus varietas tantillus. Testimonium volaticus caelum ipsam sed. Bestia careo blandior vorago.\nCrapula celo esse confido adhuc conturbo paulatim stultus. Consequuntur admiratio statua tersus deputo vinco commodo turpis ventus. Fuga expedita nulla auctor ustilo mollitia vitae.\nSodalitas cotidie causa vero vilis constans. Vomito crapula est comparo vitae id. Complectus creator porro aiunt concedo accendo urbanus tamen aegrus.\nEnim velociter tutis autem auctus sto officia sustineo. Creptio tubineus admiratio. Coniuratio utrimque cavus colligo adhuc claro virga arx.\nQuam calcar territo autus quos taceo illum tres. Comminor trado ambulo deputo sub caste claustrum aeger. Concido termes certus consuasor aut subvenio torqueo valde molestias.",
+    "skus": [
+      {
+        "id": 7000,
+        "productId": 7,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5860,
+        "stock": 66,
+        "image": "/images/product/baby/product7.jpg"
+      },
+      {
+        "id": 7001,
+        "productId": 7,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5857,
+        "stock": 158,
+        "image": "/images/product/baby/product7.jpg"
+      },
+      {
+        "id": 7002,
+        "productId": 7,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5829,
+        "stock": 115,
+        "image": "/images/product/baby/product7.jpg"
+      },
+      {
+        "id": 7003,
+        "productId": 7,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5836,
+        "stock": 37,
+        "image": "/images/product/baby/product7.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/baby/product7.jpg",
+      "/images/product/baby/product7.jpg",
+      "/images/product/baby/product7.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "《盗墓笔记》全集",
+    "desc": "鼠标有线USB静音无声家用办公台式笔记本电脑家用商务电竞男",
+    "price": 1293,
+    "originalPrice": 2715,
+    "image": "/images/product/book/product8.jpg",
+    "images": [
+      "/images/product/book/product8.jpg",
+      "/images/product/book/product8.jpg",
+      "/images/product/book/product8.jpg"
+    ],
+    "categoryId": 8,
+    "sales": 13363,
+    "stock": 39,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "店主推荐"
+    ],
+    "detail": "Apparatus cumque adaugeo venio quaerat perferendis infit. Calco vita ter sol ut consequatur sol vociferor campana advenio. Maiores totidem acsi.\nCupiditas vespillo ter antea aegre atqui. Ulciscor concedo allatus comprehendo. Comes conventus bonus casus.\nTerra eos saepe autus tantum callide id vesica. Tempus quia conicio aptus vinco depulso qui cenaculum ulciscor antea. Abstergo sollicito armarium antiquus animi.\nDefetiscor cattus curvo terminatio adeptio speculum addo. Contra acer subiungo natus. Certus stultus solio.\nAut tibi crux asper veniam surgo tener dapifer accendo. Curvo verus pariatur clibanus defetiscor crepusculum. Similique appono caelum arca confido.",
+    "skus": [
+      {
+        "id": 8000,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1316,
+        "stock": 75,
+        "image": "/images/product/book/product8.jpg"
+      },
+      {
+        "id": 8001,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1301,
+        "stock": 47,
+        "image": "/images/product/book/product8.jpg"
+      },
+      {
+        "id": 8002,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1313,
+        "stock": 27,
+        "image": "/images/product/book/product8.jpg"
+      },
+      {
+        "id": 8003,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1315,
+        "stock": 68,
+        "image": "/images/product/book/product8.jpg"
+      },
+      {
+        "id": 8004,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1314,
+        "stock": 54,
+        "image": "/images/product/book/product8.jpg"
+      },
+      {
+        "id": 8005,
+        "productId": 8,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1319,
+        "stock": 40,
+        "image": "/images/product/book/product8.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/book/product8.jpg",
+      "/images/product/book/product8.jpg",
+      "/images/product/book/product8.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "iPad Pro M4",
+    "desc": "【2023新品官方旗舰正品】DERE戴睿笔记本电脑二合一新Surface Pro13平板商务办公学生教育超轻薄便携电脑本",
+    "price": 3167,
+    "originalPrice": 5384,
+    "image": "/images/product/phone/product9.jpg",
+    "images": [
+      "/images/product/phone/product9.jpg",
+      "/images/product/phone/product9.jpg",
+      "/images/product/phone/product9.jpg"
+    ],
+    "categoryId": 1,
+    "sales": 1320,
+    "stock": 4,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "会员专享"
+    ],
+    "detail": "Tersus veritas perspiciatis laudantium ventus solitudo vesper. Velit acies cilicium vergo balbus veritatis tertius adhaero. Campana ver comprehendo thalassinus.\nTollo caelum cubicularis arcesso titulus spiritus. Veniam iste adopto similique aliqua stillicidium asper. Nam contego delectus conqueror bene magnam appello ter decens aggredior.\nTantillus ustulo centum cariosus. Tripudio animadverto est demitto ventito doloremque quas cui. Cui vulgivagus cultellus vitae contego laborum.\nAveho autem adimpleo ocer defendo. Cresco cresco voluptate. Confugo alienus viscus ab surculus.\nVinco undique tempus tyrannus. Cunctatio volubilis agnitio cuppedia degenero. Vereor aequus animadverto creator.\nCognatus nemo voveo. Suffragium alias taedium cupressus viridis vereor quidem. Varius defungo aranea terreo usus cupressus torrens vulnero cena.",
+    "skus": [
+      {
+        "id": 9000,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3179,
+        "stock": 43,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9001,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3168,
+        "stock": 24,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9002,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3165,
+        "stock": 160,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9003,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3188,
+        "stock": 167,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9004,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3196,
+        "stock": 122,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9005,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3170,
+        "stock": 23,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9006,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3194,
+        "stock": 54,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9007,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3176,
+        "stock": 50,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9008,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3160,
+        "stock": 175,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9009,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3166,
+        "stock": 16,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9010,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3195,
+        "stock": 109,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9011,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3170,
+        "stock": 106,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9012,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3180,
+        "stock": 2,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9013,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3187,
+        "stock": 107,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9014,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3191,
+        "stock": 62,
+        "image": "/images/product/phone/product9.jpg"
+      },
+      {
+        "id": 9015,
+        "productId": 9,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3158,
+        "stock": 158,
+        "image": "/images/product/phone/product9.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/phone/product9.jpg",
+      "/images/product/phone/product9.jpg",
+      "/images/product/phone/product9.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "MLB 棒球帽",
+    "desc": "【至高立省300元 赠数据线】vivo Y78新品全面屏游戏拍照学生5G智能手机大电池官方旗舰店老人机Y78+ Y77",
+    "price": 1767,
+    "originalPrice": 3887,
+    "image": "/images/product/clothes/product25.jpg",
+    "images": [
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg"
+    ],
+    "categoryId": 2,
+    "sales": 780,
+    "stock": 2,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "今日特价"
+    ],
+    "detail": "Consuasor eaque delibero strues rem. Varius thorax sub adhuc defluo viscus deripio decet. Ventito varietas accusamus venustas.\nCivis acer ventosus acerbitas demitto terreo verus creptio tabula claustrum. Timidus sapiente theologus caterva. Eaque quibusdam urbs agnosco denuncio acies summopere tempus voluptas.\nAperiam umerus quis crebro. Dignissimos sum cauda appello brevis deludo adstringo bonus complectus bis. Tunc conor suspendo demoror abduco.",
+    "skus": [
+      {
+        "id": 10000,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1781,
+        "stock": 106,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10001,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1781,
+        "stock": 28,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10002,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1762,
+        "stock": 58,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10003,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1793,
+        "stock": 172,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10004,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1787,
+        "stock": 8,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10005,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1794,
+        "stock": 127,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10006,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1788,
+        "stock": 136,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10007,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1761,
+        "stock": 3,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10008,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1771,
+        "stock": 188,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10009,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1786,
+        "stock": 147,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10010,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1775,
+        "stock": 82,
+        "image": "/images/product/clothes/product25.jpg"
+      },
+      {
+        "id": 10011,
+        "productId": 10,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1771,
+        "stock": 130,
+        "image": "/images/product/clothes/product25.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg",
+      "/images/product/clothes/product25.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "科沃斯 窗宝 W1S",
+    "desc": "可选16G【M2芯片】Apple/苹果 MacBook Pro 13英寸笔记本电脑剪辑设计大学生办公专用正品分期24G",
+    "price": 3792,
+    "originalPrice": 9101,
+    "image": "/images/product/electric/product11.jpg",
+    "images": [
+      "/images/product/electric/product11.jpg",
+      "/images/product/electric/product11.jpg",
+      "/images/product/electric/product11.jpg"
+    ],
+    "categoryId": 3,
+    "sales": 14503,
+    "stock": 50,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "品质优选",
+      "限时特惠",
+      "会员专享"
+    ],
+    "detail": "Astrum varietas ars universe. Similique tenus temporibus confido crastinus talis aureus. Adaugeo adulatio adiuvo cunabula.\nTergiversatio voluptatibus urbanus theologus. Amicitia ago pariatur illo atavus. Avarus aeternus cresco pecto sum velut vinco vulpes thymum.\nDesolo amet circumvenio nulla contra absque suffoco arto doloribus voveo. Thesis mollitia solus iste pecco dignissimos coaegresco concido tempus. Terga defero aetas harum thermae.\nCatena similique cubicularis tam. Tergum apostolus caritas vulgivagus utrum delectatio maiores vitae vinum conscendo. Sufficio benevolentia umerus terreo acer corrumpo suscipio villa depopulo bis.\nVarietas adopto nam. Atrox verto in succurro considero confugo contigo. Sufficio cruentus celo aggero contabesco.\nVita venia degero attero. Veniam adsuesco vitium bibo cernuus tergeo decens vulnero. Audeo taedium torqueo confugo virtus colo sapiente audio.",
+    "skus": [
+      {
+        "id": 11000,
+        "productId": 11,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3798,
+        "stock": 28,
+        "image": "/images/product/electric/product11.jpg"
+      },
+      {
+        "id": 11001,
+        "productId": 11,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3787,
+        "stock": 113,
+        "image": "/images/product/electric/product11.jpg"
+      },
+      {
+        "id": 11002,
+        "productId": 11,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3797,
+        "stock": 179,
+        "image": "/images/product/electric/product11.jpg"
+      },
+      {
+        "id": 11003,
+        "productId": 11,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3794,
+        "stock": 98,
+        "image": "/images/product/electric/product11.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/electric/product11.jpg",
+      "/images/product/electric/product11.jpg",
+      "/images/product/electric/product11.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "科颜氏 高保湿面霜",
+    "desc": "【2023新品官方旗舰正品】DERE戴睿笔记本电脑二合一新Surface Pro13平板商务办公学生教育超轻薄便携电脑本",
+    "price": 5322,
+    "originalPrice": 6919,
+    "image": "/images/product/cosmetics/product12.jpg",
+    "images": [
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg"
+    ],
+    "categoryId": 4,
+    "sales": 4259,
+    "stock": 84,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "店主推荐",
+      "热卖"
+    ],
+    "detail": "Victus tepesco tutamen valens spargo patior sophismata cresco aeneus suadeo. Totam umquam utroque cimentarius. Confugo traho amicitia spectaculum attero.\nComedo cupiditate tenus vacuus desolo vociferor deputo. Vorago clamo attonbitus aedificium. Solus verbum textus terror.\nEnim vicinus clementia cedo. Valetudo cui vitiosus abutor animadverto cito autus. Crinis adipisci caute canonicus utilis temeritas.",
+    "skus": [
+      {
+        "id": 12000,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5337,
+        "stock": 184,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12001,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 5317,
+        "stock": 174,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12002,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 5315,
+        "stock": 200,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12003,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5345,
+        "stock": 190,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12004,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5314,
+        "stock": 177,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12005,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 5342,
+        "stock": 58,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12006,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 5336,
+        "stock": 50,
+        "image": "/images/product/cosmetics/product12.jpg"
+      },
+      {
+        "id": 12007,
+        "productId": 12,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5323,
+        "stock": 189,
+        "image": "/images/product/cosmetics/product12.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg",
+      "/images/product/cosmetics/product12.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "稻香村 糕点礼盒",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 2654,
+    "originalPrice": 2919,
+    "image": "/images/product/food/product13.jpg",
+    "images": [
+      "/images/product/food/product13.jpg",
+      "/images/product/food/product13.jpg",
+      "/images/product/food/product13.jpg"
+    ],
+    "categoryId": 5,
+    "sales": 15708,
+    "stock": 50,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "今日特价",
+      "限时特惠"
+    ],
+    "detail": "Validus cupio verumtamen peior denuo cohibeo. Dens denique allatus cavus auctor canis statim damnatio magnam quisquam. Aegrotatio armarium non.\nSynagoga summopere cras amplus cuius agnosco timor iste taedium coruscus. Avaritia virga vulgivagus turbo ascit tabella curriculum commodi. Pecus conor adversus totam communis tener concido amplexus.\nTui adamo ascit. Aspernatur tumultus adimpleo caste verbera voveo cattus soleo. Deludo vinco voluntarius infit via thermae conqueror claustrum demum.\nCarus claro demulceo deputo asper deprecator communis. Ago canonicus terreo consequuntur tempore laboriosam aeneus caries subseco optio. Voluptates accedo alioqui clibanus.\nTergo accusamus vilitas amplitudo labore depono. Quo tui aqua ratione ultra curso auditor cresco conscendo arceo. Impedit auctor celebrer voco.",
+    "skus": [
+      {
+        "id": 13000,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2645,
+        "stock": 69,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13001,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2645,
+        "stock": 8,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13002,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 2664,
+        "stock": 16,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13003,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2650,
+        "stock": 56,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13004,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2667,
+        "stock": 19,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13005,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 2654,
+        "stock": 52,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13006,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 2680,
+        "stock": 107,
+        "image": "/images/product/food/product13.jpg"
+      },
+      {
+        "id": 13007,
+        "productId": 13,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2645,
+        "stock": 24,
+        "image": "/images/product/food/product13.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/food/product13.jpg",
+      "/images/product/food/product13.jpg",
+      "/images/product/food/product13.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "飞利浦 护眼台灯",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 789,
+    "originalPrice": 1184,
+    "image": "/images/product/electric/product8.jpg",
+    "images": [
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg"
+    ],
+    "categoryId": 6,
+    "sales": 2482,
+    "stock": 14,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "限时特惠",
+      "热卖"
+    ],
+    "detail": "Antepono apto pariatur tandem sumo alo derelinquo sollers calamitas. Sunt eaque totam verecundia vix defleo temporibus abscido. Eaque crux cupiditas sordeo aiunt statua supplanto vestrum.\nBasium admoveo advoco. Cura demo eius ter auctor confero aptus doloribus eligendi. Non occaecati amplexus velit tantillus tam suasoria repudiandae versus.\nNeque vorago tersus vix barba atrocitas depromo attollo. Deficio callide tibi vito laborum thesaurus. Succedo considero eos cupiditas calco amitto subseco arma celo vomica.\nRepellendus minima varietas. Denego aut solutio. Aeternus tumultus vis cupio consuasor beatus avarus ocer adeptio.\nAbsconditus abstergo defungo molestias cultellus. Agnitio sperno crur vulgus. Degero vesper aegrotatio apostolus derideo cibus solio voluptates sordeo benigne.",
+    "skus": [
+      {
+        "id": 14000,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 814,
+        "stock": 158,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14001,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 814,
+        "stock": 177,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14002,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 804,
+        "stock": 140,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14003,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 815,
+        "stock": 141,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14004,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 795,
+        "stock": 162,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14005,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 812,
+        "stock": 124,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14006,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 811,
+        "stock": 74,
+        "image": "/images/product/electric/product8.jpg"
+      },
+      {
+        "id": 14007,
+        "productId": 14,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 817,
+        "stock": 199,
+        "image": "/images/product/electric/product8.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg",
+      "/images/product/electric/product8.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "逻辑狗 儿童思维训练",
+    "desc": "小米电视 Redmi A43 高清智能电视 43英寸液晶平板电视L43RA-RA",
+    "price": 3540,
+    "originalPrice": 5310,
+    "image": "/images/product/baby/product15.jpg",
+    "images": [
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg"
+    ],
+    "categoryId": 7,
+    "sales": 6062,
+    "stock": 83,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "新品",
+      "今日特价",
+      "会员专享"
+    ],
+    "detail": "Ultio terga denique. Tersus aequitas utique amplexus ab causa sortitus appositus ultio tempora. Ago verto defaeco comptus baiulus tam volaticus tricesimus curvo quod.\nTriumphus curriculum demitto nesciunt ambitus adopto. Adnuo ustilo aegre vulpes consuasor paulatim adiuvo. Admiratio decet sed cunae.\nApostolus absque aer adipisci cerno triduana. Alii utilis trucido umbra culpo. Sub cicuta demoror adipiscor vomica.",
+    "skus": [
+      {
+        "id": 15000,
+        "productId": 15,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3566,
+        "stock": 118,
+        "image": "/images/product/baby/product15.jpg"
+      },
+      {
+        "id": 15001,
+        "productId": 15,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3545,
+        "stock": 175,
+        "image": "/images/product/baby/product15.jpg"
+      },
+      {
+        "id": 15002,
+        "productId": 15,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3555,
+        "stock": 135,
+        "image": "/images/product/baby/product15.jpg"
+      },
+      {
+        "id": 15003,
+        "productId": 15,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3555,
+        "stock": 28,
+        "image": "/images/product/baby/product15.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg",
+      "/images/product/baby/product15.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "《三体》全集",
+    "desc": "华为笔记本电脑MateBook X Pro 2023 13代酷睿版锐炬显卡14.2英寸3.1K原色触控屏超轻薄旗舰微绒典藏1943",
+    "price": 5415,
+    "originalPrice": 12454,
+    "image": "/images/product/book/product1.jpg",
+    "images": [
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg"
+    ],
+    "categoryId": 8,
+    "sales": 15508,
+    "stock": 97,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "品质优选",
+      "爆款"
+    ],
+    "detail": "Tamen ademptio considero sapiente reiciendis cunae suggero. Placeat articulus alienus varius contra. Caute aegre deorsum capillus amita aqua repudiandae tripudio.\nSurgo ambitus vergo tametsi. Facilis placeat virtus clarus tabula appositus vociferor. Solium reprehenderit denego textor cubicularis apostolus.\nSpiculum talus denuo pecto amiculum necessitatibus eveniet barba textilis recusandae. Tergum averto vilicus bene velut assentator caterva causa quam. Auctor defero usque.\nAmplexus vorax adfectus stips constans error. Termes assentator casus creator itaque ago defleo. Tabgo trans solium addo comes tempora curriculum.\nPectus claudeo universe varietas. Comparo conservo calamitas vigilo. Conduco cribro cerno cuius.",
+    "skus": [
+      {
+        "id": 16000,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5438,
+        "stock": 186,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16001,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5437,
+        "stock": 157,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16002,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5431,
+        "stock": 35,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16003,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5416,
+        "stock": 62,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16004,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5424,
+        "stock": 193,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16005,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5413,
+        "stock": 113,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16006,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5409,
+        "stock": 182,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16007,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5417,
+        "stock": 79,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16008,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5418,
+        "stock": 195,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16009,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5408,
+        "stock": 1,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16010,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5421,
+        "stock": 35,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16011,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5415,
+        "stock": 177,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16012,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5444,
+        "stock": 25,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16013,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5434,
+        "stock": 114,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16014,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5410,
+        "stock": 61,
+        "image": "/images/product/book/product1.jpg"
+      },
+      {
+        "id": 16015,
+        "productId": 16,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 5424,
+        "stock": 104,
+        "image": "/images/product/book/product1.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg",
+      "/images/product/book/product1.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "佳能 EOS R6 Mark II",
+    "desc": "可选16G【M2芯片】Apple/苹果 MacBook Pro 13英寸笔记本电脑剪辑设计大学生办公专用正品分期24G",
+    "price": 200,
+    "originalPrice": 240,
+    "image": "/images/product/phone/product7.jpg",
+    "images": [
+      "/images/product/phone/product7.jpg",
+      "/images/product/phone/product7.jpg",
+      "/images/product/phone/product7.jpg"
+    ],
+    "categoryId": 1,
+    "sales": 15795,
+    "stock": 95,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "店主推荐"
+    ],
+    "detail": "Vado volubilis tutis. Aggredior depraedor curriculum cariosus amplexus ademptio thorax aranea vulnus. Balbus conatus voro validus ventosus delicate derideo suffoco.\nOcer subnecto voveo corrumpo blandior cattus excepturi aegrotatio utor. Sponte deprimo quasi testimonium doloremque iure adflicto sui. Paens artificiose urbs debilito claro decipio caterva capio vehemens.\nApprobo solio crudelis thesis architecto cultura ascit. Deduco praesentium animus ea. Tamquam varietas campana uberrime traho venio celo.\nInfit audentia contabesco attero statua adinventitias usitas denique. Ex vitae tero argentum adfero. Tricesimus adduco deprimo.",
+    "skus": [
+      {
+        "id": 17000,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 206,
+        "stock": 43,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17001,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 195,
+        "stock": 11,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17002,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 199,
+        "stock": 161,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17003,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 195,
+        "stock": 179,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17004,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 212,
+        "stock": 66,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17005,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 215,
+        "stock": 197,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17006,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 205,
+        "stock": 176,
+        "image": "/images/product/phone/product7.jpg"
+      },
+      {
+        "id": 17007,
+        "productId": 17,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 191,
+        "stock": 53,
+        "image": "/images/product/phone/product7.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/phone/product7.jpg",
+      "/images/product/phone/product7.jpg",
+      "/images/product/phone/product7.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "李宁 超轻20 跑鞋",
+    "desc": "【2023新品官方旗舰正品】DERE戴睿笔记本电脑二合一新Surface Pro13平板商务办公学生教育超轻薄便携电脑本",
+    "price": 3063,
+    "originalPrice": 6739,
+    "image": "/images/product/clothes/product18.jpg",
+    "images": [
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg"
+    ],
+    "categoryId": 2,
+    "sales": 224,
+    "stock": 44,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "今日特价",
+      "热卖"
+    ],
+    "detail": "Tamen canto stella. Angulus angulus benigne aer turpis cinis amplitudo solitudo. Curia adopto vigilo communis tempore denego.\nSpiculum bos cena confido clamo comparo trucido corrupti modi facilis. Magni laboriosam usus tenetur curto veritatis usque confido. Commemoro sumptus vulnero corrumpo asper sponte constans aranea eaque.\nAmo ocer vaco cibo via correptius curriculum aurum. Vacuus solium cubitum cornu comparo capillus ascit copia cupiditate. Communis cognomen patruus tepidus blanditiis speculum adstringo basium repellat commemoro.\nVix tergo colligo tremo defluo spero uter. Corrupti cavus spoliatio alius curia patria audeo blanditiis caelestis. Cinis terror adsidue cuppedia vel suggero.\nVoro aliquid patior solum conatus tutamen vilis vereor earum. Usque vaco pecco officiis audentia curvo pecto depopulo accusantium. Credo appositus ipsa provident capitulus ater ventosus contabesco.",
+    "skus": [
+      {
+        "id": 18000,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3056,
+        "stock": 148,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18001,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3077,
+        "stock": 56,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18002,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3085,
+        "stock": 75,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18003,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3072,
+        "stock": 84,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18004,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3067,
+        "stock": 159,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18005,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3090,
+        "stock": 30,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18006,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3057,
+        "stock": 191,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18007,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3072,
+        "stock": 176,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18008,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3075,
+        "stock": 42,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18009,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3070,
+        "stock": 26,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18010,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3077,
+        "stock": 24,
+        "image": "/images/product/clothes/product18.jpg"
+      },
+      {
+        "id": 18011,
+        "productId": 18,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3082,
+        "stock": 176,
+        "image": "/images/product/clothes/product18.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg",
+      "/images/product/clothes/product18.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "格力 云佳 冷暖空调",
+    "desc": "【新品享壕礼】vivo iQOO Z8x手机官方旗舰店新品上市官网正品学生大电池大内存手机iqoo z7 z7x",
+    "price": 1883,
+    "originalPrice": 3201,
+    "image": "/images/product/electric/product4.jpg",
+    "images": [
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg"
+    ],
+    "categoryId": 3,
+    "sales": 5226,
+    "stock": 136,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "品质优选",
+      "热卖",
+      "今日特价"
+    ],
+    "detail": "Copiose ceno tergeo voluptate. Verto utroque adipiscor combibo desparatus conturbo conservo testimonium. Cervus illo claudeo virgo caecus cunctatio comburo.\nCorpus facilis cedo suscipit balbus volva adamo vado. Creptio natus thymbra aut amaritudo decretum curtus altus corroboro bibo. Adsuesco ventito optio architecto vestigium speculum balbus aliqua.\nAnimadverto carbo consectetur armarium defungo. Pauper triumphus corpus sono. Argentum pariatur allatus tricesimus.\nAngulus ocer canis ustulo aiunt adhuc audacia hic. Ver commemoro doloremque ago arcus demonstro. Accusamus adsum totidem deinde caste validus sordeo totam creo.",
+    "skus": [
+      {
+        "id": 19000,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1907,
+        "stock": 54,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19001,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1907,
+        "stock": 186,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19002,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1888,
+        "stock": 77,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19003,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1901,
+        "stock": 89,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19004,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1885,
+        "stock": 134,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19005,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1885,
+        "stock": 54,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19006,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1902,
+        "stock": 168,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19007,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1910,
+        "stock": 3,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19008,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1901,
+        "stock": 89,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19009,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1873,
+        "stock": 8,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19010,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1888,
+        "stock": 18,
+        "image": "/images/product/electric/product4.jpg"
+      },
+      {
+        "id": 19011,
+        "productId": 19,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1901,
+        "stock": 137,
+        "image": "/images/product/electric/product4.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg",
+      "/images/product/electric/product4.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "赫莲娜 绿宝瓶精华",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 38,
+    "originalPrice": 42,
+    "image": "/images/product/cosmetics/product5.jpg",
+    "images": [
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg"
+    ],
+    "categoryId": 4,
+    "sales": 7343,
+    "stock": 172,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "品质优选"
+    ],
+    "detail": "Totidem claro aliquid. Theologus socius officia supplanto derelinquo crinis ullam molestiae callide. Avarus tempore atque vacuus adhuc minima.\nQuidem attero curo acidus aspernatur neque voluntarius creo adficio perspiciatis. Vox accedo templum confero cenaculum. Carus ambulo qui cotidie centum vivo.\nVitiosus arbor undique confugo traho carpo ea caritas considero. Demo aeger uterque ars pel cohaero adnuo vesco. Quo conatus repellendus non.",
+    "skus": [
+      {
+        "id": 20000,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 57,
+        "stock": 29,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20001,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 37,
+        "stock": 135,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20002,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 49,
+        "stock": 138,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20003,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 57,
+        "stock": 141,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20004,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 30,
+        "stock": 36,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20005,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 62,
+        "stock": 197,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20006,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 36,
+        "stock": 92,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20007,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 65,
+        "stock": 158,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20008,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 58,
+        "stock": 93,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20009,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 46,
+        "stock": 60,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20010,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 43,
+        "stock": 34,
+        "image": "/images/product/cosmetics/product5.jpg"
+      },
+      {
+        "id": 20011,
+        "productId": 20,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 63,
+        "stock": 119,
+        "image": "/images/product/cosmetics/product5.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg",
+      "/images/product/cosmetics/product5.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "伊利 安慕希酸奶",
+    "desc": "人体工学椅电脑椅家用宿舍学生学习椅舒适久坐办公座椅转椅书桌椅",
+    "price": 3104,
+    "originalPrice": 4035,
+    "image": "/images/product/food/product6.jpg",
+    "images": [
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg"
+    ],
+    "categoryId": 5,
+    "sales": 5505,
+    "stock": 34,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "新品",
+      "爆款"
+    ],
+    "detail": "Coma suus cavus sophismata. Synagoga talus articulus vester. Sol curso itaque abduco harum temeritas.\nAsporto calculus apud aiunt consectetur cumque denego solio victus teres. Ulciscor amissio contigo sequi desino congregatio. Tabernus terreo territo angulus caelestis tamen vulnus ars.\nSublime deprecator deleo asper vilicus cunctatio aegrotatio solutio. Tamisium suspendo ventito admiratio. Alius creptio derelinquo curvo cresco capio esse dens nisi texo.\nAger aequus auctus congregatio spectaculum voluptate aranea vorago vesco. Coniecto aestus blandior. Cura vulgus consequuntur canto subseco denego carpo adflicto.\nPectus spiculum provident porro ex. Caries aequitas careo aro cursim tres. Venustas sol una triumphus.",
+    "skus": [
+      {
+        "id": 21000,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3118,
+        "stock": 24,
+        "image": "/images/product/food/product6.jpg"
+      },
+      {
+        "id": 21001,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3100,
+        "stock": 58,
+        "image": "/images/product/food/product6.jpg"
+      },
+      {
+        "id": 21002,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3105,
+        "stock": 67,
+        "image": "/images/product/food/product6.jpg"
+      },
+      {
+        "id": 21003,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3113,
+        "stock": 52,
+        "image": "/images/product/food/product6.jpg"
+      },
+      {
+        "id": 21004,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 3099,
+        "stock": 99,
+        "image": "/images/product/food/product6.jpg"
+      },
+      {
+        "id": 21005,
+        "productId": 21,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3106,
+        "stock": 73,
+        "image": "/images/product/food/product6.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg",
+      "/images/product/food/product6.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "喜临门 独立弹簧床垫",
+    "desc": "可选16G【M2芯片】Apple/苹果 MacBook Pro 13英寸笔记本电脑剪辑设计大学生办公专用正品分期24G",
+    "price": 4514,
+    "originalPrice": 7222,
+    "image": "/images/product/home/product7.jpg",
+    "images": [
+      "/images/product/home/product7.jpg",
+      "/images/product/home/product7.jpg",
+      "/images/product/home/product7.jpg"
+    ],
+    "categoryId": 6,
+    "sales": 3460,
+    "stock": 65,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "店主推荐",
+      "会员专享"
+    ],
+    "detail": "Cariosus coaegresco temporibus adopto cicuta caterva spectaculum adfectus. Vita aperte deleniti tabula. Cogo anser vigor adsidue solus uberrime ratione.\nAntea conscendo acceptus cursim tactus libero. Tardus brevis expedita. Somnus perferendis solum veritas summopere tutamen amplexus tibi denego.\nVideo auditor ver cui tabesco officiis. Pauci venia deporto nostrum vesica saepe eveniet rem tergum denique. Ad aperiam dignissimos possimus conturbo cruentus cotidie repellendus agnitio cohibeo.",
+    "skus": [
+      {
+        "id": 22000,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4507,
+        "stock": 32,
+        "image": "/images/product/home/product7.jpg"
+      },
+      {
+        "id": 22001,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 4532,
+        "stock": 8,
+        "image": "/images/product/home/product7.jpg"
+      },
+      {
+        "id": 22002,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4520,
+        "stock": 9,
+        "image": "/images/product/home/product7.jpg"
+      },
+      {
+        "id": 22003,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 4535,
+        "stock": 86,
+        "image": "/images/product/home/product7.jpg"
+      },
+      {
+        "id": 22004,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4515,
+        "stock": 187,
+        "image": "/images/product/home/product7.jpg"
+      },
+      {
+        "id": 22005,
+        "productId": 22,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 4520,
+        "stock": 179,
+        "image": "/images/product/home/product7.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/home/product7.jpg",
+      "/images/product/home/product7.jpg",
+      "/images/product/home/product7.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "启赋 蕴淳 3段",
+    "desc": "小米电视 Redmi A43 高清智能电视 43英寸液晶平板电视L43RA-RA",
+    "price": 1363,
+    "originalPrice": 2045,
+    "image": "/images/product/baby/product8.jpg",
+    "images": [
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg"
+    ],
+    "categoryId": 7,
+    "sales": 70,
+    "stock": 113,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "热卖",
+      "品质优选",
+      "今日特价"
+    ],
+    "detail": "Amo temptatio validus. Umquam copiose tabernus vapulus adsum vilis pecco canis cerno. Delibero quasi benevolentia.\nTruculenter defleo adduco strenuus cohors sub. Comedo aedificium adflicto absorbeo tibi tabesco odit. Demens denique synagoga corona.\nNobis curto virtus arceo tamen vallum calcar deprimo. Super voro appono aperio adeptio aptus tumultus caterva atavus. Astrum ventus amicitia.\nAperio veniam aequitas viduo eos aegre bis. Decimus pauper acerbitas vacuus suffragium virga undique. Sui tollo adipisci ante vindico cohibeo.",
+    "skus": [
+      {
+        "id": 23000,
+        "productId": 23,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1375,
+        "stock": 161,
+        "image": "/images/product/baby/product8.jpg"
+      },
+      {
+        "id": 23001,
+        "productId": 23,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1360,
+        "stock": 4,
+        "image": "/images/product/baby/product8.jpg"
+      },
+      {
+        "id": 23002,
+        "productId": 23,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 1367,
+        "stock": 61,
+        "image": "/images/product/baby/product8.jpg"
+      },
+      {
+        "id": 23003,
+        "productId": 23,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1358,
+        "stock": 91,
+        "image": "/images/product/baby/product8.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg",
+      "/images/product/baby/product8.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "《新华字典》第12版",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 2857,
+    "originalPrice": 6571,
+    "image": "/images/product/book/product9.jpg",
+    "images": [
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg"
+    ],
+    "categoryId": 8,
+    "sales": 8570,
+    "stock": 67,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "限时特惠",
+      "爆款"
+    ],
+    "detail": "Atrocitas infit agnitio sordeo tamen tyrannus talio. Quis turpis cultura. Video conicio patria turbo advoco.\nTheca tener conventus suffragium verecundia thema ulterius tam tabella. Testimonium vespillo error tubineus vigilo. Aliquid eaque cultura tremo denique rerum.\nBlanditiis officia talis allatus inventore id sollers. Pecto aer beneficium aureus villa cohors ustulo allatus. Vos voluptate sollers sumptus arceo ab adamo quaerat inventore itaque.",
+    "skus": [
+      {
+        "id": 24000,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2880,
+        "stock": 46,
+        "image": "/images/product/book/product9.jpg"
+      },
+      {
+        "id": 24001,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2885,
+        "stock": 92,
+        "image": "/images/product/book/product9.jpg"
+      },
+      {
+        "id": 24002,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 2855,
+        "stock": 79,
+        "image": "/images/product/book/product9.jpg"
+      },
+      {
+        "id": 24003,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 2847,
+        "stock": 98,
+        "image": "/images/product/book/product9.jpg"
+      },
+      {
+        "id": 24004,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 2882,
+        "stock": 123,
+        "image": "/images/product/book/product9.jpg"
+      },
+      {
+        "id": 24005,
+        "productId": 24,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 2875,
+        "stock": 198,
+        "image": "/images/product/book/product9.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg",
+      "/images/product/book/product9.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "三星 T7 2TB 移动硬盘",
+    "desc": "鼠标有线USB静音无声家用办公台式笔记本电脑家用商务电竞男",
+    "price": 4184,
+    "originalPrice": 6276,
+    "image": "/images/product/phone/product6.jpg",
+    "images": [
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg"
+    ],
+    "categoryId": 1,
+    "sales": 11204,
+    "stock": 18,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "店主推荐",
+      "新品"
+    ],
+    "detail": "Arbitro pecco ullam peior sumo unde. Copia auctor curo vero voluptates cornu caelum attollo nulla crastinus. Aveho utpote credo.\nVarietas cribro cupiditas trado substantia cura sursum caecus sodalitas crustulum. Nostrum tollo coepi damnatio ager usque alii pecco. Terebro vinculum aequitas concido socius subseco.\nBeatus centum aequitas vespillo quos. Deduco damno patior vespillo libero confido creo. Repellat degusto non cognomen saepe venia traho tergum.\nCoaegresco suscipio sublime vos via placeat auditor autem ut talis. Varietas alter sordeo occaecati. Tener victus copia admoneo subnecto stipes spoliatio ventito commodi carpo.\nTerror viscus veniam enim dolores. Abscido pax tui curo tero pecus ascit. Arbitro deleniti cauda strues arto vix aspernatur termes vir.",
+    "skus": [
+      {
+        "id": 25000,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4203,
+        "stock": 84,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25001,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 4204,
+        "stock": 144,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25002,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 4188,
+        "stock": 119,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25003,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4194,
+        "stock": 16,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25004,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 4193,
+        "stock": 109,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25005,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 4203,
+        "stock": 185,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25006,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4208,
+        "stock": 115,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25007,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 4178,
+        "stock": 146,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25008,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 4204,
+        "stock": 125,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25009,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 4175,
+        "stock": 83,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25010,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 4188,
+        "stock": 12,
+        "image": "/images/product/phone/product6.jpg"
+      },
+      {
+        "id": 25011,
+        "productId": 25,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 4205,
+        "stock": 5,
+        "image": "/images/product/phone/product6.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg",
+      "/images/product/phone/product6.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "蕉下 防晒衣",
+    "desc": "【新品享壕礼】vivo iQOO Z8x手机官方旗舰店新品上市官网正品学生大电池大内存手机iqoo z7 z7x",
+    "price": 1246,
+    "originalPrice": 2118,
+    "image": "/images/product/clothes/product26.jpg",
+    "images": [
+      "/images/product/clothes/product26.jpg",
+      "/images/product/clothes/product26.jpg",
+      "/images/product/clothes/product26.jpg"
+    ],
+    "categoryId": 2,
+    "sales": 10859,
+    "stock": 144,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "新品"
+    ],
+    "detail": "Pauci claustrum bellum turbo celo. Coniecto cimentarius ars. Decet autem talio cura stultus vilicus vinco vulariter.\nDemum desparatus acervus tracto uberrime est cupiditas. Communis arto abeo concedo cubicularis talus. Trepide consectetur repudiandae solus.\nError urbs ater tandem trepide coaegresco corrupti torqueo bestia. Vicissitudo defaeco deputo. Ipsum tripudio audax alo tres culpo damno verbum eum trucido.\nClamo culpa censura curtus. Tres censura constans adfero tego antea expedita vesica aptus delectatio. Credo eum conspergo tracto.\nCohibeo debilito quaerat. Vir bos cubitum tum. Tondeo ustilo adamo aveho vivo.",
+    "skus": [
+      {
+        "id": 26000,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1276,
+        "stock": 159,
+        "image": "/images/product/clothes/product26.jpg"
+      },
+      {
+        "id": 26001,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1237,
+        "stock": 191,
+        "image": "/images/product/clothes/product26.jpg"
+      },
+      {
+        "id": 26002,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1244,
+        "stock": 197,
+        "image": "/images/product/clothes/product26.jpg"
+      },
+      {
+        "id": 26003,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 1275,
+        "stock": 107,
+        "image": "/images/product/clothes/product26.jpg"
+      },
+      {
+        "id": 26004,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 1255,
+        "stock": 75,
+        "image": "/images/product/clothes/product26.jpg"
+      },
+      {
+        "id": 26005,
+        "productId": 26,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "曜石黑"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1260,
+        "stock": 80,
+        "image": "/images/product/clothes/product26.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/clothes/product26.jpg",
+      "/images/product/clothes/product26.jpg",
+      "/images/product/clothes/product26.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "追觅 无线洗地机 H20",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 731,
+    "originalPrice": 1754,
+    "image": "/images/product/electric/product12.jpg",
+    "images": [
+      "/images/product/electric/product12.jpg",
+      "/images/product/electric/product12.jpg",
+      "/images/product/electric/product12.jpg"
+    ],
+    "categoryId": 3,
+    "sales": 12981,
+    "stock": 65,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "新品",
+      "限时特惠"
+    ],
+    "detail": "Pax valde commodi vinum. Inventore aperte sublime tamen canonicus textor dedico corpus. Amor debeo aegrotatio xiphias capillus acervus.\nVesica desparatus canonicus adduco. Varius vomer torrens dolorem amplus autem allatus solitudo vox tenuis. Debilito canonicus ademptio acidus desidero ventus surculus vinco veritatis.\nVomer sopor blandior arto suscipit cavus testimonium eligendi conspergo. Suspendo aufero neque crustulum adipiscor iure arx tero annus. Amissio temperantia cunae dens sub admitto stella.\nAdemptio coadunatio aggredior voluptatem vitium aranea adnuo totam repellendus. Virga mollitia succedo dicta comparo ab cervus similique. Angulus voro venustas tam aegrotatio valde sophismata cibus deputo vinco.\nVoluptate deludo arma calamitas titulus amplitudo cunabula cerno. Viriliter cultura totus convoco nulla est. Aspernatur censura defleo voluntarius abundans aranea decumbo campana.\nVelut coaegresco tres tenus trepide inflammatio terror. Stipes quaerat sopor sponte vos vesco conservo tam deripio despecto. Paens tubineus commodi venia adsuesco inventore vicinus cilicium atqui.",
+    "skus": [
+      {
+        "id": 27000,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 735,
+        "stock": 124,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27001,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "珍珠白"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 757,
+        "stock": 184,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27002,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 757,
+        "stock": 52,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27003,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 756,
+        "stock": 47,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27004,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 728,
+        "stock": 26,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27005,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 754,
+        "stock": 6,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27006,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 752,
+        "stock": 35,
+        "image": "/images/product/electric/product12.jpg"
+      },
+      {
+        "id": 27007,
+        "productId": 27,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 738,
+        "stock": 48,
+        "image": "/images/product/electric/product12.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/electric/product12.jpg",
+      "/images/product/electric/product12.jpg",
+      "/images/product/electric/product12.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "倩碧 黄油乳液",
+    "desc": "【2023新品官方旗舰正品】DERE戴睿笔记本电脑二合一新Surface Pro13平板商务办公学生教育超轻薄便携电脑本",
+    "price": 3756,
+    "originalPrice": 8263,
+    "image": "/images/product/cosmetics/product13.jpg",
+    "images": [
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg"
+    ],
+    "categoryId": 4,
+    "sales": 10720,
+    "stock": 164,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "爆款"
+    ],
+    "detail": "Thesaurus ratione totus. Totidem quasi abutor turpis. Clementia abundans caute.\nArguo beatae amicitia denego subnecto. Derelinquo textor curso thesis esse non. Toties thesis adimpleo titulus tutamen via conturbo volutabrum.\nDolorum caput territo vivo cursim pecus aspicio. Viridis absorbeo admoneo doloremque. Blanditiis cui conatus cuppedia.\nCinis vilicus soluta bestia. Et suasoria ambulo uterque speculum. Arto acsi stella valde vulgus.",
+    "skus": [
+      {
+        "id": 28000,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3782,
+        "stock": 128,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28001,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3786,
+        "stock": 149,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28002,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3785,
+        "stock": 193,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28003,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3775,
+        "stock": 190,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28004,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3767,
+        "stock": 36,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28005,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3747,
+        "stock": 59,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28006,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3781,
+        "stock": 130,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28007,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "薄荷绿"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3758,
+        "stock": 41,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28008,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3767,
+        "stock": 147,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28009,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3769,
+        "stock": 84,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28010,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3766,
+        "stock": 145,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28011,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3778,
+        "stock": 43,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28012,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 3785,
+        "stock": 43,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28013,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "M"
+          }
+        ],
+        "price": 3776,
+        "stock": 79,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28014,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "2XL"
+          }
+        ],
+        "price": 3766,
+        "stock": 130,
+        "image": "/images/product/cosmetics/product13.jpg"
+      },
+      {
+        "id": 28015,
+        "productId": 28,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "雾霾蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 3765,
+        "stock": 65,
+        "image": "/images/product/cosmetics/product13.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg",
+      "/images/product/cosmetics/product13.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "元朗 蛋卷王",
+    "desc": "台式电脑机械硬盘SATA串口320G 500G 1TB 2T 3TB 4TB支持游戏监控",
+    "price": 5404,
+    "originalPrice": 5944,
+    "image": "/images/product/food/product14.jpg",
+    "images": [
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg"
+    ],
+    "categoryId": 5,
+    "sales": 6213,
+    "stock": 89,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "热卖"
+    ],
+    "detail": "Suppellex culpo commemoro. Solio curatio damno adimpleo. Viduo absum varietas absens adsuesco cur cometes.\nCelebrer sono necessitatibus socius vereor. Suppono cometes capillus eos. Coruscus laboriosam ullam speculum calculus degenero acer varius reiciendis.\nDenique basium defendo tremo admoneo pel bellicus suscipit arcus. Tolero peior cattus tolero verumtamen substantia triduana. Summisse coruscus amaritudo thesis talus voro advenio umbra delego.\nAedificium dolor temporibus. Crapula repudiandae adicio. Arma vix cimentarius apto beatae.\nConsequatur aut adamo textilis solutio suscipit delectus claudeo tenetur. Cultellus ago deduco. Sed assentator aduro tendo articulus ad delinquo.",
+    "skus": [
+      {
+        "id": 29000,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5415,
+        "stock": 3,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29001,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5430,
+        "stock": 111,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29002,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 5419,
+        "stock": 146,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29003,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "星空灰"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5396,
+        "stock": 66,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29004,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XS"
+          }
+        ],
+        "price": 5411,
+        "stock": 122,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29005,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 5434,
+        "stock": 98,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29006,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 5409,
+        "stock": 86,
+        "image": "/images/product/food/product14.jpg"
+      },
+      {
+        "id": 29007,
+        "productId": 29,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 5408,
+        "stock": 25,
+        "image": "/images/product/food/product14.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg",
+      "/images/product/food/product14.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "网易严选 人体工学椅",
+    "desc": "华为笔记本电脑MateBook X Pro 2023 13代酷睿版锐炬显卡14.2英寸3.1K原色触控屏超轻薄旗舰微绒典藏1943",
+    "price": 1661,
+    "originalPrice": 3322,
+    "image": "/images/product/home/product15.jpg",
+    "images": [
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg"
+    ],
+    "categoryId": 6,
+    "sales": 10824,
+    "stock": 7,
+    "isFlashSale": false,
+    "flashSalePrice": 0,
+    "isFavorite": false,
+    "tags": [
+      "爆款",
+      "今日特价",
+      "热卖"
+    ],
+    "detail": "Defaeco uterque triumphus. Adhuc reprehenderit demoror sordeo laboriosam. Ara centum varietas vacuus vaco acidus solum thalassinus adinventitias.\nAter conventus capillus sumptus teneo commodi benigne eligendi dens. Absorbeo subvenio via nemo vesica id spiritus crustulum caveo. Suppellex harum attonbitus.\nAscisco valeo bellicus. Consectetur desidero pauci recusandae veniam fugit ustulo denego atrocitas. Vobis depopulo clam ars aestus audentia voluptatem verus vado creta.\nAccusantium sufficio sollers blandior adeo conspergo repudiandae arca. Cupiditas demo repudiandae. In ventito curtus cibo nemo desolo.\nUlterius talus thema tremo crastinus verus cado. Tenax adficio triduana tollo cunctatio. Earum explicabo vestigium quos degusto.",
+    "skus": [
+      {
+        "id": 30000,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1677,
+        "stock": 108,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30001,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 1671,
+        "stock": 74,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30002,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "樱粉金"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1659,
+        "stock": 21,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30003,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1686,
+        "stock": 158,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30004,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 1688,
+        "stock": 27,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30005,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "落日橙"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1688,
+        "stock": 56,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30006,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "S"
+          }
+        ],
+        "price": 1690,
+        "stock": 120,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30007,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "XL"
+          }
+        ],
+        "price": 1652,
+        "stock": 181,
+        "image": "/images/product/home/product15.jpg"
+      },
+      {
+        "id": 30008,
+        "productId": 30,
+        "specs": [
+          {
+            "name": "颜色",
+            "value": "深海蓝"
+          },
+          {
+            "name": "尺码",
+            "value": "L"
+          }
+        ],
+        "price": 1683,
+        "stock": 182,
+        "image": "/images/product/home/product15.jpg"
+      }
+    ],
+    "mainImages": [
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg",
+      "/images/product/home/product15.jpg"
+    ]
+  }
+]

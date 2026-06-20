@@ -94,19 +94,25 @@
     try {
       const res = await getDistribConfig();
       levels.value = res.data;
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }
   }
 
   async function handleSave() {
-    const updated = levels.value.map((l) =>
-      l.id === editForm.id ? { ...editForm } : l
-    );
-    await updateDistribConfig(updated);
-    ElMessage.success('保存成功');
-    dlgVisible.value = false;
-    fetch();
+    try {
+      const updated = levels.value.map((l) =>
+        l.id === editForm.id ? { ...editForm } : l
+      );
+      await updateDistribConfig(updated);
+      ElMessage.success('保存成功');
+      dlgVisible.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   onMounted(fetch);

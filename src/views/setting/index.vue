@@ -302,22 +302,36 @@
           },
         })
       );
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }
   }
 
   async function handleSaveRoles(row: RoleItem) {
-    await updateRole(row.id, row.permissions);
-    ElMessage.success('保存成功');
+    try {
+      await updateRole(row.id, row.permissions);
+      ElMessage.success('保存成功');
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   async function handleSaveShop() {
-    await updateShopInfo(shopForm);
-    ElMessage.success('保存成功');
+    try {
+      await updateShopInfo(shopForm);
+      ElMessage.success('保存成功');
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   async function handleSavePayment() {
-    await updatePaymentConfig(payForm);
-    ElMessage.success('保存成功');
+    try {
+      await updatePaymentConfig(payForm);
+      ElMessage.success('保存成功');
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   function addPageComp(type: string) {
@@ -343,30 +357,34 @@
   }
 
   async function handleSavePage() {
-    const homePage = pageComponents.value.map((c: PageBlockForm) => ({
-      ...c,
-      config: {
-        ...c.config,
-        productIds:
-          c.type === 'goods'
-            ? c.config.productIdsStr
-                .split(',')
-                .map(Number)
-                .filter(Boolean)
-            : c.config.productIds,
-        couponIds:
-          c.type === 'coupon'
-            ? c.config.couponIdsStr
-                .split(',')
-                .map(Number)
-                .filter(Boolean)
-            : c.config.couponIds,
-        productIdsStr: undefined,
-        couponIdsStr: undefined,
-      },
-    }));
-    await updatePageConfig({ homePage });
-    ElMessage.success('页面配置已保存');
+    try {
+      const homePage = pageComponents.value.map((c: PageBlockForm) => ({
+        ...c,
+        config: {
+          ...c.config,
+          productIds:
+            c.type === 'goods'
+              ? c.config.productIdsStr
+                  .split(',')
+                  .map(Number)
+                  .filter(Boolean)
+              : c.config.productIds,
+          couponIds:
+            c.type === 'coupon'
+              ? c.config.couponIdsStr
+                  .split(',')
+                  .map(Number)
+                  .filter(Boolean)
+              : c.config.couponIds,
+          productIdsStr: undefined,
+          couponIdsStr: undefined,
+        },
+      }));
+      await updatePageConfig({ homePage });
+      ElMessage.success('页面配置已保存');
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   onMounted(fetchData);

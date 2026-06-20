@@ -84,7 +84,7 @@
       await userStore.getUserInfoAction();
       router.push('/');
     } catch {
-      /* handled in interceptor */
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }

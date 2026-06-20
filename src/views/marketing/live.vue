@@ -141,13 +141,17 @@
   });
 
   async function fetch() {
-    const res = await getLiveList({
-      page: page.value,
-      pageSize: pageSize.value,
-      keyword: keyword.value,
-    });
-    list.value = res.data.list;
-    total.value = res.data.total;
+    try {
+      const res = await getLiveList({
+        page: page.value,
+        pageSize: pageSize.value,
+        keyword: keyword.value,
+      });
+      list.value = res.data.list;
+      total.value = res.data.total;
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   function showDlg(type: string, row?: any) {
     if (type === 'add') {
@@ -174,27 +178,35 @@
     dlgVisible.value = true;
   }
   async function handleSave() {
-    const data = {
-      ...form,
-      productIds: form.productIdsStr
-        .split(',')
-        .map((s: string) => Number(s.trim()))
-        .filter(Boolean),
-    };
-    if (editId.value) {
-      await updateLive(editId.value, data);
-      ElMessage.success('更新成功');
-    } else {
-      await createLive(data);
-      ElMessage.success('创建成功');
+    try {
+      const data = {
+        ...form,
+        productIds: form.productIdsStr
+          .split(',')
+          .map((s: string) => Number(s.trim()))
+          .filter(Boolean),
+      };
+      if (editId.value) {
+        await updateLive(editId.value, data);
+        ElMessage.success('更新成功');
+      } else {
+        await createLive(data);
+        ElMessage.success('创建成功');
+      }
+      dlgVisible.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
     }
-    dlgVisible.value = false;
-    fetch();
   }
   async function handleDelete(id: number) {
-    await deleteLive(id);
-    ElMessage.success('删除成功');
-    fetch();
+    try {
+      await deleteLive(id);
+      ElMessage.success('删除成功');
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   onMounted(fetch);
 </script>

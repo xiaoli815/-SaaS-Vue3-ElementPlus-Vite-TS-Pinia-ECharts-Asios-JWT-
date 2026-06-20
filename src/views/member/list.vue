@@ -337,10 +337,14 @@
     }
   }
   async function fetchConfigs() {
-    [levels.value, tags.value] = [
-      (await getLevelConfigs()).data,
-      (await getTags()).data,
-    ];
+    try {
+      [levels.value, tags.value] = [
+        (await getLevelConfigs()).data,
+        (await getTags()).data,
+      ];
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   function handleLevelChange(row: MemberItem) {
@@ -349,21 +353,29 @@
     levelDlgVisible.value = true;
   }
   async function confirmLevelChange() {
-    await updateMemberLevel(
-      currentMemberId.value,
-      changeLevelId.value
-    );
-    ElMessage.success('等级修改成功');
-    levelDlgVisible.value = false;
-    fetch();
+    try {
+      await updateMemberLevel(
+        currentMemberId.value,
+        changeLevelId.value
+      );
+      ElMessage.success('等级修改成功');
+      levelDlgVisible.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   function handleBlacklist(row: MemberItem) {
-    toggleBlacklist(row.id, !row.isBlacklisted).then(() => {
-      ElMessage.success(
-        row.isBlacklisted ? '已恢复' : '已拉黑'
-      );
-      fetch();
-    });
+    toggleBlacklist(row.id, !row.isBlacklisted)
+      .then(() => {
+        ElMessage.success(
+          row.isBlacklisted ? '已恢复' : '已拉黑'
+        );
+        fetch();
+      })
+      .catch(() => {
+        // 全局拦截器已弹出错误提示
+      });
   }
 
   function editLevel(row: LevelConfig) {
@@ -371,24 +383,36 @@
     levelEditVisible.value = true;
   }
   async function confirmLevelEdit() {
-    await updateLevelConfig(
-      levelEditForm.id,
-      levelEditForm
-    );
-    ElMessage.success('保存成功');
-    levelEditVisible.value = false;
-    fetchConfigs();
+    try {
+      await updateLevelConfig(
+        levelEditForm.id,
+        levelEditForm
+      );
+      ElMessage.success('保存成功');
+      levelEditVisible.value = false;
+      fetchConfigs();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   async function handleCreateTag() {
-    await createTag(tagForm);
-    ElMessage.success('创建成功');
-    showTagDlg.value = false;
-    fetchConfigs();
+    try {
+      await createTag(tagForm);
+      ElMessage.success('创建成功');
+      showTagDlg.value = false;
+      fetchConfigs();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
   async function handleDeleteTag(id: number) {
-    await deleteTag(id);
-    ElMessage.success('删除成功');
-    fetchConfigs();
+    try {
+      await deleteTag(id);
+      ElMessage.success('删除成功');
+      fetchConfigs();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   onMounted(() => {

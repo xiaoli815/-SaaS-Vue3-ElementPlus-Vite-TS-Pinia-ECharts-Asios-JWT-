@@ -261,46 +261,60 @@
         route.params.id as string
       );
       order.value = res.data;
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       loading.value = false;
     }
   }
 
   async function handleDeliver() {
-    if (!deliverForm.trackingNo) {
-      ElMessage.warning('请输入物流单号');
-      return;
+    try {
+      if (!deliverForm.trackingNo) {
+        ElMessage.warning('请输入物流单号');
+        return;
+      }
+      await deliverOrder(
+        order.value!.id,
+        deliverForm.company,
+        deliverForm.trackingNo
+      );
+      ElMessage.success('发货成功');
+      showDeliver.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
     }
-    await deliverOrder(
-      order.value!.id,
-      deliverForm.company,
-      deliverForm.trackingNo
-    );
-    ElMessage.success('发货成功');
-    showDeliver.value = false;
-    fetch();
   }
 
   async function handleAdjust() {
-    await updateOrderPrice(
-      order.value!.id,
-      adjustForm.payAmount,
-      adjustForm.remark
-    );
-    ElMessage.success('改价成功');
-    showAdjust.value = false;
-    fetch();
+    try {
+      await updateOrderPrice(
+        order.value!.id,
+        adjustForm.payAmount,
+        adjustForm.remark
+      );
+      ElMessage.success('改价成功');
+      showAdjust.value = false;
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   async function handleAfterReview(approved: boolean) {
-    const reply = approved
-      ? '同意售后申请'
-      : '售后申请不符合条件';
-    await reviewAfterSale(order.value!.id, approved, reply);
-    ElMessage.success(
-      approved ? '已同意售后' : '已拒绝售后'
-    );
-    fetch();
+    try {
+      const reply = approved
+        ? '同意售后申请'
+        : '售后申请不符合条件';
+      await reviewAfterSale(order.value!.id, approved, reply);
+      ElMessage.success(
+        approved ? '已同意售后' : '已拒绝售后'
+      );
+      fetch();
+    } catch {
+      // 全局拦截器已弹出错误提示
+    }
   }
 
   onMounted(() => {

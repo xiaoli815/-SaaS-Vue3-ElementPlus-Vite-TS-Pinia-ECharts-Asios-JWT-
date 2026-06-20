@@ -1,4 +1,4 @@
-import { post, get, put, del } from '../request';
+import { post, get, del } from '../request';
 
 // ==================== 类型定义 ====================
 export interface ProductItem {
@@ -71,28 +71,28 @@ export function getProductDetail(id: number) {
 }
 /** 新增商品 */
 export function createProduct(data: Partial<ProductItem>) {
-  return post<ProductItem>('/product/create', data);
+  return post<ProductItem>('/product/save', data);
 }
 /** 编辑商品 */
 export function updateProduct(
   id: number,
   data: Partial<ProductItem>
 ) {
-  return put<ProductItem>(`/product/update/${id}`, data);
+  return post<ProductItem>('/product/save', { id, ...data });
 }
 /** 编辑SKU */
 export function updateProductSku(
   id: number,
   skuList: SkuItem[]
 ) {
-  return put(`/product/sku/${id}`, { skuList });
+  return post('/product/save', { id, skuList });
 }
 /** 上下架 */
 export function toggleListing(
   id: number,
   isListed: boolean
 ) {
-  return put(`/product/listing/${id}`, { isListed });
+  return post(`/product/toggle`, { id, isListed });
 }
 /** 删除商品 */
 export function deleteProduct(id: number) {

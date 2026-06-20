@@ -141,7 +141,6 @@
     updateProduct,
     getCategories,
     ProductForm,
-    ProductItem,
   } from '@/api/modules/product';
 
   const route = useRoute();
@@ -199,19 +198,25 @@
         ElMessage.success('新增成功');
       }
       router.push('/product/list');
+    } catch {
+      // 全局拦截器已弹出错误提示
     } finally {
       saving.value = false;
     }
   }
 
   onMounted(async () => {
-    const res = await getCategories();
-    categories.value = res.data;
-    if (isEdit.value) {
-      const d = await getProductDetail(
-        Number(route.params.id)
-      );
-      Object.assign(form, d.data);
+    try {
+      const res = await getCategories();
+      categories.value = res.data;
+      if (isEdit.value) {
+        const d = await getProductDetail(
+          Number(route.params.id)
+        );
+        Object.assign(form, d.data);
+      }
+    } catch {
+      // 全局拦截器已弹出错误提示
     }
   });
 </script>
