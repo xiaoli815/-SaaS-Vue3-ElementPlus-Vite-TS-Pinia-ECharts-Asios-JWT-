@@ -1,5 +1,7 @@
 import express from 'express'
 import cors from 'cors'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import authRouter from './routes/auth.js'
 import productRouter from './routes/product.js'
 import orderRouter from './routes/order.js'
@@ -9,13 +11,20 @@ import reportRouter from './routes/report.js'
 import settingRouter from './routes/setting.js'
 import cMobileRouter from './routes/c-mobile.js'
 import uploadRouter from './routes/upload.js'
+import { fullSyncOrders } from './utils/fs.js'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const app = express()
-const PORT = 3002
+const PORT = process.env.PORT || 3001
 
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+// 静态文件服务 — 提供上传图片、公共资源等
+app.use('/product/uploads', express.static(path.join(__dirname, '..', 'public', 'product', 'uploads')))
 
 // 路由挂载
 app.use('/api/auth', authRouter)
@@ -44,6 +53,7 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(PORT, () => {
+  fullSyncOrders()
   console.log('')
   console.log('========================================')
   console.log('  电商SaaS Mock 后端 v3.0 — 全端统一启动')

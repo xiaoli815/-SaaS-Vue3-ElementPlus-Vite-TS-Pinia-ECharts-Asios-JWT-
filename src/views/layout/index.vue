@@ -34,7 +34,11 @@
           </el-dropdown>
         </div>
       </div>
-      <div class="layout-content"><router-view /></div>
+      <div class="layout-content">
+        <router-view v-slot="{ Component }">
+          <keep-alive :max="10"><component :is="Component" />
+          </keep-alive></router-view>
+      </div>
     </div>
   </div>
 </template>

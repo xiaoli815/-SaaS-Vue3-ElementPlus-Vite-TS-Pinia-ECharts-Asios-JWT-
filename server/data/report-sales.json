@@ -6,10 +6,39 @@
     { "date": "06-04", "amount": 16500, "orders": 115, "avgPrice": 143 },
     { "date": "06-05", "amount": 19200, "orders": 128, "avgPrice": 150 },
     { "date": "06-06", "amount": 17300, "orders": 119, "avgPrice": 145 },
-    { "date": "06-07", "amount": 22350, "orders": 156, "avgPrice": 143 }
+    { "date": "06-07", "amount": 22350, "orders": 156, "avgPrice": 143 },
+    { "date": "06-08", "amount": 18900, "orders": 132, "avgPrice": 143 },
+    { "date": "06-09", "amount": 20100, "orders": 142, "avgPrice": 142 },
+    { "date": "06-10", "amount": 25600, "orders": 178, "avgPrice": 144 },
+    { "date": "06-11", "amount": 21400, "orders": 148, "avgPrice": 145 },
+    { "date": "06-12", "amount": 19800, "orders": 139, "avgPrice": 142 },
+    { "date": "06-13", "amount": 23700, "orders": 165, "avgPrice": 144 },
+    { "date": "06-14", "amount": 26100, "orders": 182, "avgPrice": 143 },
+    { "date": "06-15", "amount": 28500, "orders": 195, "avgPrice": 146 },
+    { "date": "06-16", "amount": 24300, "orders": 168, "avgPrice": 145 },
+    { "date": "06-17", "amount": 21900, "orders": 153, "avgPrice": 143 },
+    { "date": "06-18", "amount": 35200, "orders": 245, "avgPrice": 144 },
+    { "date": "06-19", "amount": 29800, "orders": 208, "avgPrice": 143 },
+    { "date": "06-20", "amount": 31500, "orders": 218, "avgPrice": 144 },
+    { "date": "06-21", "amount": 28300, "orders": 195, "avgPrice": 145 }
   ],
-  "total": {
-    "amount": 117150,
-    "orders": 801
-  }
+  "total": { "amount": 472150, "orders": 3270 },
+  "categoryBreakdown": [
+    { "categoryName": "男装", "amount": 68500, "orders": 480, "avgPrice": 143 },
+    { "categoryName": "手机", "amount": 156200, "orders": 850, "avgPrice": 184 },
+    { "categoryName": "休闲零食", "amount": 52300, "orders": 620, "avgPrice": 84 },
+    { "categoryName": "美妆护肤", "amount": 78200, "orders": 510, "avgPrice": 153 },
+    { "categoryName": "家用电器", "amount": 89500, "orders": 430, "avgPrice": 208 },
+    { "categoryName": "家居家装", "amount": 27450, "orders": 380, "avgPrice": 72 }
+  ],
+  "topProducts": [
+    { "productName": "iPhone 15 Pro Max 256GB", "amount": 89991, "orders": 520, "salesCount": 9 },
+    { "productName": "三只松鼠坚果大礼包", "amount": 52300, "orders": 620, "salesCount": 620 },
+    { "productName": "兰蔻持妆粉底液", "amount": 46800, "orders": 320, "salesCount": 90 },
+    { "productName": "华为 Mate 60 Pro", "amount": 41200, "orders": 240, "salesCount": 6 },
+    { "productName": "戴森V15无绳吸尘器", "amount": 39920, "orders": 150, "salesCount": 8 },
+    { "productName": "夏季新款男士短袖T恤", "amount": 20124, "orders": 210, "salesCount": 156 },
+    { "productName": "慕思 乳胶床垫", "amount": 18312, "orders": 95, "salesCount": 14 },
+    { "productName": "SK-II 神仙水 230ml", "amount": 15760, "orders": 88, "salesCount": 4 }
+  ]
 }

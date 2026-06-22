@@ -1,6 +1,7 @@
 import express from 'express'
 import multer from 'multer'
 import path from 'path'
+import fs from 'fs'
 import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -8,11 +9,16 @@ const __dirname = path.dirname(__filename)
 
 const router = express.Router()
 
+// 确保上传目录存在
+const uploadDir = path.join(__dirname, '../../public/product/uploads')
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true })
+  console.log('📁 已创建上传目录:', uploadDir)
+}
+
 // 配置 multer 存储
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    // 上传到 public/product 目录（前端静态资源）
-    const uploadDir = path.join(__dirname, '../../public/product/uploads')
     cb(null, uploadDir)
   },
   filename: (req, file, cb) => {

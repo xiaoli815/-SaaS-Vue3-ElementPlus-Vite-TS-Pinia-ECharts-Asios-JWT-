@@ -10,6 +10,31 @@ function loadCProducts() {
   return readJSON('c-products')
 }
 
+// 将 B端同步的商品数据格式化为 C端前端组件期望的格式
+function formatProductForC(p) {
+  if (!p) return p
+  // C端 ProductDetail 组件用 mainImages 做轮播图
+  const mainImages = p.images && p.images.length > 0 ? p.images : [p.image || '']
+  // C端 SkuPopUp 组件用 skuList (字段名: skuId, specName, specValue)
+  const skuList = (p.skus || []).map(sku => ({
+    skuId: sku.id || sku.skuId,
+    productId: sku.productId || p.id,
+    price: sku.price || p.price,
+    stock: sku.stock || 0,
+    specs: (sku.specs || []).map(s => ({
+      specName: s.name || s.specName || '规格',
+      specValue: s.value || s.specValue || ''
+    }))
+  }))
+  return {
+    ...p,
+    mainImages,
+    skuList,
+    salesCount: p.sales || 0,
+    description: p.desc || p.description || p.detail || ''
+  }
+}
+
 // ==================== 首页 ====================
 
 // 轮播图
@@ -30,7 +55,7 @@ router.get('/home/hot', (req, res) => {
   const products = loadCProducts()
   const sorted = [...products].sort((a, b) => (b.sales || 0) - (a.sales || 0))
   const start = (page - 1) * pageSize
-  const list = sorted.slice(start, start + pageSize)
+  const list = sorted.slice(start, start + pageSize).map(formatProductForC)
   res.json({ code: 200, msg: 'success', data: { list, total: sorted.length, page, pageSize } })
 })
 
@@ -43,7 +68,8 @@ router.get('/products', (req, res) => {
   let products = loadCProducts()
   if (keyword) products = products.filter(p => p.name.toLowerCase().includes(keyword))
   if (categoryId) products = products.filter(p => p.categoryId === categoryId)
-  res.json({ code: 200, msg: 'success', data: { list: products, total: products.length } })
+  const list = products.map(formatProductForC)
+  res.json({ code: 200, msg: 'success', data: { list, total: products.length } })
 })
 
 // 商品详情
@@ -52,7 +78,7 @@ router.get('/goods/detail', (req, res) => {
   const products = loadCProducts()
   const product = products.find(p => p.id === goodsId)
   if (!product) return res.json({ code: 404, msg: '商品不存在', data: null })
-  res.json({ code: 200, msg: 'success', data: product })
+  res.json({ code: 200, msg: 'success', data: formatProductForC(product) })
 })
 
 // 单个商品
@@ -60,7 +86,7 @@ router.get('/products/:id', (req, res) => {
   const products = loadCProducts()
   const product = products.find(p => p.id === Number(req.params.id))
   if (!product) return res.json({ code: 404, msg: '商品不存在', data: null })
-  res.json({ code: 200, msg: 'success', data: product })
+  res.json({ code: 200, msg: 'success', data: formatProductForC(product) })
 })
 
 // 收藏/取消收藏
@@ -123,7 +149,8 @@ router.get('/category/goods', (req, res) => {
   const products = loadCProducts()
   const filtered = categoryId ? products.filter(p => p.categoryId === categoryId) : products
   const start = (page - 1) * pageSize
-  res.json({ code: 200, msg: 'success', data: { list: filtered.slice(start, start + pageSize), total: filtered.length } })
+  const list = filtered.slice(start, start + pageSize).map(formatProductForC)
+  res.json({ code: 200, msg: 'success', data: { list, total: filtered.length } })
 })
 
 // ==================== 购物车 ====================
@@ -202,11 +229,30 @@ function saveOrders(data) {
   writeJSON('c-orders', data)
 }
 
+/** 从请求 Token 中提取 userId */
+function getUserId(req) {
+  const auth = req.headers.authorization || ''
+  const token = auth.replace('Bearer ', '')
+  const match = token.match(/^token_(\d+)_/)
+  return match ? Number(match[1]) : 1
+}
+
 router.get('/order/list', (req, res) => {
   const orders = loadOrders()
   const status = req.query.status
-  let list = orders
-  if (status) list = orders.filter(o => o.status === Number(status))
+  const userId = getUserId(req)
+  // 按用户过滤，只返回当前用户的订单
+  let list = orders.filter(o => o.userId === userId || o.userId === undefined)
+  if (status) list = list.filter(o => o.status === Number(status))
+  // 将相对路径图片转为绝对路径，确保跨域图片能正常渲染
+  const baseUrl = `${req.protocol}://${req.get('host')}`
+  list = list.map(order => ({
+    ...order,
+    goods: (order.goods || []).map(g => ({
+      ...g,
+      image: g.image && g.image.startsWith('/product/uploads/') ? baseUrl + g.image : g.image
+    }))
+  }))
   res.json({ code: 200, msg: 'success', data: { list, total: list.length } })
 })
 
@@ -239,6 +285,7 @@ router.post('/order/submit', (req, res) => {
   const { goods, addressId, totalAmount, remark } = req.body
   const orders = loadOrders()
   const orderId = orders.length > 0 ? Math.max(...orders.map(o => o.id)) + 1 : 1
+  const userId = getUserId(req)
   const order = {
     id: orderId,
     orderId: String(orderId),
@@ -246,6 +293,7 @@ router.post('/order/submit', (req, res) => {
     addressId: addressId || 1,
     totalAmount: totalAmount || 0,
     status: 1,
+    userId,
     createTime: new Date().toISOString(),
     remark: remark || ''
   }
@@ -308,63 +356,129 @@ router.post('/user/logout', (req, res) => {
 
 // ==================== 秒杀 ====================
 
-// 根据商品ID生成一致的秒杀折扣价（确定性，避免每次刷新价格不同）
-function getSeckillPrice(productPrice, productId) {
-  const seed = (productId * 7 + 13) % 21
-  return Math.floor(productPrice * (0.5 + seed / 100))
-}
+// 从 B 端 seckill.json 读取秒杀活动，关联 c-products 商品详情
+function loadBSeckillItems() {
+  const seckillList = readJSON('seckill')
+  const products = loadCProducts()
 
-// 将商品转为秒杀商品（含SKU）
-function toSeckillItem(product, index) {
-  const seckillPrice = getSeckillPrice(product.price, product.id)
-  return {
-    seckillId: 1000 + index,
-    title: `${product.name} 限时秒杀`,
-    goodsId: product.id,
-    image: product.image,
-    mainImages: product.images || [product.image],
-    description: product.desc || '',
-    originalPrice: product.originalPrice || product.price,
-    seckillPrice,
-    startTime: '2026-06-20 10:00:00',
-    endTime: '2026-06-20 12:00:00',
-    totalStock: 50 + index * 30,
-    remainStock: 20 + index * 10,
-    limitCount: 1,
-    status: index < 2 ? 1 : index < 4 ? 0 : 2,
-    soldCount: 30 + index * 20,
-    skuList: (product.skus || []).map(sku => ({
-      skuId: sku.id,
-      specs: sku.specs.map(s => ({ specName: s.name, specValue: s.value })),
-      price: sku.price,
-      seckillPrice: getSeckillPrice(sku.price, sku.id),
-      stock: sku.stock,
-      remainStock: sku.stock
-    }))
-  }
+  return seckillList.map((sk, idx) => {
+    const product = products.find(p => p.id === sk.productId) || products[0]
+    const formatted = formatProductForC(product)
+    // 生成接近当前时间的秒杀时段（现在+1h → 现在+3h）
+    const now = Date.now()
+    const startMs = now + 3600000  // 1小时后开始
+    const endMs = now + 10800000  // 3小时后结束
+
+    return {
+      seckillId: sk.id,
+      title: sk.name,
+      goodsId: sk.productId,
+      image: formatted.image || '',
+      mainImages: formatted.mainImages || [formatted.image || ''],
+      description: formatted.description || '',
+      originalPrice: formatted.originalPrice || formatted.price,
+      seckillPrice: sk.seckillPrice,
+      startTime: new Date(startMs).toISOString(),
+      endTime: new Date(endMs).toISOString(),
+      totalStock: sk.stock || 0,
+      remainStock: Math.floor(sk.stock * (1 - idx * 0.1)),
+      limitCount: sk.limitPerUser || 1,
+      soldCount: Math.floor(sk.stock * idx * 0.1),
+      status: sk.status,  // 0=未开始 1=进行中 2=已结束
+      skuList: (formatted.skuList || []).map(sku => ({
+        ...sku,
+        seckillPrice: Math.floor((sku.price || sk.seckillPrice) * 0.8),
+        remainStock: sku.stock || 0
+      }))
+    }
+  })
 }
 
 router.get('/seckill/list', (req, res) => {
-  const products = loadCProducts()
-  const seckillList = products.slice(0, 6).map((p, i) => toSeckillItem(p, i))
+  const seckillList = loadBSeckillItems()
   res.json({ code: 200, msg: 'success', data: seckillList })
 })
 
 router.get('/seckill/detail', (req, res) => {
   const seckillId = Number(req.query.seckillId)
-  const products = loadCProducts()
-  const index = seckillId - 1000
-  const p = products[index] || products[0]
-  const seckillItem = toSeckillItem(p, index)
-  seckillItem.seckillId = seckillId // 保持传入的seckillId
-  res.json({ code: 200, msg: 'success', data: seckillItem })
+  const seckillList = loadBSeckillItems()
+  const item = seckillList.find(s => s.seckillId === seckillId)
+  if (!item) return res.json({ code: 404, msg: '秒杀活动不存在', data: null })
+  res.json({ code: 200, msg: 'success', data: item })
 })
 
 // ==================== 优惠券 ====================
 
-// 加载优惠券数据
+// 将 B 端优惠券/满减活动转为 C 端 Coupon 格式
+function convertBCouponToC(bCoupon) {
+  const now = Date.now()
+  // B 端测试数据日期较旧，统一调整为当前时间附近的未来日期
+  const startAt = now + 3600000             // 1小时后开始
+  const endAt = now + 86400000 * 60          // 60天后过期
+  const isUsable = bCoupon.status === 1      // status=1 表示可用
+
+  // type: B端 1=满减券 2=直减券 3=折扣券
+  let type, value, discount
+  if (bCoupon.type === 3 || bCoupon.typeText === '折扣券') {
+    type = '折扣'
+    value = 90  // 默认 9折
+    discount = value * 10  // 900
+  } else if (bCoupon.type === 2 || bCoupon.typeText === '直减券') {
+    type = '无门槛'
+    value = bCoupon.value || 0
+    discount = value * 100
+  } else {
+    // 满减券 (type=1) 或满减活动
+    type = '满减'
+    value = bCoupon.value || bCoupon.reduceAmount || 0
+    discount = value * 100
+  }
+
+  return {
+    id: bCoupon.id,
+    name: bCoupon.name,
+    type,
+    value,
+    minUseAmount: bCoupon.minAmount || bCoupon.fullAmount || 0,
+    startAt,
+    endAt,
+    description: bCoupon.name,
+    category: '店铺券',
+    productIds: [],
+    stackRule: 'stackable',
+    isUsable,
+    discount,
+    minOrderAmount: (bCoupon.minAmount || bCoupon.fullAmount || 0) * 100,
+    valid: isUsable,
+    reason: !isUsable ? (bCoupon.statusText || '') : '',
+    expireTime: new Date(endAt).toISOString(),
+    collected: false
+  }
+}
+
+// 加载优惠券数据（合并 B端 coupon.json + full-reduction.json + 已有 c-coupons.json）
 function loadCoupons() {
-  return readJSON('c-coupons')
+  const cCoupons = readJSON('c-coupons')      // 已有 C 端优惠券
+  const bCoupons = readJSON('coupon')           // B 端运营优惠券
+  const bFullReduction = readJSON('full-reduction') // B 端满减活动
+
+  const convertedBCoupons = bCoupons.map(convertBCouponToC)
+  const convertedBFull = bFullReduction.map(fr => convertBCouponToC({
+    ...fr,
+    type: 1,
+    typeText: '满减券',
+    value: fr.reduceAmount,
+    minAmount: fr.fullAmount
+  }))
+
+  // 去重：B端转换的优惠券优先，同名不同ID都保留；通过 id 去重
+  const allCoupons = [...convertedBCoupons, ...convertedBFull]
+  const existingIds = new Set(allCoupons.map(c => c.id))
+  const merged = [
+    ...allCoupons,
+    ...cCoupons.filter(c => !existingIds.has(c.id))
+  ]
+  return merged
 }
 
 // 加载用户已领取优惠券
@@ -372,19 +486,11 @@ function loadCollectedCoupons() {
   try { return readJSON('c-collected-coupons') } catch { return {} }
 }
 
-// 从请求中获取用户ID（默认用户1）
-function getCouponUserId(req) {
-  const auth = req.headers.authorization || ''
-  const token = auth.replace('Bearer ', '')
-  const match = token.match(/^token_(\d+)_/)
-  return match ? Number(match[1]) : 1
-}
-
 // 获取优惠券列表（优惠券中心）
 router.get('/coupons/list', (req, res) => {
   const coupons = loadCoupons()
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
   const collectedIds = collected[userId] || []
   const data = coupons.map(c => ({ ...c, collected: collectedIds.includes(c.id) }))
   res.json({ code: 200, msg: 'success', data })
@@ -395,7 +501,7 @@ router.get('/coupons/product/:productId', (req, res) => {
   const productId = Number(req.params.productId)
   const coupons = loadCoupons()
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
   const collectedIds = collected[userId] || []
   const now = Date.now()
 
@@ -414,7 +520,7 @@ router.get('/coupons/available', (req, res) => {
   const amount = Number(req.query.amount) || 0
   const coupons = loadCoupons()
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
   const collectedIds = collected[userId] || []
   const now = Date.now()
 
@@ -434,7 +540,7 @@ router.post('/coupons/collect', (req, res) => {
   const { id } = req.body
   const coupons = loadCoupons()
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
 
   const coupon = coupons.find(c => c.id === id)
   if (!coupon) return res.json({ code: 404, msg: '优惠券不存在', data: null })
@@ -452,7 +558,7 @@ router.post('/coupons/collect', (req, res) => {
 router.get('/coupons/my', (req, res) => {
   const coupons = loadCoupons()
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
   const collectedIds = collected[userId] || []
   const myCoupons = coupons.filter(c => collectedIds.includes(c.id)).map(c => ({ ...c, collected: true }))
   res.json({ code: 200, msg: 'success', data: myCoupons })
@@ -462,7 +568,7 @@ router.get('/coupons/my', (req, res) => {
 router.post('/coupons/use', (req, res) => {
   const { id } = req.body
   const collected = loadCollectedCoupons()
-  const userId = String(getCouponUserId(req))
+  const userId = String(getUserId(req))
   const userCoupons = collected[userId] || []
   if (!userCoupons.includes(id)) return res.json({ code: 400, msg: '未领取该优惠券', data: null })
   collected[userId] = userCoupons.filter(cid => cid !== id)
@@ -529,10 +635,11 @@ router.get('/search/suggestions', (req, res) => {
 
 router.get('/search/products', (req, res) => {
   const keyword = (req.query.keyword || '').trim()
-  if (!keyword) return res.json({ list: [], total: 0 })
+  if (!keyword) return res.json({ code: 200, msg: 'success', data: { list: [], total: 0 } })
   const products = loadCProducts()
   const filtered = products.filter(p => p.name.toLowerCase().includes(keyword.toLowerCase()))
-  res.json({ code: 200, msg: 'success', data: { list: filtered, total: filtered.length } })
+  const list = filtered.map(formatProductForC)
+  res.json({ code: 200, msg: 'success', data: { list, total: filtered.length } })
 })
 
 // ==================== 运费计算 ====================
@@ -670,6 +777,33 @@ router.post('/shipping/calculate', (req, res) => {
     code: 200, msg: 'success',
     data: { fee, freeAmount, appliedRule: rule, isFree }
   })
+})
+
+// ==================== 收藏 ====================
+
+let favoriteData = {} // { [userId]: [productId, ...] }
+
+function loadFavorites() {
+  try { favoriteData = readJSON('c-favorites') } catch { favoriteData = {} }
+}
+function saveFavorites() { writeJSON('c-favorites', favoriteData) }
+loadFavorites()
+
+router.get('/favorites', (req, res) => {
+  const userId = String(getUserId(req))
+  const productIds = favoriteData[userId] || []
+  const products = loadCProducts()
+  const list = products.filter(p => productIds.includes(p.id)).map(formatProductForC)
+  res.json({ code: 200, msg: 'success', data: list })
+})
+
+// ==================== 地址详情 ====================
+
+router.get('/address/detail', (req, res) => {
+  const id = Number(req.query.id)
+  const address = addressList.find(a => a.id === id)
+  if (!address) return res.json({ code: 404, msg: '地址不存在', data: null })
+  res.json({ code: 200, msg: 'success', data: address })
 })
 
 export default router

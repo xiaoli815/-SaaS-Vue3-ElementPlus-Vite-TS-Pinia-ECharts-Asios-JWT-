@@ -37,17 +37,5 @@
     "limitPerUser": 1,
     "status": 2,
     "statusText": "已结束"
-  },
-  {
-    "name": "shdjiaj",
-    "productId": 1,
-    "seckillPrice": 90,
-    "stock": 100,
-    "limitPerUser": 1,
-    "startTime": "2026-06-19 00:00:00",
-    "endTime": "2026-06-25 00:00:00",
-    "status": 0,
-    "id": 1781877759340,
-    "statusText": "未开始"
   }
 ]

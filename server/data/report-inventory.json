@@ -1,12 +1,33 @@
 {
   "list": [
-    { "productName": "iPhone 15 Pro Max", "stock": 200, "sales": 3560, "turnover": 2.8 },
-    { "productName": "夏季新款短袖T恤", "stock": 500, "sales": 1280, "turnover": 1.8 },
-    { "productName": "三只松鼠坚果大礼包", "stock": 1000, "sales": 5680, "turnover": 3.2 },
-    { "productName": "兰蔻持妆粉底液", "stock": 300, "sales": 2100, "turnover": 2.5 },
-    { "productName": "戴森V15吸尘器", "stock": 80, "sales": 890, "turnover": 2.1 },
-    { "productName": "女士碎花连衣裙", "stock": 0, "sales": 650, "turnover": 0.0 }
+    { "productName": "iPhone 15 Pro Max 256GB", "skuName": "原色钛金属/256GB", "stock": 200, "sales": 3560, "turnover": 2.8, "stockValue": 1999800, "status": "充足", "categoryName": "手机" },
+    { "productName": "夏季新款男士短袖T恤", "skuName": "黑色/M", "stock": 500, "sales": 1280, "turnover": 1.8, "stockValue": 64500, "status": "充足", "categoryName": "男装" },
+    { "productName": "三只松鼠坚果大礼包", "skuName": "经典款 750g", "stock": 1000, "sales": 5680, "turnover": 3.2, "stockValue": 89000, "status": "充足", "categoryName": "休闲零食" },
+    { "productName": "兰蔻持妆粉底液", "skuName": "PO-01 象牙白", "stock": 300, "sales": 2100, "turnover": 2.5, "stockValue": 156000, "status": "正常", "categoryName": "美妆护肤" },
+    { "productName": "戴森V15无绳吸尘器", "skuName": "标准版", "stock": 80, "sales": 890, "turnover": 2.1, "stockValue": 399200, "status": "正常", "categoryName": "家用电器" },
+    { "productName": "华为 Mate 60 Pro", "skuName": "雅川青/12+256GB", "stock": 45, "sales": 680, "turnover": 3.5, "stockValue": 314955, "status": "偏低", "categoryName": "手机" },
+    { "productName": "Nike Air Force 1", "skuName": "白色/42", "stock": 120, "sales": 950, "turnover": 4.2, "stockValue": 107880, "status": "正常", "categoryName": "服装鞋帽" },
+    { "productName": "小米 米家扫拖机器人2", "skuName": "标准版", "stock": 35, "sales": 320, "turnover": 5.1, "stockValue": 69930, "status": "偏低", "categoryName": "家用电器" },
+    { "productName": "SK-II 神仙水 230ml", "skuName": "230ml", "stock": 60, "sales": 480, "turnover": 3.1, "stockValue": 82200, "status": "偏低", "categoryName": "美妆护肤" },
+    { "productName": "良品铺子 肉脯礼盒", "skuName": "经典款", "stock": 15, "sales": 420, "turnover": 8.9, "stockValue": 1035, "status": "告急", "categoryName": "休闲零食" },
+    { "productName": "慕思 乳胶床垫", "skuName": "1.8m", "stock": 25, "sales": 95, "turnover": 1.5, "stockValue": 50500, "status": "告急", "categoryName": "家居家装" },
+    { "productName": "波司登 极寒系列羽绒服", "skuName": "黑色/M", "stock": 8, "sales": 180, "turnover": 8.2, "stockValue": 14392, "status": "告急", "categoryName": "服装鞋帽" }
   ],
-  "totalStock": 2080,
-  "totalValue": 1258920
+  "totalStock": 2388,
+  "totalValue": 3349432,
+  "statusSummary": [
+    { "status": "告急", "count": 3, "value": 65927 },
+    { "status": "偏低", "count": 3, "value": 467085 },
+    { "status": "正常", "count": 3, "value": 665080 },
+    { "status": "充足", "count": 3, "value": 2151340 }
+  ],
+  "categoryStock": [
+    { "categoryName": "手机", "stock": 245, "value": 2314755 },
+    { "categoryName": "男装", "stock": 500, "value": 64500 },
+    { "categoryName": "休闲零食", "stock": 1015, "value": 90035 },
+    { "categoryName": "美妆护肤", "stock": 360, "value": 238200 },
+    { "categoryName": "家用电器", "stock": 115, "value": 469130 },
+    { "categoryName": "服装鞋帽", "stock": 128, "value": 122272 },
+    { "categoryName": "家居家装", "stock": 25, "value": 50500 }
+  ]
 }

@@ -11,14 +11,14 @@
     "costPrice": 65,
     "stock": 500,
     "sales": 1280,
-    "cover": "/product/uploads/upload-1781966816288-279044046.jpg",
+    "cover": "/product/uploads/upload-1782120051517-492864382.jpg",
     "images": [
       "https://img.alicdn.com/example1.jpg",
       "https://img.alicdn.com/example1-2.jpg"
     ],
     "description": "<p>纯棉面料，舒适透气，适合夏季穿着</p>",
     "status": 1,
-    "isListed": false,
+    "isListed": true,
     "skuList": [
       {
         "id": 101,
@@ -50,7 +50,7 @@
       }
     ],
     "createTime": "2024-06-01 10:00:00",
-    "updateTime": "2026-06-20T14:46:59.422Z"
+    "updateTime": "2026-06-22T09:20:55.243Z"
   },
   {
     "id": 2,
@@ -64,13 +64,13 @@
     "costPrice": 8500,
     "stock": 200,
     "sales": 3560,
-    "cover": "/product/uploads/upload-1781966846556-243063068.jpg",
+    "cover": "/product/uploads/upload-1782028844484-63961923.jpg",
     "images": [
       "https://img.alicdn.com/example2.jpg"
     ],
     "description": "<p>A17 Pro芯片，钛金属设计，USB-C接口</p>",
     "status": 1,
-    "isListed": false,
+    "isListed": true,
     "skuList": [
       {
         "id": 201,
@@ -102,7 +102,7 @@
       }
     ],
     "createTime": "2024-06-01 10:00:00",
-    "updateTime": "2026-06-20T14:47:30.145Z"
+    "updateTime": "2026-06-21T08:01:53.500Z"
   },
   {
     "id": 3,
@@ -116,7 +116,7 @@
     "costPrice": 45,
     "stock": 1000,
     "sales": 5680,
-    "cover": "/product/uploads/upload-1781966986659-562188740.jpg",
+    "cover": "/product/uploads/upload-1782027066236-537229514.jpg",
     "images": [
       "https://img.alicdn.com/example3.jpg"
     ],
@@ -140,7 +140,7 @@
       }
     ],
     "createTime": "2024-05-20 08:00:00",
-    "updateTime": "2026-06-20T14:49:48.814Z"
+    "updateTime": "2026-06-21T07:58:54.805Z"
   },
   {
     "id": 4,
@@ -154,7 +154,7 @@
     "costPrice": 280,
     "stock": 300,
     "sales": 2100,
-    "cover": "/product/uploads/upload-1781966999054-275647398.jpg",
+    "cover": "/product/uploads/upload-1782042986771-352397305.jpg",
     "images": [
       "https://img.alicdn.com/example4.jpg"
     ],
@@ -185,7 +185,7 @@
       }
     ],
     "createTime": "2024-05-15 16:30:00",
-    "updateTime": "2026-06-20T14:50:01.153Z"
+    "updateTime": "2026-06-21T12:12:20.945Z"
   },
   {
     "id": 5,
@@ -199,7 +199,7 @@
     "costPrice": 3200,
     "stock": 80,
     "sales": 890,
-    "cover": "/product/uploads/upload-1781966564802-695773353.jpg",
+    "cover": "/product/uploads/upload-1782028872586-857815475.jpg",
     "images": [
       "https://img.alicdn.com/example5.jpg"
     ],
@@ -223,6 +223,6 @@
       }
     ],
     "createTime": "2024-06-02 09:00:00",
-    "updateTime": "2026-06-20T14:43:05.352Z"
+    "updateTime": "2026-06-21T08:01:15.696Z"
   }
 ]

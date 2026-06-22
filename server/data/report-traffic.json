@@ -1,16 +1,38 @@
 {
   "list": [
-    { "date": "06-01", "pv": 12000, "uv": 3500, "newUsers": 180 },
-    { "date": "06-02", "pv": 13500, "uv": 4100, "newUsers": 210 },
-    { "date": "06-03", "pv": 11800, "uv": 3200, "newUsers": 160 },
-    { "date": "06-04", "pv": 15800, "uv": 4500, "newUsers": 230 },
-    { "date": "06-05", "pv": 18200, "uv": 5200, "newUsers": 280 },
-    { "date": "06-06", "pv": 16500, "uv": 4800, "newUsers": 240 },
-    { "date": "06-07", "pv": 21000, "uv": 6200, "newUsers": 350 }
+    { "date": "06-01", "pv": 12000, "uv": 3500, "newUsers": 180, "avgStay": 87, "bounceRate": 0.42 },
+    { "date": "06-02", "pv": 13500, "uv": 4100, "newUsers": 210, "avgStay": 92, "bounceRate": 0.38 },
+    { "date": "06-03", "pv": 11800, "uv": 3200, "newUsers": 160, "avgStay": 85, "bounceRate": 0.45 },
+    { "date": "06-04", "pv": 15800, "uv": 4500, "newUsers": 230, "avgStay": 95, "bounceRate": 0.36 },
+    { "date": "06-05", "pv": 18200, "uv": 5200, "newUsers": 280, "avgStay": 98, "bounceRate": 0.33 },
+    { "date": "06-06", "pv": 16500, "uv": 4800, "newUsers": 240, "avgStay": 90, "bounceRate": 0.37 },
+    { "date": "06-07", "pv": 21000, "uv": 6200, "newUsers": 350, "avgStay": 102, "bounceRate": 0.31 },
+    { "date": "06-08", "pv": 19200, "uv": 5600, "newUsers": 310, "avgStay": 99, "bounceRate": 0.32 },
+    { "date": "06-09", "pv": 17300, "uv": 5100, "newUsers": 265, "avgStay": 93, "bounceRate": 0.35 },
+    { "date": "06-10", "pv": 23400, "uv": 6900, "newUsers": 420, "avgStay": 105, "bounceRate": 0.29 },
+    { "date": "06-11", "pv": 20100, "uv": 5900, "newUsers": 340, "avgStay": 97, "bounceRate": 0.33 },
+    { "date": "06-12", "pv": 18600, "uv": 5600, "newUsers": 300, "avgStay": 94, "bounceRate": 0.35 },
+    { "date": "06-13", "pv": 22500, "uv": 6700, "newUsers": 400, "avgStay": 101, "bounceRate": 0.30 },
+    { "date": "06-14", "pv": 24800, "uv": 7300, "newUsers": 460, "avgStay": 104, "bounceRate": 0.28 },
+    { "date": "06-15", "pv": 27200, "uv": 8100, "newUsers": 520, "avgStay": 108, "bounceRate": 0.26 },
+    { "date": "06-16", "pv": 23100, "uv": 6900, "newUsers": 380, "avgStay": 100, "bounceRate": 0.31 },
+    { "date": "06-17", "pv": 20800, "uv": 6200, "newUsers": 350, "avgStay": 96, "bounceRate": 0.33 },
+    { "date": "06-18", "pv": 35600, "uv": 10800, "newUsers": 680, "avgStay": 115, "bounceRate": 0.22 },
+    { "date": "06-19", "pv": 31200, "uv": 9500, "newUsers": 580, "avgStay": 110, "bounceRate": 0.25 },
+    { "date": "06-20", "pv": 33800, "uv": 10200, "newUsers": 620, "avgStay": 112, "bounceRate": 0.23 },
+    { "date": "06-21", "pv": 29800, "uv": 8900, "newUsers": 550, "avgStay": 107, "bounceRate": 0.27 }
   ],
   "summary": {
-    "totalPv": 108800,
-    "totalUv": 31800,
-    "totalNewUsers": 1650
-  }
+    "totalPv": 456300,
+    "totalUv": 137000,
+    "totalNewUsers": 7825,
+    "avgStay": 99,
+    "avgBounceRate": 0.32
+  },
+  "sourceBreakdown": [
+    { "source": "APP", "pv": 182520, "uv": 54800, "percentage": 40 },
+    { "source": "小程序", "pv": 136890, "uv": 41100, "percentage": 30 },
+    { "source": "H5", "pv": 91260, "uv": 27400, "percentage": 20 },
+    { "source": "PC", "pv": 45630, "uv": 13700, "percentage": 10 }
+  ]
 }

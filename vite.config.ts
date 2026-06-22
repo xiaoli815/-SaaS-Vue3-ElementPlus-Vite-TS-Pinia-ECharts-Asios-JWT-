@@ -18,9 +18,12 @@ export default defineConfig({
     open: true,
     // 代理配置，解决跨域问题
     proxy: {
-      // 代理 /api 开头的请求到本地 Mock 后端服务
       '/api': {
-        target: 'http://localhost:3001', // Mock 后端服务地址
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+      '/product': {
+        target: 'http://localhost:3001',
         changeOrigin: true,
       },
     },
@@ -29,13 +32,25 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    chunkSizeWarningLimit: 1000,
+    // 资源内联阈值：小于 4KB 的资源内联为 base64，减少 HTTP 请求数
+    assetsInlineLimit: 4096,
+    chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
         manualChunks: {
+          // Vue 核心运行时
           vendor: ['vue', 'vue-router', 'pinia'],
+          // Element Plus UI 框架
           elementPlus: ['element-plus', '@element-plus/icons-vue'],
+          // ECharts 图表库（独立 chunk，利于浏览器缓存）
+          echarts: ['echarts'],
+          // HTTP 请求库
+          axios: ['axios'],
         },
+        // 优化 chunk 文件名
+        chunkFileNames: 'js/[name]-[hash].js',
+        entryFileNames: 'js/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
   },

@@ -4,16 +4,18 @@
     "orderId": "1",
     "goods": [
       {
-        "goodsId": 17,
-        "name": "佳能 EOS R6 Mark II",
-        "price": 200,
-        "count": 1
+        "goodsId": 1004,
+        "name": "慕思 乳胶床垫 限时秒杀",
+        "image": "/images/product/home/product6.jpg",
+        "price": 739,
+        "count": 1,
+        "specText": "颜色: 落日橙 / 尺码: XS"
       }
     ],
     "addressId": 1,
-    "totalAmount": 200,
-    "status": 1,
-    "createTime": "2026-06-20T02:54:39.966Z",
+    "totalAmount": 744,
+    "status": 4,
+    "createTime": "2026-06-21T07:53:17.967Z",
     "remark": ""
   },
   {
@@ -21,35 +23,39 @@
     "orderId": "2",
     "goods": [
       {
-        "price": 1717,
+        "goodsId": 1000,
+        "name": "Adidas Ultraboost 轻量跑鞋 限时秒杀",
+        "image": "/images/product/clothes/product17.jpg",
+        "price": 398,
         "count": 1,
-        "name": "iPhone 15 Pro Max",
-        "goodsId": 1
+        "specText": "颜色: 落日橙 / 尺码: S"
       }
     ],
     "addressId": 1,
-    "totalAmount": 1717,
-    "status": 1,
-    "createTime": "2026-06-20T02:54:54.518Z",
-    "remark": "test"
+    "totalAmount": 403,
+    "status": 4,
+    "userId": 1,
+    "createTime": "2026-06-21T07:58:04.757Z",
+    "remark": ""
   },
   {
     "id": 3,
     "orderId": "3",
     "goods": [
       {
-        "goodsId": 11,
-        "name": "科沃斯 窗宝 W1S",
-        "image": "/images/product/electric/product11.jpg",
-        "price": 3792,
+        "goodsId": 1000,
+        "name": "三只松鼠坚果大礼包 限时秒杀",
+        "image": "/images/product/electric/product3.jpg",
+        "price": 118,
         "count": 1,
-        "specText": "暂无规格"
+        "specText": "礼盒装: 1.5kg"
       }
     ],
     "addressId": 1,
-    "totalAmount": 3792,
-    "status": 1,
-    "createTime": "2026-06-20T03:06:29.870Z",
+    "totalAmount": 123,
+    "status": 4,
+    "userId": 1,
+    "createTime": "2026-06-21T08:25:39.432Z",
     "remark": ""
   },
   {
@@ -57,18 +63,19 @@
     "orderId": "4",
     "goods": [
       {
-        "goodsId": 6,
-        "name": "慕思 乳胶床垫",
-        "image": "/images/product/home/product6.jpg",
-        "price": 3363,
+        "goodsId": 1001,
+        "name": "戴森V15无绳吸尘器 限时秒杀",
+        "image": "/images/product/food/product5.jpg",
+        "price": 2794,
         "count": 1,
-        "specText": "暂无规格"
+        "specText": "标准版: 标准版"
       }
     ],
     "addressId": 1,
-    "totalAmount": 3363,
+    "totalAmount": 2779,
     "status": 4,
-    "createTime": "2026-06-20T03:06:59.489Z",
+    "userId": 1,
+    "createTime": "2026-06-21T08:26:46.535Z",
     "remark": ""
   },
   {
@@ -76,18 +83,19 @@
     "orderId": "5",
     "goods": [
       {
-        "goodsId": 17,
-        "name": "佳能 EOS R6 Mark II",
-        "image": "/images/product/phone/product7.jpg",
-        "price": 200,
+        "goodsId": 2,
+        "name": "iPhone 15 Pro Max 256GB",
+        "image": "/product/uploads/upload-1782028844484-63961923.jpg",
+        "price": 9999,
         "count": 1,
-        "specText": "暂无规格"
+        "specText": "原色钛金属: 原色钛金属 / 256GB: 256GB"
       }
     ],
-    "addressId": 1,
-    "totalAmount": 200,
+    "addressId": 2,
+    "totalAmount": 8999.1,
     "status": 4,
-    "createTime": "2026-06-20T03:37:08.721Z",
+    "userId": 1,
+    "createTime": "2026-06-21T09:00:12.442Z",
     "remark": ""
   },
   {
@@ -95,18 +103,19 @@
     "orderId": "6",
     "goods": [
       {
-        "goodsId": 17,
-        "name": "佳能 EOS R6 Mark II",
-        "image": "/images/product/phone/product7.jpg",
-        "price": 200,
+        "goodsId": 5,
+        "name": "戴森V15无绳吸尘器",
+        "image": "/product/uploads/upload-1782028872586-857815475.jpg",
+        "price": 4990,
         "count": 1,
-        "specText": "暂无规格"
+        "specText": "标准版: 标准版"
       }
     ],
     "addressId": 2,
-    "totalAmount": 180,
-    "status": 1,
-    "createTime": "2026-06-20T06:43:23.911Z",
+    "totalAmount": 4990,
+    "status": 4,
+    "userId": 1,
+    "createTime": "2026-06-21T09:15:08.778Z",
     "remark": ""
   },
   {
@@ -114,18 +123,19 @@
     "orderId": "7",
     "goods": [
       {
-        "goodsId": 17,
-        "name": "佳能 EOS R6 Mark II",
-        "image": "/images/product/phone/product7.jpg",
-        "price": 200,
+        "goodsId": 1000,
+        "name": "三只松鼠坚果大礼包 限时秒杀",
+        "image": "/product/uploads/upload-1782027066236-537229514.jpg",
+        "price": 56,
         "count": 1,
-        "specText": "暂无规格"
+        "specText": "经典款: 750g"
       }
     ],
-    "addressId": 1,
-    "totalAmount": 170,
-    "status": 4,
-    "createTime": "2026-06-20T07:19:39.860Z",
+    "addressId": 2,
+    "totalAmount": 61,
+    "status": 1,
+    "userId": 1,
+    "createTime": "2026-06-21T09:38:43.296Z",
     "remark": ""
   },
   {
@@ -133,56 +143,209 @@
     "orderId": "8",
     "goods": [
       {
-        "goodsId": 1000,
-        "name": "iPhone 15 Pro Max 限时秒杀",
-        "image": "/images/product/phone/product1.jpg",
-        "price": 969,
+        "goodsId": 6,
+        "name": "慕思 乳胶床垫",
+        "image": "/images/product/home/product6.jpg",
+        "price": 1321,
         "count": 1,
-        "specText": "颜色: 落日橙 / 尺码: M"
-      }
-    ],
-    "addressId": 1,
-    "totalAmount": 969,
-    "status": 1,
-    "createTime": "2026-06-20T07:20:47.635Z",
-    "remark": ""
-  },
-  {
-    "id": 9,
-    "orderId": "9",
-    "goods": [
-      {
-        "goodsId": 26,
-        "name": "蕉下 防晒衣",
-        "image": "/images/product/clothes/product26.jpg",
-        "price": 1246,
-        "count": 1,
-        "specText": "暂无规格"
-      }
-    ],
-    "addressId": 1,
-    "totalAmount": 1086.4,
-    "status": 1,
-    "createTime": "2026-06-20T13:49:25.253Z",
-    "remark": "形成的"
-  },
-  {
-    "id": 10,
-    "orderId": "10",
-    "goods": [
-      {
-        "goodsId": 1,
-        "name": "iPhone 15 Pro Max",
-        "image": "/images/product/phone/product1.jpg",
-        "price": 1717,
-        "count": 1,
-        "specText": "暂无规格"
+        "specText": "颜色: 落日橙 / 尺码: XS"
       }
     ],
     "addressId": 2,
-    "totalAmount": 1722,
+    "totalAmount": 1326,
     "status": 1,
-    "createTime": "2026-06-20T15:23:42.913Z",
+    "userId": 1,
+    "createTime": "2026-06-21T09:48:54.358Z",
     "remark": ""
+  },
+  {
+    "id": "20240607152100001",
+    "orderId": "20240607152100001",
+    "goods": [
+      {
+        "goodsId": 2,
+        "name": "iPhone 15 Pro Max 256GB",
+        "image": "/product/uploads/upload-1782028844484-63961923.jpg",
+        "price": 9999,
+        "count": 1,
+        "specText": "原色钛金属 / 256GB"
+      },
+      {
+        "goodsId": 1,
+        "name": "夏季新款男士短袖T恤",
+        "image": "/product/uploads/upload-1782120051517-492864382.jpg",
+        "price": 129,
+        "count": 1,
+        "specText": "黑色 / M"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 10128,
+    "status": 3,
+    "createTime": "2024-06-07 15:21:00",
+    "remark": "请发顺丰",
+    "userId": 1,
+    "userName": "张三",
+    "userPhone": "13900139001",
+    "receiverName": "张三",
+    "receiverPhone": "13900139001",
+    "receiverAddress": "广东省广州市天河区体育西路100号",
+    "payType": "wechat",
+    "logistics": {
+      "company": "顺丰速运",
+      "trackNo": "SF1234567890"
+    }
+  },
+  {
+    "id": "20240607143000002",
+    "orderId": "20240607143000002",
+    "goods": [
+      {
+        "goodsId": 4,
+        "name": "兰蔻持妆粉底液 30ml",
+        "image": "/product/uploads/upload-1782042986771-352397305.jpg",
+        "price": 520,
+        "count": 1,
+        "specText": "PO-01 象牙白"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 520,
+    "status": 2,
+    "createTime": "2024-06-07 14:30:00",
+    "remark": "",
+    "userId": 1,
+    "userName": "李四",
+    "userPhone": "13900139002",
+    "receiverName": "李四",
+    "receiverPhone": "13900139002",
+    "receiverAddress": "北京市朝阳区望京SOHO T1 15层",
+    "payType": "alipay",
+    "logistics": null
+  },
+  {
+    "id": "20240607091000003",
+    "orderId": "20240607091000003",
+    "goods": [
+      {
+        "goodsId": 1,
+        "name": "夏季新款男士短袖T恤",
+        "image": "/product/uploads/upload-1782120051517-492864382.jpg",
+        "price": 129,
+        "count": 2,
+        "specText": "黑色 / L"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 248,
+    "status": 4,
+    "createTime": "2024-06-07 09:10:00",
+    "remark": "",
+    "userId": 2,
+    "userName": "王五",
+    "userPhone": "13900139003",
+    "receiverName": "王五",
+    "receiverPhone": "13900139003",
+    "receiverAddress": "上海市浦东新区张江高科技园区",
+    "payType": "wechat",
+    "logistics": {
+      "company": "中通快递",
+      "trackNo": "ZT9876543210"
+    }
+  },
+  {
+    "id": "20240606180000004",
+    "orderId": "20240606180000004",
+    "goods": [
+      {
+        "goodsId": 3,
+        "name": "三只松鼠坚果大礼包",
+        "image": "/product/uploads/upload-1782027066236-537229514.jpg",
+        "price": 89,
+        "count": 1,
+        "specText": "经典款 750g"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 89,
+    "status": 6,
+    "createTime": "2024-06-06 18:00:00",
+    "remark": "不想要了",
+    "userId": 1,
+    "userName": "张三",
+    "userPhone": "13900139001",
+    "receiverName": "张三",
+    "receiverPhone": "13900139001",
+    "receiverAddress": "广东省广州市天河区体育西路100号",
+    "payType": "wechat",
+    "logistics": null
+  },
+  {
+    "id": "20240606150000005",
+    "orderId": "20240606150000005",
+    "goods": [
+      {
+        "goodsId": 5,
+        "name": "戴森V15无绳吸尘器",
+        "image": "/product/uploads/upload-1782028872586-857815475.jpg",
+        "price": 4990,
+        "count": 1,
+        "specText": "标准版"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 4890,
+    "status": 5,
+    "createTime": "2024-06-06 15:00:00",
+    "remark": "",
+    "userId": 3,
+    "userName": "赵六",
+    "userPhone": "13900139004",
+    "receiverName": "赵六",
+    "receiverPhone": "13900139004",
+    "receiverAddress": "浙江省杭州市西湖区文三路200号",
+    "payType": "alipay",
+    "logistics": {
+      "company": "圆通快递",
+      "trackNo": "YT5566778899"
+    }
+  },
+  {
+    "id": "20240605120000006",
+    "orderId": "20240605120000006",
+    "goods": [
+      {
+        "goodsId": 1,
+        "name": "夏季新款男士短袖T恤",
+        "image": "/product/uploads/upload-1782120051517-492864382.jpg",
+        "price": 119,
+        "count": 1,
+        "specText": "白色 / M"
+      },
+      {
+        "goodsId": 3,
+        "name": "三只松鼠坚果大礼包",
+        "image": "/product/uploads/upload-1782027066236-537229514.jpg",
+        "price": 89,
+        "count": 1,
+        "specText": "经典款 750g"
+      }
+    ],
+    "addressId": 1,
+    "totalAmount": 258,
+    "status": 4,
+    "createTime": "2024-06-05 12:00:00",
+    "remark": "",
+    "userId": 2,
+    "userName": "李四",
+    "userPhone": "13900139002",
+    "receiverName": "李四",
+    "receiverPhone": "13900139002",
+    "receiverAddress": "北京市朝阳区望京SOHO T1 15层",
+    "payType": "wechat",
+    "logistics": {
+      "company": "韵达快递",
+      "trackNo": "YD1122334455"
+    }
   }
 ]

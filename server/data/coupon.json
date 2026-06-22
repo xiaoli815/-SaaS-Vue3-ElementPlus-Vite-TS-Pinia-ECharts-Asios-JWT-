@@ -58,5 +58,19 @@
     "endTime": "2024-06-06 23:59:59",
     "status": 2,
     "statusText": "已结束"
+  },
+  {
+    "name": "满200减20",
+    "type": 1,
+    "value": 20,
+    "minAmount": 200,
+    "total": 900,
+    "startTime": "2026-06-22 00:00:00",
+    "endTime": "2026-06-30 00:00:00",
+    "id": 1782008798591,
+    "received": 0,
+    "used": 0,
+    "status": 0,
+    "statusText": "未开始"
   }
 ]

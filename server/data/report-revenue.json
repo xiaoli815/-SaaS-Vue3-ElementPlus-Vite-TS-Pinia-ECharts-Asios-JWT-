@@ -1,16 +1,37 @@
 {
   "list": [
-    { "date": "06-01", "revenue": 12800, "refund": 250, "netRevenue": 12550 },
-    { "date": "06-02", "revenue": 15200, "refund": 320, "netRevenue": 14880 },
-    { "date": "06-03", "revenue": 13800, "refund": 180, "netRevenue": 13620 },
-    { "date": "06-04", "revenue": 16500, "refund": 450, "netRevenue": 16050 },
-    { "date": "06-05", "revenue": 19200, "refund": 520, "netRevenue": 18680 },
-    { "date": "06-06", "revenue": 17300, "refund": 380, "netRevenue": 16920 },
-    { "date": "06-07", "revenue": 22350, "refund": 680, "netRevenue": 21670 }
+    { "date": "06-01", "revenue": 12800, "refund": 250, "netRevenue": 12550, "refundRate": 1.95 },
+    { "date": "06-02", "revenue": 15200, "refund": 320, "netRevenue": 14880, "refundRate": 2.11 },
+    { "date": "06-03", "revenue": 13800, "refund": 180, "netRevenue": 13620, "refundRate": 1.30 },
+    { "date": "06-04", "revenue": 16500, "refund": 450, "netRevenue": 16050, "refundRate": 2.73 },
+    { "date": "06-05", "revenue": 19200, "refund": 520, "netRevenue": 18680, "refundRate": 2.71 },
+    { "date": "06-06", "revenue": 17300, "refund": 380, "netRevenue": 16920, "refundRate": 2.20 },
+    { "date": "06-07", "revenue": 22350, "refund": 680, "netRevenue": 21670, "refundRate": 3.04 },
+    { "date": "06-08", "revenue": 18900, "refund": 340, "netRevenue": 18560, "refundRate": 1.80 },
+    { "date": "06-09", "revenue": 20100, "refund": 290, "netRevenue": 19810, "refundRate": 1.44 },
+    { "date": "06-10", "revenue": 25600, "refund": 560, "netRevenue": 25040, "refundRate": 2.19 },
+    { "date": "06-11", "revenue": 21400, "refund": 420, "netRevenue": 20980, "refundRate": 1.96 },
+    { "date": "06-12", "revenue": 19800, "refund": 310, "netRevenue": 19490, "refundRate": 1.57 },
+    { "date": "06-13", "revenue": 23700, "refund": 610, "netRevenue": 23090, "refundRate": 2.57 },
+    { "date": "06-14", "revenue": 26100, "refund": 780, "netRevenue": 25320, "refundRate": 2.99 },
+    { "date": "06-15", "revenue": 28500, "refund": 550, "netRevenue": 27950, "refundRate": 1.93 },
+    { "date": "06-16", "revenue": 24300, "refund": 430, "netRevenue": 23870, "refundRate": 1.77 },
+    { "date": "06-17", "revenue": 21900, "refund": 390, "netRevenue": 21510, "refundRate": 1.78 },
+    { "date": "06-18", "revenue": 35200, "refund": 920, "netRevenue": 34280, "refundRate": 2.61 },
+    { "date": "06-19", "revenue": 29800, "refund": 650, "netRevenue": 29150, "refundRate": 2.18 },
+    { "date": "06-20", "revenue": 31500, "refund": 580, "netRevenue": 30920, "refundRate": 1.84 },
+    { "date": "06-21", "revenue": 28300, "refund": 720, "netRevenue": 27580, "refundRate": 2.54 }
   ],
   "summary": {
-    "totalRevenue": 117150,
-    "totalRefund": 2780,
-    "netRevenue": 114370
-  }
+    "totalRevenue": 472150,
+    "totalRefund": 10130,
+    "netRevenue": 462020,
+    "avgRefundRate": 2.15
+  },
+  "paymentBreakdown": [
+    { "method": "微信支付", "amount": 283290, "orders": 1962, "percentage": 60 },
+    { "method": "支付宝", "amount": 141645, "orders": 981, "percentage": 30 },
+    { "method": "银行卡", "amount": 37772, "orders": 262, "percentage": 8 },
+    { "method": "其他", "amount": 9443, "orders": 65, "percentage": 2 }
+  ]
 }
