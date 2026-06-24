@@ -244,15 +244,6 @@ router.get('/order/list', (req, res) => {
   // 按用户过滤，只返回当前用户的订单
   let list = orders.filter(o => o.userId === userId || o.userId === undefined)
   if (status) list = list.filter(o => o.status === Number(status))
-  // 将相对路径图片转为绝对路径，确保跨域图片能正常渲染
-  const baseUrl = `${req.protocol}://${req.get('host')}`
-  list = list.map(order => ({
-    ...order,
-    goods: (order.goods || []).map(g => ({
-      ...g,
-      image: g.image && g.image.startsWith('/product/uploads/') ? baseUrl + g.image : g.image
-    }))
-  }))
   res.json({ code: 200, msg: 'success', data: { list, total: list.length } })
 })
 

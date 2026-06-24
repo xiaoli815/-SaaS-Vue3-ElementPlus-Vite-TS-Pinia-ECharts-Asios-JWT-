@@ -1,8 +1,0 @@
-[
-  { "id": 1, "name": "潮流上衣 A款", "price": 199.00, "num": 500, "UrlImg": "https://img.alicdn.com/sort1.jpg" },
-  { "id": 2, "name": "时尚裤装 B款", "price": 299.00, "num": 320, "UrlImg": "https://img.alicdn.com/sort2.jpg" },
-  { "id": 3, "name": "优雅裙装 C款", "price": 399.00, "num": 180, "UrlImg": "https://img.alicdn.com/sort3.jpg" },
-  { "id": 4, "name": "商务套装 D款", "price": 599.00, "num": 90, "UrlImg": "https://img.alicdn.com/sort4.jpg" },
-  { "id": 5, "name": "潮流配饰 E款", "price": 99.00, "num": 650, "UrlImg": "https://img.alicdn.com/sort5.jpg" },
-  { "id": 6, "name": "运动鞋 F款", "price": 459.00, "num": 230, "UrlImg": "https://img.alicdn.com/sort6.jpg" }
-]

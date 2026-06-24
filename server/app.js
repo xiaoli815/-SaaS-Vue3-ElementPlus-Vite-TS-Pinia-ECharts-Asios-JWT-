@@ -11,7 +11,6 @@ import reportRouter from './routes/report.js'
 import settingRouter from './routes/setting.js'
 import cMobileRouter from './routes/c-mobile.js'
 import uploadRouter from './routes/upload.js'
-import { fullSyncOrders } from './utils/fs.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -53,7 +52,6 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(PORT, () => {
-  fullSyncOrders()
   console.log('')
   console.log('========================================')
   console.log('  电商SaaS Mock 后端 v3.0 — 全端统一启动')

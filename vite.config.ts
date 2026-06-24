@@ -22,10 +22,6 @@ export default defineConfig({
         target: 'http://localhost:3001',
         changeOrigin: true,
       },
-      '/product': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      },
     },
   },
   // 构建配置
