@@ -2,6 +2,5 @@ node_modules
 dist
 .env.*
 !/.env.example
-!/.env.production
 npm-debug.log*
 .vscode
